@@ -1,0 +1,158 @@
+/* =========================
+   Portfolio page
+========================= */
+
+.portfolio-page {
+    background: #f8f9fa;
+}
+
+/* =========================
+   Hero
+========================= */
+
+.portfolio-hero {
+    padding: 80px 0 40px;
+}
+
+.portfolio-hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+}
+
+.portfolio-kicker {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #007acc;
+    margin: 0;
+}
+
+.portfolio-hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.05;
+    font-weight: 300;
+    color: #222;
+    margin: 0;
+    max-width: 85%;
+}
+
+.portfolio-intro {
+    max-width: 860px;
+    margin: 0;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* =========================
+   Projects section
+========================= */
+
+.portfolio-projects {
+    padding: 48px 0 96px;
+    background: #ffffff;
+    border-top: 1px solid #eee;
+}
+
+.portfolio-projects h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #222;
+}
+
+/* =========================
+   Cards behavior
+========================= */
+
+.project-grid {
+    align-items: stretch;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 18px;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 34px rgba(0, 0, 0, 0.08);
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.project-content a {
+    margin-top: auto;
+}
+
+.project-category {
+    background: #f1f3f5;
+    color: #555;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 1024px) {
+    .portfolio-hero {
+        padding: 72px 0 40px;
+    }
+
+    .portfolio-hero h1 {
+        font-size: 3.2rem;
+        max-width: 16ch;
+    }
+
+    .portfolio-intro {
+        font-size: 1.05rem;
+        max-width: 760px;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-hero {
+        padding: 64px 0 36px;
+    }
+
+    .portfolio-hero .container {
+        gap: 20px;
+    }
+
+    .portfolio-hero h1 {
+        font-size: 2.4rem;
+        max-width: none;
+    }
+
+    .portfolio-kicker {
+        font-size: 0.82rem;
+    }
+
+    .portfolio-intro {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .portfolio-projects {
+        padding: 40px 0 72px;
+    }
+
+    .portfolio-projects h2 {
+        font-size: 2rem;
+        margin-bottom: 28px;
+    }
+}

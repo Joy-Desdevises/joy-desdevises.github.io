@@ -1,0 +1,314 @@
+/* =========================
+   Reset and base styles
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* =========================
+   Global layout
+========================= */
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container.narrow {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.7;
+}
+
+/* =========================
+   Navigation
+========================= */
+nav {
+    background-color: #f8f9fa;
+}
+
+.nav-inner {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: right;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #007acc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #005999;
+}
+
+/* =========================
+   Hero section
+========================= */
+#hero {
+    padding: 120px 0px 120px 0px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 32px;
+    font-weight: 300;
+}
+
+#hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #666;
+    font-weight: 400;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    max-width: 760px;
+    margin: 0 auto 0px auto;
+}
+
+.subtitle {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+
+/* =========================
+   Featured projects / Portfolio
+========================= */
+.featured-projects,
+#portfolio-content {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.featured-projects h2,
+#portfolio-content h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.view-all {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.view-all a {
+    display: inline-block;
+    color: #007acc;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.view-all a:hover {
+    color: #005999;
+}
+
+/* =========================
+   Project preview cards
+========================= */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+    align-items: start;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    width: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+}
+
+.project-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(135deg, #f4f7fb 0%, #dfe7f2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-image span {
+    color: #667085;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.project-content {
+    padding: 22px;
+}
+
+.project-category {
+    display: inline-block;
+    background: #eef3f7;
+    color: #4a5560;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.project-content h3 {
+    font-size: 1.45rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #222;
+}
+
+.project-content p {
+    margin-bottom: 18px;
+    color: #666;
+    line-height: 1.7;
+}
+
+.project-content a {
+    display: inline-block;
+    color: #007acc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.project-content a:hover {
+    color: #005999;
+}
+
+/* =========================
+   Case study pages
+========================= */
+.case-study {
+    padding: 90px 0;
+}
+
+.case-study h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.case-study h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.case-study p {
+    margin-bottom: 18px;
+    max-width: 900px;
+}
+
+.case-study section + section {
+    margin-top: 56px;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 1024px) {
+    .container,
+    .container.narrow {
+        width: 85%;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .container,
+    .container.narrow {
+        width: 90%;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #hero {
+        padding: 72px 0;
+    }
+
+    #hero h1 {
+        font-size: 2.4rem;
+    }
+
+    #hero h2 {
+        font-size: 1.25rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .featured-projects h2 {
+        font-size: 2rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
