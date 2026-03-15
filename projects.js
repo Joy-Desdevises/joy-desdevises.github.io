@@ -2,8 +2,8 @@ const projects = [
   {
     id: 1,
     slug: "bobbee",
-    category: "UX Research & Product Design",
-    title: "Audit UX-UI du SaaS Bobbee",
+    category: "Product Design | Data",
+    title: "Audit UX-UI du SaaS Bobbee (Isagri)",
     description:
       "Réalisation d’un audit design pour identifier les points de friction d’un logiciel SaaS de comptabilité et proposer des améliorations de parcours, d’interface et d’intégration de fonctionnalités basées sur l’IA.",
     image: "images/Bobbee_Illustration.jpg",
@@ -12,59 +12,26 @@ const projects = [
   },
   {
     id: 2,
-    slug: "project-2",
-    category: "UX Research",
-    title: "Research-driven Product Redesign",
+    slug: "ademe",
+    category: "UX Research | Data",
+    title: "Optimisation des services data de l’ADEME",
     description:
-      "Led a complete redesign of a legacy product based on extensive user research, improving satisfaction and task completion rates.",
-    image: "images/project2.jpg",
-    alt: "Aperçu du projet 2",
-    url: "projets/project2.html"
+      "Service design et analyse de données pour la Fabrique de la donnée. 90+ retours utilisateurs, croisement de méthodes qualitatives et quantitatives, et formulation de recommandations pour améliorer l’accès et l’usage des services data.",
+    image: "images/Ademe_Illustration.png",
+    alt: "Aperçu du projet pour l'ADEME",
+    url: "projets/ademe.html"
   },
   {
     id: 3,
-    slug: "project-3",
-    category: "AI & Automation",
-    title: "AI-powered Workflow Experience",
+    slug: "T-SRU",
+    category: "UI Design | Mentoring | Data",
+    title: "UI Design pour une plateforme publique de logement social",
     description:
-      "Designed a product experience integrating automation and AI-assisted features to simplify complex user journeys and support decision-making.",
-    image: "images/project3.jpg",
-    alt: "Aperçu du projet 3",
-    url: "projets/project3.html"
+      "Conception d’interfaces pour la plateforme Transparence SRU (Ministère de la Transition Ecologique) afin de centraliser les données et faciliter le suivi des quotas de logements sociaux.",
+    image: "images/sru-proto.png",
+    alt: "Aperçu du projet T-SRU",
+    url: "projets/T-SRU.html"
   },
-  {
-    id: 4,
-    slug: "project-4",
-    category: "Data Analytics",
-    title: "Data-intensive Analytics Dashboard",
-    description:
-      "Designed a comprehensive dashboard enabling non-technical users to explore complex datasets through intuitive visualizations and interactive controls.",
-    image: "images/project4.jpg",
-    alt: "Aperçu du projet 4",
-    url: "projets/project4.html"
-  },
-  {
-    id: 5,
-    slug: "project-5",
-    category: "Service Design",
-    title: "Cross-team Product Journey Redesign",
-    description:
-      "Restructured key service touchpoints to improve coordination, usability and decision-making across multiple stakeholders.",
-    image: "images/project5.jpg",
-    alt: "Aperçu du projet 5",
-    url: "projets/project5.html"
-  },
-  {
-    id: 6,
-    slug: "project-6",
-    category: "Product Design",
-    title: "Operational Tool for Complex Workflows",
-    description:
-      "Designed a clearer and more scalable interface for a complex operational product used in high-information environments.",
-    image: "images/project6.jpg",
-    alt: "Aperçu du projet 6",
-    url: "projets/project6.html"
-  }
 ];
 
 function createProjectCard(project) {

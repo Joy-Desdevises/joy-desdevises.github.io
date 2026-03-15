@@ -44,7 +44,7 @@
 
 .case-hero h1 {
   margin: 0 0 18px 0;
-  max-width: 75%;
+  max-width: 90%;
   font-size: 4rem;
   line-height: 1.05;
   font-weight: 300;
@@ -97,13 +97,16 @@
 ========================= */
 
 .case-cover {
-  margin: 12px 0 56px;
+  margin: 12px auto 32px;
+  max-width: 100%; /* évite que la cover soit trop massive */
 }
 
 .case-cover img {
   display: block;
   width: 100%;
-  height: auto;
+  max-height: 520px; /* réduit la place prise verticalement */
+  object-fit: cover;
+  object-position: top;
   border: 1px solid #ececec;
   border-radius: 18px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -175,7 +178,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-top: 24px;
-  align-items: stretch;
+  align-items: start;
 }
 
 .case-card-light {
@@ -193,14 +196,10 @@
 }
 
 .case-card-light p {
-  margin: 0 0 14px 0;
+  margin: 0;
   font-size: 0.98rem;
   line-height: 1.75;
   color: #555;
-}
-
-.case-card-light p:last-child {
-  margin-bottom: 0;
 }
 
 .case-list {
@@ -222,6 +221,17 @@
   margin-top: 30px;
 }
 
+.case-block {
+  margin-top: 28px;
+}
+
+.case-solution-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 28px;
+}
+
 .case-quote {
   margin-top: 24px;
   padding: 20px 24px;
@@ -233,34 +243,23 @@
 }
 
 /* =========================
-   Stack verticale (section solution)
-========================= */
-
-.case-solution-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-  margin-top: 28px;
-}
-
-/* =========================
    Images dans les sections
 ========================= */
 
 .case-image {
   margin: 0;
-  height: 100%;
+  padding: 0;
+  background: transparent;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .case-image img {
   display: block;
   width: 100%;
-  height: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  border: 1px solid #ececec;
-  border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .case-image figcaption {
@@ -268,6 +267,17 @@
   font-size: 0.92rem;
   line-height: 1.6;
   color: #777;
+}
+
+/* Ajustement spécifique section recherche */
+#recherche .case-image {
+  margin: 0;
+}
+
+#recherche .case-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 /* =========================
@@ -278,7 +288,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin-top: 28px;
+  margin: 28px 0 32px; /* espace au-dessus ET en dessous */
 }
 
 .case-metric {
@@ -300,6 +310,11 @@
   font-size: 0.95rem;
   line-height: 1.6;
   color: #666;
+}
+
+/* sécurité supplémentaire si une image suit les métriques */
+#resultats .case-image {
+  margin-top: 32px;
 }
 
 /* =========================
@@ -388,14 +403,12 @@
     grid-template-columns: 1fr;
   }
 
-  .case-image {
-    height: auto;
+  .case-cover {
+    max-width: 100%;
   }
 
-  .case-image img {
-    height: auto;
-    min-height: 0;
-    object-fit: contain;
+  .case-cover img {
+    max-height: 420px;
   }
 }
 
@@ -421,8 +434,16 @@
     font-size: 1.6rem;
   }
 
+  .case-card-light {
+    padding: 22px;
+  }
+
   .case-footer-card {
     padding: 24px;
+  }
+
+  .case-cover img {
+    max-height: 340px;
   }
 
   .case-cover-placeholder,
