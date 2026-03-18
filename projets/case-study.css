@@ -59,6 +59,14 @@
   color: #666;
 }
 
+.text-grey {
+  color: #666;
+  font-size: 1rem;
+}
+
+
+
+
 /* =========================
    Meta
 ========================= */
@@ -67,6 +75,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
+  margin-bottom: 32px;
 }
 
 .case-meta-card {
@@ -98,13 +107,13 @@
 
 .case-cover {
   margin: 12px auto 32px;
-  max-width: 100%; /* évite que la cover soit trop massive */
+  max-width: 100%;
 }
 
 .case-cover img {
   display: block;
   width: 100%;
-  max-height: 520px; /* réduit la place prise verticalement */
+  max-height: 520px;
   object-fit: cover;
   object-position: top;
   border: 1px solid #ececec;
@@ -144,7 +153,7 @@
 }
 
 .case-section-card {
-  padding: 40px;
+  padding: 32px;
   background: #fff;
   border: 1px solid #e8e8e8;
   border-radius: 18px;
@@ -167,6 +176,37 @@
 
 .case-section p:last-child {
   margin-bottom: 0;
+}
+
+/* =========================
+   Intro layout (texte + image)
+========================= */
+
+.case-intro-layout {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) auto;
+  gap: 40px;
+  align-items: start;
+}
+
+.case-intro-text {
+  min-width: 0;
+  
+}
+
+.case-intro-image {
+  margin: 0;
+  padding: 0;
+  display: block;
+  justify-self: end;
+}
+
+.case-intro-image img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 18px;
 }
 
 /* =========================
@@ -288,7 +328,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin: 28px 0 32px; /* espace au-dessus ET en dessous */
+  margin: 28px 0 32px;
 }
 
 .case-metric {
@@ -386,6 +426,40 @@
   transform: translateY(-2px);
 }
 
+
+
+/* =========================
+   Livrables
+========================= */
+
+.case-deliverables {
+  margin-top: 40px;
+  padding: 48px;
+  background: #f3f4f6;
+  border-radius: 20px;
+}
+
+.case-deliverables-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.case-deliverables img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.case-deliverables figcaption {
+  margin-top: 32px;
+  font-size: 1.15rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+
 /* =========================
    Responsive
 ========================= */
@@ -399,12 +473,22 @@
     grid-template-columns: 1fr;
   }
 
+  .case-intro-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+
   .case-cover {
     max-width: 100%;
   }
 
   .case-cover img {
     max-height: 420px;
+  }
+
+  .case-intro-image img {
+    max-height: 320px;
   }
 }
 
@@ -426,6 +510,10 @@
     padding: 28px 22px;
   }
 
+  .case-meta {
+  margin-bottom: 32px;
+}
+
   .case-section h2 {
     font-size: 1.6rem;
   }
@@ -445,5 +533,13 @@
   .case-cover-placeholder,
   .case-image-placeholder {
     min-height: 220px;
+  }
+
+  .case-intro-image {
+    padding: 12px;
+  }
+
+  .case-intro-image img {
+    max-height: 260px;
   }
 }

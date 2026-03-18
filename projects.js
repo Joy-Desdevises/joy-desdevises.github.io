@@ -48,9 +48,9 @@ const projects = [
     id: 5,
     slug: "OHC",
     category: "Data analyses | Questionnaire | Automatisation",
-    title: "Evaluation du bien-être au travail, analyse de données et automatisation (OCTO Technology)",
-    description: "Recherche scientifique et automatisation des analyses statistiques (python) pour concevoir un outil d’évaluation du bien-être au travail et identifier des leviers d’amélioration organisationnels.",
-    image: "images/ohc-research.png",
+    title: "Transformer des données de bien-être en leviers d’action (OCTO Technology)",
+    description: "Passer de questionnaires peu exploitables à un outil fiable permettant de comprendre le bien-être des collaborateurs et d’orienter des décisions concrètes à l’échelle de l’entreprise.",
+    image: "images/ohc-illustration.png",
     alt: "Aperçu du projet OHC",
     url: "projets/ohc.html"
   },
