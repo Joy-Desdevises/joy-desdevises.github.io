@@ -132,6 +132,28 @@ nav a:hover {
     text-align: center;
 }
 
+
+/* =========================
+   Generic projects sections
+========================= */
+
+.cta-button {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 999px;
+  background: #007acc;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.cta-button:hover {
+  background: #005999;
+  transform: translateY(-2px);
+}
+
+
 .view-all {
     margin-top: 40px;
     text-align: center;
@@ -147,6 +169,24 @@ nav a:hover {
 }
 
 .view-all a:hover {
+    color: #005999;
+}
+
+.cta-contact {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cta-contact a {
+    display: inline-block;
+    color: #007acc;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.cta-contact a:hover {
     color: #005999;
 }
 

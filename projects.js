@@ -2,10 +2,10 @@ const projects = [
   {
     id: 1,
     slug: "bobbee",
-    category: "Product Design | Data",
+    category: "Audit | UX Research | Data IA",
     title: "Audit UX-UI du SaaS Bobbee (Isagri)",
     description:
-      "Réalisation d’un audit design pour identifier les points de friction d’un logiciel SaaS de comptabilité et proposer des améliorations de parcours, d’interface et d’intégration de fonctionnalités basées sur l’IA.",
+      "Analyse de l’expérience utilisateur et de l’ergonomie d’un outil comptable complexe afin d’identifier les frictions et structurer des pistes d’amélioration produit, dont l’intégration de fonctionnalités IA.",
     image: "images/Bobbee_Illustration.jpg",
     alt: "Illustration du projet Bobbee avec dashboard et analyse financière",
     url: "projets/bobbee.html"
@@ -13,10 +13,10 @@ const projects = [
   {
     id: 2,
     slug: "ademe",
-    category: "UX Research | Data",
-    title: "Optimisation des services data de l’ADEME",
+    category: "UX Research | Data | Pulic sector",
+    title: "Design de service pour l’ADEME (Fabrique de la donnée)",
     description:
-      "Service design et analyse de données pour la Fabrique de la donnée. 90+ retours utilisateurs, croisement de méthodes qualitatives et quantitatives, et formulation de recommandations pour améliorer l’accès et l’usage des services data.",
+      "Recherche utilisateurs et analyse de données pour comprendre les usages des services data publics et formuler des recommandations d’amélioration à partir de plus de 90 retours utilisateurs.",
     image: "images/Ademe_Illustration.png",
     alt: "Aperçu du projet pour l'ADEME",
     url: "projets/ademe.html"
@@ -24,14 +24,37 @@ const projects = [
   {
     id: 3,
     slug: "T-SRU",
-    category: "UI Design | Mentoring | Data",
-    title: "UI Design pour une plateforme publique de logement social",
+    category: "UX-UI | DSFR | GovTech | Data Viz",
+    title: "UI Design de la plateforme Transparence SRU - logements sociaux (Ministère Écologie)",
     description:
-      "Conception d’interfaces pour la plateforme Transparence SRU (Ministère de la Transition Ecologique) afin de centraliser les données et faciliter le suivi des quotas de logements sociaux.",
+      "Conception d’interfaces pour un outil métier destiné aux collectivités, visant à centraliser les données et simplifier le suivi des obligations de logements sociaux.",
     image: "images/sru-proto.png",
     alt: "Aperçu du projet T-SRU",
     url: "projets/T-SRU.html"
   },
+
+  {
+    id: 4,
+    slug: "TRM",
+    category: "Strategie | UX-UI | Data | GovTech",
+    title: "Refonte du produit data Transport Routier de Marchandises (Ministère Écologie)",
+    description: "Cadrage produit, recherche utilisateurs et conception de nouveaux parcours pour améliorer la collecte et la fiabilité des données sur le transport routier de marchandises.",
+    image: "images/trm-research.png",
+    alt: "Aperçu du projet TRM",
+    url: "projets/trm.html"
+  },
+
+  {
+    id: 5,
+    slug: "OHC",
+    category: "Data analyses | Questionnaire | Automatisation",
+    title: "Evaluation du bien-être au travail, analyse de données et automatisation (OCTO Technology)",
+    description: "Recherche scientifique et automatisation des analyses statistiques (python) pour concevoir un outil d’évaluation du bien-être au travail et identifier des leviers d’amélioration organisationnels.",
+    image: "images/ohc-research.png",
+    alt: "Aperçu du projet OHC",
+    url: "projets/ohc.html"
+  },
+
 ];
 
 function createProjectCard(project) {

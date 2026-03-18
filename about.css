@@ -60,7 +60,7 @@
 
 .about-sections .container {
     display: grid;
-    grid-template-columns: 1.4fr 1fr; /* Approche plus large */
+    grid-template-columns: 1.4fr 1fr;
     gap: 40px;
     align-items: start;
 }
@@ -122,7 +122,7 @@
 
 .about-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 bulles par ligne */
+    grid-template-columns: repeat(2, 1fr);
     gap: 22px;
     margin-top: 28px;
 }
@@ -194,7 +194,7 @@
    CTA section
 ========================= */
 
-.about-cta {
+.contact-cta {
     text-align: left;
 }
 
@@ -209,38 +209,17 @@
     color: #444;
 }
 
-.about-button {
-    display: inline-block;
-    margin-top: 8px;
-    padding: 14px 22px;
-    border-radius: 999px;
-    background: #007acc;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.about-button:hover {
-    background: #005999;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-}
-
 /* =========================
    Responsive
 ========================= */
 
 @media (max-width: 1024px) {
-
     .about-hero h1 {
         font-size: 3rem;
     }
-
 }
 
 @media (max-width: 768px) {
-
     .about-hero {
         padding: 64px 0 36px;
     }
@@ -273,5 +252,4 @@
     .about-block h2 {
         font-size: 1.6rem;
     }
-
 }

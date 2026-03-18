@@ -1,0 +1,317 @@
+/* =========================
+   Services page
+========================= */
+
+.services-page {
+    background: #f8f9fa;
+}
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+    padding: 80px 0 40px;
+    background: #f8f9fa;
+    text-align: center;
+    border-bottom: 1px solid #ececec;
+
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.05;
+    font-weight: 300;
+    color: #222;
+    margin: 0;
+    max-width: 85%;
+}
+
+.hero p {
+    max-width: 860px;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #666;
+    margin: 0;
+}
+
+section {
+    padding: 48px 0;
+}
+
+.cta {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 999px;
+    background: #007acc;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.decision-buttons button.active {
+    border-color: #007acc;
+    background: #eef5fc;
+    color: #007acc;
+    font-weight: 600;
+}
+
+.cta:hover {
+    background: #005999;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   Main sections
+========================= */
+
+.services-overview {
+    background: #ffffff;
+    border-bottom: 1px solid #ececec;
+}
+
+.services-decision {
+    background: #f8f9fa;
+    border-bottom: 1px solid #ececec;
+
+}
+
+.contact-cta {
+    background: #ffffff;
+    text-align: center;
+    padding-bottom: 96px;
+}
+
+.services-overview h2,
+.services-decision h2,
+.contact-cta h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #222;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   Problem cards
+========================= */
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 18px;
+    padding: 32px;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 34px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: #222;
+    margin-bottom: 14px;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #555;
+    margin: 0;
+}
+
+/* =========================
+   Decision tree buttons
+========================= */
+
+.decision-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 36px;
+}
+
+.decision-buttons button {
+    padding: 14px 20px;
+    border: 1px solid #d9e3ec;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #333;
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.decision-buttons button:hover {
+    border-color: #007acc;
+    color: #007acc;
+    transform: translateY(-1px);
+}
+
+/* =========================
+   Service detail card
+========================= */
+
+.service {
+    display: none;
+    margin-top: 36px;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 18px;
+    padding: 36px;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.06);
+}
+
+.service h3 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #222;
+    margin-bottom: 18px;
+}
+
+.service ul {
+    margin: 0 0 24px 20px;
+    padding: 0;
+}
+
+.service li {
+    margin-bottom: 10px;
+    line-height: 1.75;
+    color: #444;
+}
+
+.service a {
+    display: inline-block;
+    color: #007acc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.service a:hover {
+    color: #005999;
+}
+
+.hero .services-kicker {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #b35a1f;
+}
+
+.services-intro {
+    max-width: 860px;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #666;
+    margin: 0;
+}
+
+.service p {
+    font-size: 1.02rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   CTA section
+========================= */
+
+.contact-cta {
+    text-align: center;
+    padding-bottom: 96px;
+}
+
+.contact-cta h2 {
+    margin-bottom: 24px;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .services-overview h2,
+    .services-decision h2,
+    .contact-cta h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 64px 0 36px;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+        max-width: 100%;
+    }
+
+    .hero p {
+        font-size: 1.05rem;
+    }
+
+    .problem-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .card,
+    .service {
+        padding: 28px 24px;
+    }
+
+    .services-overview h2,
+    .services-decision h2,
+    .contact-cta h2 {
+        font-size: 2rem;
+    }
+
+    .service h3 {
+        font-size: 1.5rem;
+    }
+
+    .decision-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .decision-buttons button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-cta {
+        padding-bottom: 72px;
+    }
+}

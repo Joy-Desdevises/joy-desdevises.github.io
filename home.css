@@ -44,6 +44,36 @@
 }
 
 /* =========================
+   CTA
+========================= */
+
+.cta-button,
+a.cta-button,
+a.cta-button:visited,
+a.cta-button:hover,
+a.cta-button:active,
+a.cta-button:focus {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 999px;
+    background: #007acc;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1;
+    transition: all 0.2s ease;
+}
+
+a.cta-button:hover,
+a.cta-button:focus {
+    background: #005999;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/* =========================
    Featured projects section
 ========================= */
 
@@ -140,14 +170,6 @@
 }
 
 /* =========================
-   View all link
-========================= */
-
-.view-all {
-    margin-top: 48px;
-}
-
-/* =========================
    Responsive
 ========================= */
 
@@ -202,9 +224,5 @@
 
     .project-content h3 {
         font-size: 1.2rem;
-    }
-
-    .view-all {
-        margin-top: 32px;
     }
 }
