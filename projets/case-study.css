@@ -305,6 +305,20 @@
   color: #777;
 }
 
+
+.case-video {
+  margin-top: 32px;
+}
+
+.case-video video {
+  display: block;
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
 /* =========================
    Results
 ========================= */

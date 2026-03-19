@@ -1,59 +1,114 @@
 const projects = [
   {
-    id: 11,
+    id: 10,
     slug: "bobbee",
     category: "Audit | UX Research | Data IA",
-    title: "Identifier les frictions et améliorer l’expérience d’un SaaS complexe (Bobbee - ISAGRI)",
+    title: "Bobbee (SaaS comptabilité) – Isagri",
     description:
-      "Identifier les points de friction d’un logiciel métier de comptabilité et proposer des améliorations concrètes pour rendre le produit plus fluide, plus lisible et prêt à évoluer.",
+      "Identifier les frictions et améliorer l’expérience d’un SaaS comptable complexe.",
     image: "../images/BOBBEE/bobbee_carte.jpg",
-    alt: "Illustration du projet Bobbee avec dashboard et analyse financière",
+    alt: "Aperçu du projet Bobbee",
     url: "projets/bobbee.html"
   },
   {
-    id: 10,
+    id: 9,
     slug: "ademe",
-    category: "UX Research | Data | Public sector",
-    title: "Structurer et améliorer une offre de services data multi-acteurs (ADEME - Fabrique de la donnée)",
+    category: "UX Research | Data | Secteur public",
+    title: "Fabrique de la donnée – ADEME",
     description:
-      "Comprendre les usages et les interactions entre acteurs pour clarifier une offre de services data publics et proposer des améliorations alignées avec les besoins terrain.",
-    image: "images/ADEME/Ademe_Illustration.png",
+      "Structurer et améliorer une offre de services data multi-acteurs à partir des usages terrain.",
+    image: "images/ADEME/ademe-illustration.png",
     alt: "Aperçu du projet pour l'ADEME",
     url: "projets/ademe.html"
   },
   {
-    id: 9,
+    id: 8,
     slug: "T-SRU",
     category: "UX-UI | DSFR | GovTech | Data Viz",
-    title: "Concevoir une interface claire pour un outil métier public (SRU - Ministère Écologie)",
+    title: "SRU (outil métier logement) – Ministère de l’Écologie",
     description:
-      "Transformer un outil complexe de suivi des logements sociaux en une interface plus lisible et exploitable pour les collectivités.",
+      "Concevoir une interface claire pour un outil public complexe de suivi des logements sociaux.",
     image: "images/TSRU/sru-carte.png",
     alt: "Aperçu du projet T-SRU",
     url: "projets/T-SRU.html"
   },
   {
-    id: 8,
+    id: 4,
+    slug: "THALES",
+    category: "UX Research | Product Design | Stratégie",
+    title: "Portefeuille applicatif – Thales",
+    description:
+      "Comprendre les usages pour aider à décider quelles applications conserver, transformer ou supprimer.",
+    image: "images/THALES/thales-carte.png",
+    alt: "Aperçu du projet Thalès",
+    url: "projets/thales.html"
+  },
+  {
+    id: 6,
+    slug: "OHC",
+    category: "Data analyses | Questionnaire | Automatisation",
+    title: "OHC (bien-être au travail) – OCTO Technology",
+    description:
+      "Transformer des données de bien-être en décisions concrètes à l’échelle de l’entreprise.",
+    image: "images/OHC/ohc-carte.png",
+    alt: "Aperçu du projet OHC",
+    url: "projets/ohc.html"
+  },
+  {
+    id: 5,
+    slug: "1J1Sdelivery",
+    category: "Product Design | Analytics | Secteur public",
+    title: "1jeune1solution – Delivery produit",
+    description:
+      "Concevoir, tester et améliorer en continu un service public utilisé par des milliers de jeunes.",
+    image: "images/1J1Sdelivery/1J1Sdelivery-carte.png",
+    alt: "Aperçu du projet 1J1Sdelivery",
+    url: "projets/1j1sdelivery.html"
+  },
+  {
+    id: 3,
+    slug: "1J1Scadrage",
+    category: "UX Research | UX-UI | Stratégie",
+    title: "1jeune1solution – Cadrage produit",
+    description:
+      "Comprendre les besoins, structurer les parcours et poser les bases d’un produit utile et accessible.",
+    image: "images/1J1Scadrage/1J1Scadrage-carte.png",
+    alt: "Aperçu du projet 1J1S cadrage",
+    url: "projets/1j1scadrage.html"
+  },
+  {
+    id: 7,
     slug: "TRM",
     category: "Strategie | UX-UI | Data | GovTech",
-    title: "Améliorer la collecte et la fiabilité de données métier (TRM - Ministère Écologie)",
+    title: "TRM (transport routier de marchandises) – Ministère de l’Écologie",
     description:
-      "Repenser les parcours et le produit pour faciliter la collecte de données sur le transport routier de marchandises et améliorer leur qualité.",
+      "Améliorer la collecte et la fiabilité de données métier dans un produit public complexe.",
     image: "images/TRM/trm-carte.png",
     alt: "Aperçu du projet TRM",
     url: "projets/trm.html"
   },
   {
-    id: 7,
-    slug: "OHC",
-    category: "Data analyses | Questionnaire | Automatisation",
-    title: "Transformer des données de bien-être en décisions concrètes (OCTO Technology)",
+    id: 2,
+    slug: "STREETCO",
+    category: "UX-UI | Accessibilité | Mécénat",
+    title: "StreetCo (mobilité inclusive) – mécénat de compétences",
     description:
-      "Passer de questionnaires peu exploitables à un outil fiable permettant de comprendre le bien-être des collaborateurs et d’orienter des décisions à l’échelle de l’entreprise.",
-    image: "images/OHC/ohc-illustration.png",
-    alt: "Aperçu du projet OHC",
-    url: "projets/ohc.html"
-  }
+      "Concevoir une application mobile accessible en intégrant collaboration, navigation et gamification.",
+    image: "images/STREETCO/streetco-carte.png",
+    alt: "Aperçu du projet STREETCO",
+    url: "projets/streetco.html"
+  },
+  {
+    id: 1,
+    slug: "MUSEUM",
+    category: "UI Design | Prototypes | Figma",
+    title: "Refonte UI - Leopold Museum (Vienne)",
+    description:
+      "Projet personnel - Concevoir une expérience web immersive en travaillant identité visuelle, UI et prototypage interactif.",
+    image: "images/MUSEUM/museum-carte.png",
+    alt: "Aperçu du projet Leopold Museum",
+    url: "projets/leopold-museum.html"
+  },
 ];
 
 function createProjectCard(project) {
