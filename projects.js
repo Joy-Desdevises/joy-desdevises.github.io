@@ -63,7 +63,7 @@ const projects = [
       "Concevoir, tester et améliorer en continu un service public utilisé par des milliers de jeunes.",
     image: "images/1J1Sdelivery/1J1Sdelivery-carte.png",
     alt: "Aperçu du projet 1J1Sdelivery",
-    url: "projets/1j1sdelivery.html"
+    url: "projets/1J1Sdelivery.html"
   },
   {
     id: 3,
@@ -74,7 +74,7 @@ const projects = [
       "Comprendre les besoins, structurer les parcours et poser les bases d’un produit utile et accessible.",
     image: "images/1J1Scadrage/1J1Scadrage-carte.png",
     alt: "Aperçu du projet 1J1S cadrage",
-    url: "projets/1j1scadrage.html"
+    url: "projets/1J1Scadrage.html"
   },
   {
     id: 7,
