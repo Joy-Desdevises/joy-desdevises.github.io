@@ -497,6 +497,57 @@ section {
 }
 
 /* =========================
+   Newsletter section (resources page)
+========================= */
+
+.newsletter-section {
+  background: linear-gradient(135deg, #f0f6ff 0%, #e8f0fb 100%);
+  border-bottom: 1px solid #cddff5;
+}
+
+.newsletter-inline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.newsletter-inline-text h2 {
+  font-size: 1.55rem;
+  font-weight: 400;
+  color: #1a2a3a;
+  margin: 0 0 8px 0;
+  text-align: left;
+}
+
+.newsletter-inline-text p {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: #556;
+  margin: 0;
+  max-width: 520px;
+  text-align: left;
+}
+
+.newsletter-inline .cta-button {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .newsletter-inline {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .newsletter-inline .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* =========================
    Smooth scroll
 ========================= */
 

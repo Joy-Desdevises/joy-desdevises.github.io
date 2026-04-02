@@ -36,8 +36,8 @@ const articles = [
     title: "Le paradoxe de l'ignorance : pourquoi ceux qui en savent le moins pensent souvent en savoir le plus",
     description:
       "Qui n'a jamais rencontré quelqu'un convaincu de tout savoir sur un sujet, alors qu'en réalité, il en sait très peu ? C'est ce qu'on appelle le paradoxe de l'ignorance, ou l'effet Dunning-Kruger.",
-    urlInternal: "articles/paradoxe-ignorance-dunning-kruger.html",
-    urlEn: "https://medium.com/@joydesdevises/the-ignorance-paradox-why-those-who-know-the-least-often-think-they-know-the-most-238bb54cd5f6",
+      urlInternal: "articles/paradoxe-ignorance-dunning-kruger.html",
+      internalLabel: "Lire l'article",
   },
 
   {
@@ -131,7 +131,7 @@ let currentPage   = 1;
 
 function createArticleCard(article) {
   const internalLink = article.urlInternal
-    ? `<a class="resource-article-link" href="${article.urlInternal}">🇫🇷 Lire le résumé</a>`
+    ? `<a class="resource-article-link" href="${article.urlInternal}">🇫🇷 ${article.internalLabel || "Lire le résumé"}</a>`
     : "";
 
   const enLink = article.urlEn

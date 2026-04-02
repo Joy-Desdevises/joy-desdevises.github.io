@@ -46,6 +46,19 @@
     </div>
   </section>
 
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section resources-section">
+    <div class="container narrow">
+      <div class="newsletter-inline">
+        <div class="newsletter-inline-text">
+          <h2>Ce que la recherche dit, mais en clair !</h2>
+          <p>Une fois par mois, reçois mes derniers articles, des outils, des études qui ont du sens en UX, innovation, product management, data et IA.</p>
+        </div>
+        <button class="cta-button" onclick="openNewsletterModal()">✉&nbsp; S'inscrire</button>
+      </div>
+    </div>
+  </section>
+
   <!-- ARTICLES -->
   <section id="articles" class="resources-section resources-white">
     <div class="container narrow">
@@ -93,6 +106,36 @@
 </main>
 
 <script src="ressources-data.js"></script>
+
+<!-- NEWSLETTER MODAL -->
+<div id="newsletter-modal" class="newsletter-modal" onclick="closeNewsletterModal(event)">
+  <div class="newsletter-modal-box">
+    <button class="newsletter-modal-close" onclick="closeNewsletterModal()" aria-label="Fermer">×</button>
+    <iframe width="540" height="305" src="https://0d635eb9.sibforms.com/serve/MUIFAC7JQPYVM9I8jEz9Zxjfqu4UTqtRx4txY224EPThB7b7KvoziOwV1GVgdMf5mvx0DZAFifQNji6xcweXpxOwa1SWjd9Iu5sVWgFzzLdWoYfYXuPU4_rs4Z8uNPrhT02gPvhSHIXj491vLm7tsa-2H8ERY0ohzZ-GZuVvG8RFlD1uA23yIp0sSg6ioQgwr12Ymh0AK7Ixyn-c5Q==" frameborder="0" scrolling="auto" allowfullscreen style="display:block;margin:0 auto;max-width:100%;"></iframe>
+  </div>
+</div>
+
+<!-- NEWSLETTER FAB -->
+<button class="newsletter-fab" onclick="openNewsletterModal()" aria-label="S'inscrire à la newsletter">
+  ✉&nbsp; S'inscrire
+</button>
+
+<script>
+  function openNewsletterModal() {
+    document.getElementById('newsletter-modal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeNewsletterModal(e) {
+    var modal = document.getElementById('newsletter-modal');
+    if (!e || e.target === modal) {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeNewsletterModal();
+  });
+</script>
 
 </body>
 </html>
