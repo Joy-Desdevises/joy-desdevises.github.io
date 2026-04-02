@@ -1,11 +1,19 @@
 const articles = [
-   {
-    category: "Article scientifique",
-    title: "The paradox of creativity in generative AI: high performance, human-like bias, and limited differential evaluation",
+  {
+    category: "Résumé d'article scientifique",
+    title: "Outils IA pour le design d'interface : le problème n'est pas la qualité, c'est le contrôle",
     description:
-      "Un article scientifique sur les apports et les limites de l'IA générative dans la génération d'idées créatives",
-      urlEn: "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1628486/full",
+      "Une étude récente montre que les outils de génération d'UI échouent sur l'itération : leurs outputs sont opaques, difficiles à affiner. PrototypeFlow propose des checkpoints éditables à chaque étape et réduit le nombre de révisions de moitié.",
+    urlInternal: "articles/prototypage-ia-iteration-humain-2026.html",    
   },
+
+  {
+    category: "Résumé d'article scientifique",
+    title: "IA générative et créativité : puissante pour générer, biaisée et aveugle pour trier",
+    description:
+      "ChatGPT génère 4 fois plus d'idées que les humains et 3 fois plus d'idées originales. Mais il reproduit les mêmes biais cognitifs et ne distingue pas ses meilleures idées de ses idées banales. Ce que ça change pour les équipes qui innovent.",
+    urlInternal: "articles/ia-generative-creativite-biais-cognitif-2025.html",
+    },
 
   {
     category: "Innovation & Sciences Cognitives",
@@ -111,6 +119,12 @@ const tools = [
 
 function createArticleCard(article) {
 
+  const internalLink = article.urlInternal
+    ? `<a class="resource-article-link" href="${article.urlInternal}">
+         🇫🇷 Lire le résumé
+       </a>`
+    : "";
+
   const enLink = article.urlEn
     ? `<a class="resource-article-link" href="${article.urlEn}" target="_blank" rel="noopener noreferrer">
          🇬🇧 Read the article
@@ -134,6 +148,7 @@ function createArticleCard(article) {
         <p class="resource-article-description">${article.description}</p>
 
         <div class="resource-article-links">
+          ${internalLink}
           ${enLink}
           ${frLink}
         </div>
