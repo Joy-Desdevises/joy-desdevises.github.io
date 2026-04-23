@@ -43,8 +43,17 @@
     <section class="portfolio-projects">
         <div class="container">
 
-            <!-- CONTENEUR VIDE -->
-            <div class="project-grid" id="all-projects-grid"></div>
+            <!-- Product Design — UX/UI -->
+            <h2>Product Design — UX/UI</h2>
+            <div class="project-grid" id="grid-product-design"></div>
+
+            <!-- Service Design & Audit -->
+            <h2 style="margin-top: 72px;">Service Design &amp; Audit</h2>
+            <div class="project-grid" id="grid-service-design"></div>
+
+            <!-- Recherche scientifique appliquée -->
+            <h2 style="margin-top: 72px;">Recherche scientifique appliquée</h2>
+            <div class="project-grid" id="grid-recherche"></div>
 
         </div>
     </section>
@@ -55,7 +64,9 @@
 <script src="projects.js"></script>
 
 <script>
-renderProjects("all-projects-grid");
+renderProjects("grid-product-design", { ids: [5, 3, 7, 2, 8] });
+renderProjects("grid-service-design",  { ids: [10, 9, 4] });
+renderProjects("grid-recherche",       { ids: [6] });
 </script>
 
 </body>
