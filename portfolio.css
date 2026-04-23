@@ -118,17 +118,6 @@
     padding: 24px;
 }
 
-.project-category {
-    align-self: flex-start;
-    padding: 6px 10px;
-    background: #f1f3f5;
-    border-radius: 999px;
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    color: #555;
-}
-
 .project-content h3 {
     margin: 0;
     font-size: 1.35rem;

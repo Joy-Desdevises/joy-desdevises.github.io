@@ -2,7 +2,6 @@ const projects = [
   {
     id: 10,
     slug: "bobbee",
-    category: "Audit | UX Research | Data IA",
     title: "Bobbee (SaaS comptabilité) – Isagri",
     description:
       "Identifier les frictions et améliorer l’expérience d’un SaaS comptable complexe.",
@@ -13,7 +12,6 @@ const projects = [
   {
     id: 9,
     slug: "ademe",
-    category: "UX Research | Data | Secteur public",
     title: "Fabrique de la donnée – ADEME",
     description:
       "Structurer et améliorer une offre de services data multi-acteurs à partir des usages terrain.",
@@ -24,7 +22,6 @@ const projects = [
   {
     id: 8,
     slug: "T-SRU",
-    category: "UX-UI | DSFR | GovTech | Data Viz",
     title: "SRU (outil métier logement) – Ministère de l’Écologie",
     description:
       "Concevoir une interface claire pour un outil public complexe de suivi des logements sociaux.",
@@ -35,7 +32,6 @@ const projects = [
   {
     id: 4,
     slug: "THALES",
-    category: "UX Research | Product Design | Stratégie",
     title: "Portefeuille applicatif – Thales",
     description:
       "Comprendre les usages pour aider à décider quelles applications conserver, transformer ou supprimer.",
@@ -46,7 +42,6 @@ const projects = [
   {
     id: 6,
     slug: "OHC",
-    category: "Data analyses | Questionnaire | Automatisation",
     title: "OHC (bien-être au travail) – OCTO Technology",
     description:
       "Transformer des données de bien-être en décisions concrètes à l’échelle de l’entreprise.",
@@ -57,7 +52,6 @@ const projects = [
   {
     id: 5,
     slug: "1J1Sdelivery",
-    category: "Product Design | Analytics | Secteur public",
     title: "1jeune1solution – Delivery produit",
     description:
       "Concevoir, tester et améliorer en continu un service public utilisé par des milliers de jeunes.",
@@ -68,7 +62,6 @@ const projects = [
   {
     id: 3,
     slug: "1J1Scadrage",
-    category: "UX Research | UX-UI | Stratégie",
     title: "1jeune1solution – Cadrage produit",
     description:
       "Comprendre les besoins, structurer les parcours et poser les bases d’un produit utile et accessible.",
@@ -79,7 +72,6 @@ const projects = [
   {
     id: 7,
     slug: "TRM",
-    category: "Strategie | UX-UI | Data | GovTech",
     title: "TRM (transport routier de marchandises) – Ministère de l’Écologie",
     description:
       "Améliorer la collecte et la fiabilité de données métier dans un produit public complexe.",
@@ -90,7 +82,6 @@ const projects = [
   {
     id: 2,
     slug: "STREETCO",
-    category: "UX-UI | Accessibilité | Mécénat",
     title: "StreetCo (mobilité inclusive) – mécénat de compétences",
     description:
       "Concevoir une application mobile accessible en intégrant collaboration, navigation et gamification.",
@@ -98,17 +89,16 @@ const projects = [
     alt: "Aperçu du projet STREETCO",
     url: "projets/streetco.html"
   },
-  /*{
+  {
     id: 1,
     slug: "MUSEUM",
-    category: "UI Design | Prototypes | Figma",
     title: "Refonte UI - Leopold Museum (Vienne)",
     description:
       "Projet personnel - Concevoir une expérience web immersive en travaillant identité visuelle, UI et prototypage interactif.",
     image: "images/MUSEUM/museum-carte.png",
     alt: "Aperçu du projet Leopold Museum",
     url: "projets/leopold-museum.html"
-  },*/
+  },
 ];
 
 function createProjectCard(project) {
@@ -118,7 +108,6 @@ function createProjectCard(project) {
         <img src="${project.image}" alt="${project.alt}" loading="lazy">
       </div>
       <div class="project-content">
-        <span class="project-category">${project.category}</span>
         <h3>${project.title}</h3>
         <p>${project.description}</p>
         <a href="${project.url}">Voir l'étude de cas</a>

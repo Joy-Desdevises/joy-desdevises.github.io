@@ -428,9 +428,15 @@
 
 .case-deliverables {
   margin-top: 40px;
-  padding: 48px;
-  background: #f3f4f6;
-  border-radius: 20px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+.case-deliverables img {
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
 }
 
 .case-deliverables-grid {
@@ -440,14 +446,9 @@
   margin-top: 24px;
 }
 
-.case-deliverables img {
-  width: 100%;
-  border-radius: 14px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-
 .case-deliverables figcaption {
-  margin-top: 32px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 1.15rem;
   color: #666;
   line-height: 1.5;
