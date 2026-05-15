@@ -11,11 +11,13 @@
 ========================= */
 
 .hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
     padding: 80px 0 40px;
     background: #f8f9fa;
     text-align: center;
     border-bottom: 1px solid #ececec;
-
 }
 
 .hero .container {
@@ -44,6 +46,10 @@
 
 section {
     padding: 48px 0;
+}
+
+.hero .cta {
+    margin-top: 24px;
 }
 
 .cta {
@@ -269,6 +275,7 @@ section {
 
 @media (max-width: 768px) {
     .hero {
+        min-height: 100vh;
         padding: 64px 0 36px;
     }
 
