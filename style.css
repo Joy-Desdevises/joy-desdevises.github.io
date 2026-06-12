@@ -70,24 +70,22 @@ nav {
     width: 95%;
     margin: 0 auto;
     padding: 20px 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-}
-
-.nav-logo {
-    flex: 1;
 }
 
 .lang-switch {
-    flex: 0 0 auto;
-    padding: 0 0.75rem;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 1rem;
 }
 
 .nav-links {
-    flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     flex-wrap: nowrap;
     white-space: nowrap;
 }
@@ -111,11 +109,6 @@ nav a:hover {
     color: #005999;
 }
 
-.lang-switch {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
 
 .lang-btn {
     background: none;
