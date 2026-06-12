@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-page="home">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,12 +14,17 @@
     <div class="nav-inner">
         <a href="index.html" class="nav-logo"><img src="images/logo-uxcog.png" alt="UXcog"></a>
         <div class="nav-links">
-            <a href="index.html" aria-current="page">Accueil</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="Ressources/index.html">Ressources</a>
-            <a href="Services.html">Services</a>
-            <a href="a-propos.html">À propos</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html" aria-current="page" data-i18n="nav.home">Accueil</a>
+            <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+            <a href="Ressources/index.html" data-i18n="nav.resources">Ressources</a>
+            <a href="Services.html" data-i18n="nav.services">Services</a>
+            <a href="a-propos.html" data-i18n="nav.about">À propos</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact</a>
+            <div class="lang-switch">
+                <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+                <span class="lang-sep">|</span>
+                <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+            </div>
         </div>
     </div>
 </nav>
@@ -31,17 +36,16 @@
             <div class="container narrow">
                 <h1>UXcog - Joy Desdevises</h1>
 
-                <p class="home-kicker">
+                <p class="home-kicker" data-i18n="home.kicker">
                     Product & Service Designer — accompagnement et conseil
                 </p>
-                <p class="home-intro">
-                    Spécialisée dans les produits complexes, la data et l'intégration de l'IA.
-                    <br><br> Des clients comme le Ministère du Travail, Thales, l'ADEME ou le Ministère de la Transition écologique ont fait confiance à mon approche qui allie rigueur et capacité à m'adapter à des contextes complexes.
+                <p class="home-intro" data-i18n-html="home.intro">
+                    Spécialisée dans les produits complexes, la data et l'intégration de l'IA.<br><br>Des clients comme le Ministère du Travail, Thales, l'ADEME ou le Ministère de la Transition écologique ont fait confiance à mon approche qui allie rigueur et capacité à m'adapter à des contextes complexes.
                 </p>
 
                 <div class="cta-contact">
-                    <a href="contact.html" class="cta-button">Me contacter</a>
-                    <a href="https://joy-desdevises.github.io/Services.html" class="cta-button">Mes services</a>
+                    <a href="contact.html" class="cta-button" data-i18n="home.cta_contact">Me contacter</a>
+                    <a href="https://joy-desdevises.github.io/Services.html" class="cta-button" data-i18n="home.cta_services">Mes services</a>
                 </div>
             </div>
         </div>
@@ -61,5 +65,7 @@
 
 </main>
 
+<script src="translations.js"></script>
+<script src="i18n.js"></script>
 </body>
 </html>

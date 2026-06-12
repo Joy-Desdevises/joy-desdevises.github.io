@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-page="portfolio">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,12 +14,17 @@
     <div class="nav-inner">
       <a href="index.html" class="nav-logo"><img src="images/logo-uxcog.png" alt="UXcog"></a>
       <div class="nav-links">
-        <a href="index.html">Accueil</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="Ressources/index.html">Ressources</a>
-        <a href="Services.html" aria-current="page">Services</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="portfolio.html" aria-current="page" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="Ressources/index.html" data-i18n="nav.resources">Ressources</a>
+        <a href="Services.html" data-i18n="nav.services">Services</a>
+        <a href="a-propos.html" data-i18n="nav.about">À propos</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        <div class="lang-switch">
+          <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+        </div>
       </div>
     </div>
 </nav>
@@ -29,15 +34,15 @@
     <section class="portfolio-hero">
         <div class="container narrow">
 
-            <p class="portfolio-kicker">
+            <p class="portfolio-kicker" data-i18n="portfolio.kicker">
                 Product & Service Designer — accompagnement et conseil
             </p>
 
-            <h1>Mes projets antérieurs</h1>
+            <h1 data-i18n="portfolio.title">Mes projets antérieurs</h1>
 
-            <p class="portfolio-intro">
-                Une sélection de projets autour de la conception de produits et services 
-                numériques, de la recherche utilisateur et de l’analyse de données.
+            <p class="portfolio-intro" data-i18n="portfolio.intro">
+                Une sélection de projets autour de la conception de produits et services
+                numériques, de la recherche utilisateur et de l'analyse de données.
             </p>
 
         </div>
@@ -46,16 +51,13 @@
     <section class="portfolio-projects">
         <div class="container">
 
-            <!-- Product Design — UX/UI -->
-            <h2>Product Design — UX/UI</h2>
+            <h2 data-i18n="portfolio.h2_product">Product Design — UX/UI</h2>
             <div class="project-grid" id="grid-product-design"></div>
 
-            <!-- Service Design & Audit -->
-            <h2 style="margin-top: 72px;">Service Design &amp; Audit</h2>
+            <h2 style="margin-top: 72px;" data-i18n="portfolio.h2_service">Service Design &amp; Audit</h2>
             <div class="project-grid" id="grid-service-design"></div>
 
-            <!-- Recherche scientifique appliquée -->
-            <h2 style="margin-top: 72px;">Recherche scientifique appliquée</h2>
+            <h2 style="margin-top: 72px;" data-i18n="portfolio.h2_research">Recherche scientifique appliquée</h2>
             <div class="project-grid" id="grid-recherche"></div>
 
         </div>
@@ -63,14 +65,14 @@
 
 </main>
 
-<!-- Script projets -->
 <script src="projects.js"></script>
-
 <script>
 renderProjects("grid-product-design", { ids: [5, 3, 7, 2, 8, 1] });
 renderProjects("grid-service-design",  { ids: [10, 9, 4] });
 renderProjects("grid-recherche",       { ids: [6] });
 </script>
+<script src="translations.js"></script>
+<script src="i18n.js"></script>
 
 </body>
 </html>

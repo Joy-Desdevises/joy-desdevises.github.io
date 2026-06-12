@@ -13,12 +13,18 @@
         <div class="nav-inner">
       <a href="../../index.html" class="nav-logo"><img src="../../images/logo-uxcog.png" alt="UXcog"></a>
       <div class="nav-links">
-        <a href="../../index.html">Accueil</a>
-        <a href="../../portfolio.html">Portfolio</a>
-        <a href="../index.html">Ressources</a>
-        <a href="../../Services.html">Services</a>
-        <a href="../../a-propos.html">À propos</a>
-        <a href="../../contact.html">Contact</a>
+        <a href="../../index.html" data-i18n="nav.home">Accueil</a>
+        <a href="../../portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="../index.html" data-i18n="nav.resources">Ressources</a>
+        <a href="../../Services.html" data-i18n="nav.services">Services</a>
+        <a href="../../a-propos.html" data-i18n="nav.about">À propos</a>
+        <a href="../../contact.html" data-i18n="nav.contact">Contact</a>
+      
+        <div class="lang-switch">
+          <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+        </div>
       </div>
   </nav>
 
@@ -289,5 +295,8 @@
   });
 </script>
 
+
+<script src="../../translations.js"></script>
+<script src="../../i18n.js"></script>
 </body>
 </html>

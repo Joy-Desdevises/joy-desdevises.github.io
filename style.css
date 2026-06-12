@@ -94,6 +94,45 @@ nav a:hover {
     color: #005999;
 }
 
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-left: 20px;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #007acc;
+    padding: 2px 5px;
+    opacity: 0.45;
+    letter-spacing: 0.04em;
+    font-family: inherit;
+}
+
+.lang-btn.active {
+    opacity: 1;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.lang-btn:hover {
+    opacity: 0.8;
+    color: #005999;
+}
+
+.lang-sep {
+    color: #007acc;
+    opacity: 0.3;
+    font-size: 0.75rem;
+    user-select: none;
+}
+
 /* =========================
    Generic hero section
    (base only, can be overridden

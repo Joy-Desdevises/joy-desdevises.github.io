@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-page="contact">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,17 @@
     <div class="nav-inner">
       <a href="index.html" class="nav-logo"><img src="images/logo-uxcog.png" alt="UXcog"></a>
       <div class="nav-links">
-        <a href="index.html">Accueil</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="Ressources/index.html">Ressources</a>
-        <a href="Services.html" aria-current="page">Services</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="Ressources/index.html" data-i18n="nav.resources">Ressources</a>
+        <a href="Services.html" data-i18n="nav.services">Services</a>
+        <a href="a-propos.html" data-i18n="nav.about">À propos</a>
+        <a href="contact.html" aria-current="page" data-i18n="nav.contact">Contact</a>
+        <div class="lang-switch">
+          <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+        </div>
       </div>
     </div>
 </nav>
@@ -25,31 +30,34 @@
     <main class="contact-page">
         <section class="contact-hero">
             <div class="container narrow">
-                <p class="contact-kicker">Product & Service Designer — accompagnement et conseil</p>
-                <h1>Discutons de votre projet</h1>
+                <p class="contact-kicker" data-i18n="contact.kicker">Product & Service Designer — accompagnement et conseil</p>
+                <h1 data-i18n="contact.title">Discutons de votre projet</h1>
 
-                <p class="contact-intro">
-                    Vous travaillez sur un produit complexe et cherchez un regard extérieur pour cadrer, concevoir ou faire évoluer l'expérience ? 
+                <p class="contact-intro" data-i18n="contact.intro">
+                    Vous travaillez sur un produit complexe et cherchez un regard extérieur pour cadrer, concevoir ou faire évoluer l'expérience ?
                     Décrivez-moi votre contexte en quelques lignes — je vous réponds sous 48h.
                 </p>
 
                 <div class="contact-cards">
                     <article class="contact-card">
-                        <p class="contact-label">Email</p>
+                        <p class="contact-label" data-i18n="contact.label_email">Email</p>
                         <a href="mailto:desdevisesjoy.pro@proton.me">desdevisesjoy.pro@proton.me</a>
-                        <p><br>Pour décrire votre projet, poser une question ou prévoir appel/visio/rencontre.</p>
+                        <p data-i18n-html="contact.email_desc"><br>Pour décrire votre projet, poser une question ou prévoir appel/visio/rencontre.</p>
                     </article>
 
                     <article class="contact-card">
-                        <p class="contact-label">LinkedIn</p>
+                        <p class="contact-label" data-i18n="contact.label_linkedin">LinkedIn</p>
                         <a href="https://www.linkedin.com/in/joydesdevises-product-designer/" target="_blank" rel="noopener noreferrer">
                             Joy Desdevises, PhD
                         </a>
-                        <p><br>Pour en savoir plus sur mon parcours ou me contacter via la messagerie LinkedIn.</p>
+                        <p data-i18n-html="contact.linkedin_desc"><br>Pour en savoir plus sur mon parcours ou me contacter via la messagerie LinkedIn.</p>
                     </article>
                 </div>
             </div>
         </section>
     </main>
+
+<script src="translations.js"></script>
+<script src="i18n.js"></script>
 </body>
 </html>

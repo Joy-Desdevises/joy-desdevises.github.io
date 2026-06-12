@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-page="about">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,17 @@
     <div class="nav-inner">
       <a href="index.html" class="nav-logo"><img src="images/logo-uxcog.png" alt="UXcog"></a>
       <div class="nav-links">
-        <a href="index.html">Accueil</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="Ressources/index.html">Ressources</a>
-        <a href="Services.html" aria-current="page">Services</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="Ressources/index.html" data-i18n="nav.resources">Ressources</a>
+        <a href="Services.html" data-i18n="nav.services">Services</a>
+        <a href="a-propos.html" aria-current="page" data-i18n="nav.about">À propos</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        <div class="lang-switch">
+          <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+        </div>
       </div>
     </div>
 </nav>
@@ -32,24 +37,24 @@
             </div>
 
             <div class="about-title-block">
-                <p class="about-kicker">Product & Service Designer — accompagnement et conseil</p>
+                <p class="about-kicker" data-i18n="about.kicker">Product & Service Designer — accompagnement et conseil</p>
 
-                <h1>À propos - Joy Desdevises</h1>
+                <h1 data-i18n="about.title">À propos - Joy Desdevises</h1>
 
-                <p class="about-tagline">
-                    <b><i>"Je transforme des systèmes complexes en expériences compréhensibles"</i></b>
+                <p class="about-tagline" data-i18n-html="about.tagline">
+                    <b><i>« Je transforme des systèmes complexes en expériences compréhensibles »</i></b>
                 </p>
             </div>
         </div>
 
         <div class="about-example">
-            <p>
+            <p data-i18n="about.example_p1">
                 Par exemple, sur 1 jeune 1 solution, la plateforme nationale du Ministère du Travail,
                 j'ai conçu de bout en bout l'expérience d'un service public utilisé par des millions
                 de jeunes de 15 à 30 ans — du cadrage initial jusqu'à l'amélioration continue en production.
             </p>
 
-            <p>
+            <p data-i18n="about.example_p2">
                 Un produit complexe, des contraintes institutionnelles fortes, des utilisateurs aux profils
                 très variés. C'est exactement le type de sujet sur lequel je suis le plus utile.
             </p>
@@ -61,31 +66,31 @@
         <section class="about-sections">
             <div class="container narrow">
                 <article class="about-block">
-                    <h2>Background</h2>
-                    <p>
-                        Docteure en sciences cognitives (2018–2022), je travaille en product design depuis 2022. J'ai exercé au sein d'OCTO Technology, 
-                        où j'ai accompagné des organisations comme Thales, Isagri, La Fabrique de la Donnée, le Ministère du Travail et le Ministère de 
+                    <h2 data-i18n="about.h2_background">Background</h2>
+                    <p data-i18n-html="about.background">
+                        Docteure en sciences cognitives (2018–2022), je travaille en product design depuis 2022. J'ai exercé au sein d'OCTO Technology,
+                        où j'ai accompagné des organisations comme Thales, Isagri, La Fabrique de la Donnée, le Ministère du Travail et le Ministère de
                         la Transition écologique sur des produits numériques complexes — SaaS, plateformes data, services publics.
-                        <br> Ce qui me distingue : je combine une compréhension fine du comportement humain, une culture de la donnée et une pratique concrète du design produit, 
-                        là où beaucoup de sujets restent flous ou mal cadrés. 
+                        <br>Ce qui me distingue : je combine une compréhension fine du comportement humain, une culture de la donnée et une pratique concrète du design produit,
+                        là où beaucoup de sujets restent flous ou mal cadrés.
                     </p>
                 </article>
 
                 <article class="about-block">
-                    <h2>Expertises</h2>
-                    <p class="about-lead">Mes domaines d’expertise incluent notamment :</p>
+                    <h2 data-i18n="about.h2_expertise">Expertises</h2>
+                    <p class="about-lead" data-i18n="about.expertise_lead">Mes domaines d'expertise incluent notamment :</p>
 
                     <div class="about-list">
                         <div class="about-list-item">
-                            <h3>Recherche utilisateur & compréhension des usages</h3>
-                            <p>Entretiens, questionnaires, observation des usages, analyse 
-                               qualitative et quantitative pour comprendre les comportements 
+                            <h3 data-i18n="about.exp1_title">Recherche utilisateur & compréhension des usages</h3>
+                            <p data-i18n="about.exp1_text">Entretiens, questionnaires, observation des usages, analyse
+                               qualitative et quantitative pour comprendre les comportements
                                utilisateurs et orienter les décisions produit.</p>
                         </div>
 
                         <div class="about-list-item">
-                            <h3>Conception de produits et services numériques</h3>
-                            <p>Structuration de parcours utilisateurs, wireframes, prototypes 
+                            <h3 data-i18n="about.exp2_title">Conception de produits et services numériques</h3>
+                            <p data-i18n-html="about.exp2_text">Structuration de parcours utilisateurs, wireframes, prototypes
                                 et tests utilisateurs pour concevoir des expériences simples et
                                 efficaces, même dans des systèmes complexes.<br>
                                Produits responsables : Accessibilité, design inclusif, éco-conception...
@@ -93,66 +98,69 @@
                         </div>
 
                         <div class="about-list-item">
-                            <h3>Gestion, traitement et analyses de données</h3>
-                            <p>Analyse de données quali/quanti, statistiques, data visualisation 
-                                et conception d’outils permettant d’exploiter des données 
+                            <h3 data-i18n="about.exp3_title">Gestion, traitement et analyses de données</h3>
+                            <p data-i18n="about.exp3_text">Analyse de données quali/quanti, statistiques, data visualisation
+                                et conception d'outils permettant d'exploiter des données
                                 complexes de manière compréhensible et utile.</p>
                         </div>
 
                         <div class="about-list-item">
-                            <h3>Automatisation et IA</h3>
-                            <p>Exploration et conception de cas d’usage intégrant l’IA : 
-                                automatisation de workflows, prototypage de fonctionnalités 
-                                intelligentes et amélioration de l’exploitation des données. </p>
+                            <h3 data-i18n="about.exp4_title">Automatisation et IA</h3>
+                            <p data-i18n="about.exp4_text">Exploration et conception de cas d'usage intégrant l'IA :
+                                automatisation de workflows, prototypage de fonctionnalités
+                                intelligentes et amélioration de l'exploitation des données.</p>
                         </div>
 
                         <div class="about-list-item">
-                            <h3>Cadrage et discovery produit</h3>
-                            <p>Clarification des problématiques, priorisation des besoins 
-                                et accompagnement des équipes dans les phases amont de 
+                            <h3 data-i18n="about.exp5_title">Cadrage et discovery produit</h3>
+                            <p data-i18n="about.exp5_text">Clarification des problématiques, priorisation des besoins
+                                et accompagnement des équipes dans les phases amont de
                                 conception.</p>
                         </div>
                     </div>
                 </article>
 
            <article class="about-block">
-    <h2>Ma manière de travailler</h2>
+    <h2 data-i18n="about.h2_working">Ma manière de travailler</h2>
 
-    <p>
+    <p data-i18n="about.working_p1">
         Je pars toujours des usages réels avant de proposer quoi que ce soit.
-        Concrètement, ça passe par des entretiens utilisateurs, de l’analyse de données
+        Concrètement, ça passe par des entretiens utilisateurs, de l'analyse de données
         — et parfois du code (Python) pour explorer des données brutes.
     </p>
 
-    <p>
-        Mon objectif n’est pas seulement de produire des livrables design,
-        mais d’apporter des éléments utiles à la décision pour les équipes produit.
+    <p data-i18n="about.working_p2">
+        Mon objectif n'est pas seulement de produire des livrables design,
+        mais d'apporter des éléments utiles à la décision pour les équipes produit.
     </p>
 
-    <p>
-        J’interviens principalement sur des produits où la complexité est réelle :
-        systèmes multi-acteurs, forte composante data, intégration d’IA,
+    <p data-i18n="about.working_p3">
+        J'interviens principalement sur des produits où la complexité est réelle :
+        systèmes multi-acteurs, forte composante data, intégration d'IA,
         contraintes réglementaires (...).
-        C’est là que la rigueur méthodologique fait vraiment la différence.
+        C'est là que la rigueur méthodologique fait vraiment la différence.
     </p>
 </article>
 
                 <article class="about-block about-cta">
-                    <h2>Travaillons ensemble</h2>
-                    <p>
+                    <h2 data-i18n="about.h2_together">Travaillons ensemble</h2>
+                    <p data-i18n="about.together_intro">
                         Je suis particulièrement intéressée par les projets impliquant :
                     </p>
 
                     <ul class="about-bullets">
-                        <li>des produits numériques complexes</li>
-                        <li>des produits ou plateformes data-driven</li>
-                        <li>de l'IA et/ou de l'automatisation appliquée aux produits numériques</li>
-                        <li>des services numériques publics ou à impact</li>
+                        <li data-i18n="about.bullet1">des produits numériques complexes</li>
+                        <li data-i18n="about.bullet2">des produits ou plateformes data-driven</li>
+                        <li data-i18n="about.bullet3">de l'IA et/ou de l'automatisation appliquée aux produits numériques</li>
+                        <li data-i18n="about.bullet4">des services numériques publics ou à impact</li>
                     </ul>
-                        <a href="contact.html" class="cta-button">Me contacter</a>               
-                     </article>
+                    <a href="contact.html" class="cta-button" data-i18n="about.cta">Me contacter</a>
+                </article>
             </div>
         </section>
     </main>
+
+<script src="translations.js"></script>
+<script src="i18n.js"></script>
 </body>
 </html>
