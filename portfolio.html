@@ -55,14 +55,7 @@
     <section class="portfolio-projects">
         <div class="container">
 
-            <h2 data-i18n="portfolio.h2_product">Product Design — UX/UI</h2>
-            <div class="project-grid" id="grid-product-design"></div>
-
-            <h2 style="margin-top: 72px;" data-i18n="portfolio.h2_service">Service Design &amp; Audit</h2>
-            <div class="project-grid" id="grid-service-design"></div>
-
-            <h2 style="margin-top: 72px;" data-i18n="portfolio.h2_research">Recherche scientifique appliquée</h2>
-            <div class="project-grid" id="grid-recherche"></div>
+            <div class="project-grid" id="grid-all"></div>
 
         </div>
     </section>
@@ -72,9 +65,7 @@
 <script src="projects.js"></script>
 <script>
 function renderAll() {
-  renderProjects("grid-product-design", { ids: [5, 3, 7, 2, 8, 1] });
-  renderProjects("grid-service-design",  { ids: [10, 9, 4] });
-  renderProjects("grid-recherche",       { ids: [6] });
+  renderProjects("grid-all");
 }
 renderAll();
 window.onLanguageChange = renderAll;

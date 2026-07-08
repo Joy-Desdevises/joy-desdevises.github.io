@@ -27,10 +27,7 @@ const translations = {
     portfolio: {
       kicker: 'Product & Service Designer — accompagnement et conseil',
       title: 'Mes projets antérieurs',
-      intro: 'Une sélection de projets autour de la conception de produits et services numériques, de la recherche utilisateur et de l\'analyse de données.',
-      h2_product: 'Product Design — UX/UI',
-      h2_service: 'Service Design & Audit',
-      h2_research: 'Recherche scientifique appliquée'
+      intro: 'Une sélection de projets autour de la conception de produits et services numériques, de la recherche utilisateur et de l\'analyse de données.'
     },
     about: {
       kicker: 'Product & Service Designer — accompagnement et conseil',
@@ -443,10 +440,7 @@ const translations = {
     portfolio: {
       kicker: 'Product & Service Designer — consulting and support',
       title: 'Previous projects',
-      intro: 'A selection of projects in digital product and service design, user research, and data analysis.',
-      h2_product: 'Product Design — UX/UI',
-      h2_service: 'Service Design & Audit',
-      h2_research: 'Applied scientific research'
+      intro: 'A selection of projects in digital product and service design, user research, and data analysis.'
     },
     about: {
       kicker: 'Product & Service Designer — consulting and support',
