@@ -40,6 +40,9 @@
   window.setLanguage = function (lang) {
     localStorage.setItem(LANG_KEY, lang);
     apply(lang);
+    if (typeof window.onLanguageChange === 'function') {
+      window.onLanguageChange(lang);
+    }
   };
 
   document.addEventListener('DOMContentLoaded', function () {
