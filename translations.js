@@ -21,7 +21,8 @@ const translations = {
       kicker: 'Product & Service Designer — accompagnement et conseil',
       intro: 'Spécialisée dans les produits complexes, la data et l\'intégration de l\'IA.<br><br>Des clients comme le Ministère du Travail, Thales, l\'ADEME ou le Ministère de la Transition écologique ont fait confiance à mon approche qui allie rigueur et capacité à m\'adapter à des contextes complexes.',
       cta_contact: 'Me contacter',
-      cta_services: 'Mes services'
+      cta_services: 'Mes services',
+      trust_label: 'Ils me font confiance'
     },
     portfolio: {
       kicker: 'Product & Service Designer — accompagnement et conseil',
@@ -403,6 +404,11 @@ const translations = {
         h2_2: 'Aperçu de la landing page',
         link: 'Lien vers l\'étude de cas sur Behance avec vidéos de démonstration (prototypes interactifs)'
       }
+    },
+
+    footer: {
+      tagline: 'Product & Service Designer indépendante — produits complexes, data et IA.',
+      rights: 'Tous droits réservés.'
     }
   },
 
@@ -431,7 +437,8 @@ const translations = {
       kicker: 'Product & Service Designer — consulting and support',
       intro: 'Specialised in complex products, data and AI integration.<br><br>Clients such as the French Ministry of Labour, Thales, ADEME and the Ministry of Ecological Transition have trusted my approach, which combines methodological rigour with the ability to adapt to complex environments.',
       cta_contact: 'Get in touch',
-      cta_services: 'My services'
+      cta_services: 'My services',
+      trust_label: 'Trusted by'
     },
     portfolio: {
       kicker: 'Product & Service Designer — consulting and support',
@@ -813,6 +820,11 @@ const translations = {
         h2_2: 'Landing page overview',
         link: 'Link to the Behance case study with demo videos (interactive prototypes)'
       }
+    },
+
+    footer: {
+      tagline: 'Independent Product & Service Designer — complex products, data and AI.',
+      rights: 'All rights reserved.'
     }
   }
 };

@@ -3,7 +3,7 @@
 ========================= */
 
 .services-page {
-    background: #f8f9fa;
+    background: var(--color-bg);
 }
 
 /* =========================
@@ -15,9 +15,9 @@
     display: flex;
     align-items: center;
     padding: 80px 0 40px;
-    background: #f8f9fa;
+    background: var(--color-bg);
     text-align: center;
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .hero .container {
@@ -30,8 +30,8 @@
 .hero h1 {
     font-size: 3.5rem;
     line-height: 1.05;
-    font-weight: 300;
-    color: #222;
+    font-weight: 500;
+    color: var(--color-ink);
     margin: 0;
     max-width: 85%;
 }
@@ -40,7 +40,7 @@
     max-width: 860px;
     font-size: 1.15rem;
     line-height: 1.8;
-    color: #666;
+    color: var(--color-muted);
     margin: 0;
 }
 
@@ -55,8 +55,8 @@ section {
 .cta {
     display: inline-block;
     padding: 14px 22px;
-    border-radius: 999px;
-    background: #007acc;
+    border-radius: var(--radius-pill);
+    background: var(--color-primary);
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -64,14 +64,14 @@ section {
 }
 
 .decision-buttons button.active {
-    border-color: #007acc;
+    border-color: var(--color-primary);
     background: #eef5fc;
-    color: #007acc;
+    color: var(--color-primary);
     font-weight: 600;
 }
 
 .cta:hover {
-    background: #005999;
+    background: var(--color-primary-dark);
     transform: translateY(-2px);
 }
 
@@ -81,12 +81,12 @@ section {
 
 .services-overview {
     background: #ffffff;
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .services-decision {
-    background: #f8f9fa;
-    border-bottom: 1px solid #ececec;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
 
 }
 
@@ -100,8 +100,8 @@ section {
 .services-decision h2,
 .contact-cta h2 {
     font-size: 2.5rem;
-    font-weight: 300;
-    color: #222;
+    font-weight: 500;
+    color: var(--color-ink);
     text-align: center;
     margin-bottom: 20px;
 }
@@ -119,30 +119,30 @@ section {
 
 .card {
     background: #ffffff;
-    border: 1px solid #e8e8e8;
-    border-radius: 18px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
     padding: 32px;
-    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow-md);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 34px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow-lg);
 }
 
 .card h3 {
     font-size: 1.35rem;
     font-weight: 600;
     line-height: 1.35;
-    color: #222;
+    color: var(--color-ink);
     margin-bottom: 14px;
 }
 
 .card p {
     font-size: 1rem;
     line-height: 1.75;
-    color: #555;
+    color: var(--color-muted);
     margin: 0;
 }
 
@@ -161,9 +161,9 @@ section {
 .decision-buttons button {
     padding: 14px 20px;
     border: 1px solid #d9e3ec;
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
     background: #ffffff;
-    color: #333;
+    color: var(--color-body);
     font: inherit;
     font-weight: 500;
     cursor: pointer;
@@ -171,8 +171,8 @@ section {
 }
 
 .decision-buttons button:hover {
-    border-color: #007acc;
-    color: #007acc;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
     transform: translateY(-1px);
 }
 
@@ -184,16 +184,16 @@ section {
     display: none;
     margin-top: 36px;
     background: #ffffff;
-    border: 1px solid #e8e8e8;
-    border-radius: 18px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
     padding: 36px;
-    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow-md);
 }
 
 .service h3 {
     font-size: 1.8rem;
-    font-weight: 300;
-    color: #222;
+    font-weight: 500;
+    color: var(--color-ink);
     margin-bottom: 18px;
 }
 
@@ -205,19 +205,19 @@ section {
 .service li {
     margin-bottom: 10px;
     line-height: 1.75;
-    color: #444;
+    color: var(--color-muted);
 }
 
 .service a {
     display: inline-block;
-    color: #007acc;
+    color: var(--color-primary);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.2s ease;
 }
 
 .service a:hover {
-    color: #005999;
+    color: var(--color-primary-dark);
 }
 
 .hero .services-kicker {
@@ -226,21 +226,21 @@ section {
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #b35a1f;
+    color: var(--color-accent);
 }
 
 .services-intro {
     max-width: 860px;
     font-size: 1.15rem;
     line-height: 1.8;
-    color: #666;
+    color: var(--color-muted);
     margin: 0;
 }
 
 .service p {
     font-size: 1.02rem;
     line-height: 1.8;
-    color: #555;
+    color: var(--color-muted);
     margin-bottom: 20px;
 }
 

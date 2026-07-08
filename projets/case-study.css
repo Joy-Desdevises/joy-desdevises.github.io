@@ -3,8 +3,8 @@
 ========================= */
 
 .case-study-page {
-  background: #f8f9fa;
-  color: #222;
+  background: var(--color-bg);
+  color: var(--color-ink);
 }
 
 /* Neutralise les paddings globaux du style.css */
@@ -39,7 +39,7 @@
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #b35a1f;
+  color: var(--color-accent);
 }
 
 .case-hero h1 {
@@ -47,8 +47,8 @@
   max-width: 90%;
   font-size: 4rem;
   line-height: 1.05;
-  font-weight: 300;
-  color: #222;
+  font-weight: 500;
+  color: var(--color-ink);
 }
 
 .case-subtitle {
@@ -56,11 +56,11 @@
   max-width: 95%;
   font-size: 1.15rem;
   line-height: 1.8;
-  color: #666;
+  color: var(--color-muted);
 }
 
 .text-grey {
-  color: #666;
+  color: var(--color-muted);
   font-size: 1rem;
 }
 
@@ -78,7 +78,7 @@
 .case-meta-card {
   padding: 22px;
   background: #fff;
-  border: 1px solid #e8e8e8;
+  border: 1px solid var(--color-border);
   border-radius: 16px;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
 }
@@ -95,7 +95,7 @@
   font-size: 1rem;
   line-height: 1.6;
   font-weight: 500;
-  color: #222;
+  color: var(--color-ink);
 }
 
 /* =========================
@@ -113,8 +113,8 @@
   max-height: 520px;
   object-fit: cover;
   object-position: top;
-  border: 1px solid #ececec;
-  border-radius: 18px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
@@ -131,13 +131,13 @@
   font-weight: 500;
   color: #667085;
   background: linear-gradient(135deg, #f4f7fb 0%, #dfe7f2 100%);
-  border: 1px solid #ececec;
-  border-radius: 18px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
 }
 
 .case-image-placeholder {
   min-height: 280px;
-  border-radius: 14px;
+  border-radius: var(--radius-md);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
 
@@ -152,23 +152,23 @@
 .case-section-card {
   padding: 32px;
   background: #fff;
-  border: 1px solid #e8e8e8;
-  border-radius: 18px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
 }
 
 .case-section h2 {
   margin: 0 0 20px 0;
   font-size: 2rem;
-  font-weight: 300;
-  color: #222;
+  font-weight: 500;
+  color: var(--color-ink);
 }
 
 .case-section p {
   margin: 0 0 16px 0;
   font-size: 1.05rem;
   line-height: 1.85;
-  color: #444;
+  color: var(--color-muted);
 }
 
 .case-section p:last-child {
@@ -202,7 +202,7 @@
   width: 100%;
   max-width: 320px;
   height: auto;
-  border-radius: 18px;
+  border-radius: var(--radius-lg);
 }
 
 /* =========================
@@ -220,22 +220,22 @@
 .case-card-light {
   padding: 24px;
   background: #fafafa;
-  border: 1px solid #ececec;
-  border-radius: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
 }
 
 .case-card-light h3 {
   margin: 0 0 10px 0;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #222;
+  color: var(--color-ink);
 }
 
 .case-card-light p {
   margin: 0;
   font-size: 0.98rem;
   line-height: 1.75;
-  color: #555;
+  color: var(--color-muted);
 }
 
 .case-list {
@@ -246,7 +246,7 @@
 .case-list li {
   margin-bottom: 10px;
   line-height: 1.75;
-  color: #444;
+  color: var(--color-muted);
 }
 
 .case-list li:last-child {
@@ -272,10 +272,10 @@
   margin-top: 24px;
   padding: 20px 24px;
   background: #f7fbff;
-  border-left: 4px solid #007acc;
+  border-left: 4px solid var(--color-primary);
   border-radius: 10px;
   font-style: italic;
-  color: #555;
+  color: var(--color-muted);
 }
 
 /* =========================
@@ -313,7 +313,7 @@
 .case-video video {
   display: block;
   width: 100%;
-  border-radius: 18px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
@@ -334,21 +334,21 @@
   padding: 24px;
   text-align: center;
   background: #fafafa;
-  border: 1px solid #ececec;
-  border-radius: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
 }
 
 .case-metric-value {
   margin-bottom: 8px;
   font-size: 1.4rem;
   font-weight: 600;
-  color: #222;
+  color: var(--color-ink);
 }
 
 .case-metric-label {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #666;
+  color: var(--color-muted);
 }
 
 /* =========================
@@ -369,8 +369,8 @@
   flex-wrap: wrap;
   padding: 32px;
   background: #fff;
-  border: 1px solid #e8e8e8;
-  border-radius: 18px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
 }
 
@@ -383,7 +383,7 @@
 .case-footer-text p {
   margin: 0;
   line-height: 1.7;
-  color: #555;
+  color: var(--color-muted);
 }
 
 .case-footer-actions {
@@ -395,25 +395,25 @@
 .case-button {
   display: inline-block;
   padding: 14px 22px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   text-decoration: none;
   font-weight: 600;
   transition: all 0.2s ease;
 }
 
 .case-button-primary {
-  background: #007acc;
+  background: var(--color-primary);
   color: #fff;
 }
 
 .case-button-primary:hover {
-  background: #005999;
+  background: var(--color-primary-dark);
   transform: translateY(-2px);
 }
 
 .case-button-secondary {
   background: #f3f4f6;
-  color: #222;
+  color: var(--color-ink);
   border: 1px solid #e5e7eb;
 }
 
@@ -450,7 +450,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 1.15rem;
-  color: #666;
+  color: var(--color-muted);
   line-height: 1.5;
 }
 
@@ -473,7 +473,7 @@
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 18px;
+  border-radius: var(--radius-lg);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 

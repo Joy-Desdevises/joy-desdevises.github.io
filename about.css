@@ -3,7 +3,7 @@
 ========================= */
 
 .about-page {
-    background: #f8f9fa;
+    background: var(--color-bg);
 }
 
 /* =========================
@@ -54,15 +54,15 @@
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #B35A1F;
+    color: var(--color-accent);
     margin: 0;
 }
 
 .about-hero h1 {
     font-size: 3.5rem;
     line-height: 1.05;
-    font-weight: 300;
-    color: #222;
+    font-weight: 500;
+    color: var(--color-ink);
     margin: 0;
 }
 
@@ -70,7 +70,7 @@
     margin: 0;
     font-size: 1.2rem;
     line-height: 1.6;
-    color: #666; /* ⬅️ AVANT trop noir → plus doux */
+    color: var(--color-muted); /* ⬅️ AVANT trop noir → plus doux */
     font-weight: 400; /* ⬅️ évite le côté trop lourd */
 }
 
@@ -80,7 +80,7 @@
     max-width: 100%;
     font-size: 1rem;
     line-height: 1.8;
-    color: #555;
+    color: var(--color-muted);
     text-align: left;
     margin-left: 0;
     margin-right: auto;
@@ -127,30 +127,30 @@
 
 .about-block {
     background: #ffffff;
-    border: 1px solid #e8e8e8;
-    border-radius: 18px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
     padding: 42px;
-    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow-md);
     height: 100%;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .about-block:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 34px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow-lg);
 }
 
 .about-block h2 {
     font-size: 2rem;
-    font-weight: 300;
-    color: #222;
+    font-weight: 500;
+    color: var(--color-ink);
     margin: 0 0 22px;
 }
 
 .about-block p {
     font-size: 1.05rem;
     line-height: 1.85;
-    color: #444;
+    color: var(--color-muted);
     margin: 0 0 16px;
 }
 
@@ -159,7 +159,7 @@
 }
 
 .about-lead {
-    color: #555;
+    color: var(--color-muted);
     margin-bottom: 22px;
 }
 
@@ -176,8 +176,8 @@
 
 .about-list-item {
     padding: 24px;
-    border: 1px solid #ececec;
-    border-radius: 14px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
     background: #fafafa;
     transition: border 0.2s ease, transform 0.2s ease;
 }
@@ -190,13 +190,13 @@
 .about-list-item h3 {
     font-size: 1.05rem;
     font-weight: 600;
-    color: #222;
+    color: var(--color-ink);
     margin: 0 0 8px;
 }
 
 .about-list-item p {
     font-size: 0.95rem;
-    color: #555;
+    color: var(--color-muted);
     line-height: 1.7;
     margin: 0;
 }
@@ -217,7 +217,7 @@
 .about-bullets li {
     margin-bottom: 10px;
     line-height: 1.75;
-    color: #444;
+    color: var(--color-muted);
 }
 
 /* =========================

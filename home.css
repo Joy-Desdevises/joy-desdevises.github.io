@@ -3,7 +3,7 @@
 ========================= */
 
 .home-page {
-    background: #f8f9fa;
+    background: var(--color-bg);
 }
 
 /* =========================
@@ -37,8 +37,7 @@
     margin: 0;
     font-size: clamp(3rem, 5vw, 4.2rem);
     line-height: 1.08;
-    font-weight: 300;
-    color: #222;
+    font-weight: 500;
 }
 
 .home-kicker {
@@ -47,7 +46,7 @@
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #b35a1f;
+    color: var(--color-accent);
 }
 
 .home-intro {
@@ -55,7 +54,7 @@
     margin: 0;
     font-size: 1.15rem;
     line-height: 1.8;
-    color: #666;
+    color: var(--color-muted);
 }
 
 /* =========================
@@ -77,46 +76,72 @@ a.cta-button:active,
 a.cta-button:focus {
     display: inline-block;
     padding: 14px 22px;
-    border-radius: 999px;
-    background: #007acc;
+    border-radius: var(--radius-pill);
+    background: var(--color-primary);
     color: #fff;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.125rem;
     line-height: 1;
+    box-shadow: var(--shadow-primary);
     transition: all 0.2s ease;
 }
 
 a.cta-button:hover,
 a.cta-button:focus {
-    background: #005999;
+    background: var(--color-primary-dark);
     color: #fff;
     text-decoration: none;
     transform: translateY(-2px);
 }
 
 /* =========================
-   Logo strip
+   Logo strip — trust marquee
 ========================= */
 
 .logo-strip-full {
     width: 100vw;
     margin-left: calc(50% - 50vw);
-    padding: 12px 32px;
+    padding: 20px 0;
     background: #ffffff;
     border-top: 1px solid #e6dfd5;
     border-bottom: 1px solid #e6dfd5;
     box-sizing: border-box;
 }
 
-.logo-strip {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(7, auto);
-    justify-content: center;
+#hero .trust-label {
+    margin: 0 0 24px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-muted);
+}
+
+.logo-marquee {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.logo-track {
+    display: flex;
+    width: max-content;
     align-items: center;
     gap: 40px;
+    animation: logo-marquee 32s linear infinite;
+}
+
+.logo-track:hover {
+    animation-play-state: paused;
+}
+
+.logo-strip {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
 }
 
 .logo-strip img {
@@ -133,6 +158,21 @@ a.cta-button:focus {
 
 .logo-strip img:hover {
     transform: translateY(-2px);
+}
+
+@keyframes logo-marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .logo-track {
+        animation: none;
+    }
 }
 
 /* =========================
@@ -153,8 +193,8 @@ a.cta-button:focus {
         font-size: 1.05rem;
     }
 
-    .logo-strip {
-        grid-template-columns: repeat(4, auto);
+    .logo-strip,
+    .logo-track {
         gap: 28px;
     }
 
@@ -192,11 +232,11 @@ a.cta-button:focus {
     }
 
     .logo-strip-full {
-        padding: 12px 20px;
+        padding: 16px 0;
     }
 
-    .logo-strip {
-        grid-template-columns: repeat(2, auto);
+    .logo-strip,
+    .logo-track {
         gap: 20px;
     }
 
