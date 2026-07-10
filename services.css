@@ -46,27 +46,11 @@ section {
     padding: 48px 0;
 }
 
-.cta {
-    display: inline-block;
-    padding: 14px 22px;
-    border-radius: var(--radius-pill);
-    background: var(--color-primary);
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.2s ease;
-}
-
 .decision-buttons button.active {
     border-color: var(--color-primary);
     background: #eef5fc;
     color: var(--color-primary);
     font-weight: 600;
-}
-
-.cta:hover {
-    background: var(--color-primary-dark);
-    transform: translateY(-2px);
 }
 
 /* =========================
@@ -84,23 +68,9 @@ section {
 
 }
 
-.contact-cta {
-    background: #ffffff;
-    text-align: center;
-    padding-bottom: 96px;
-}
-
 .services-overview h2,
 .services-decision h2 {
     font-size: 1.9rem;
-    font-weight: 500;
-    color: var(--color-ink);
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.contact-cta h2 {
-    font-size: 2.5rem;
     font-weight: 500;
     color: var(--color-ink);
     text-align: center;
@@ -229,27 +199,10 @@ section {
 }
 
 /* =========================
-   CTA section
-========================= */
-
-.contact-cta {
-    text-align: center;
-    padding-bottom: 96px;
-}
-
-.contact-cta h2 {
-    margin-bottom: 24px;
-}
-
-/* =========================
    Responsive
 ========================= */
 
 @media (max-width: 1024px) {
-    .contact-cta h2 {
-        font-size: 2.2rem;
-    }
-
     .problem-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -280,10 +233,6 @@ section {
         font-size: 1.6rem;
     }
 
-    .contact-cta h2 {
-        font-size: 2rem;
-    }
-
     .service h3 {
         font-size: 1.5rem;
     }
@@ -296,9 +245,5 @@ section {
     .decision-buttons button {
         width: 100%;
         text-align: center;
-    }
-
-    .contact-cta {
-        padding-bottom: 72px;
     }
 }

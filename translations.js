@@ -105,10 +105,7 @@ const translations = {
       ux_li2: 'Restructuration de parcours et de process',
       ux_li3: 'Conception d\'interfaces',
       ux_li4: 'Structuration d\'expériences complexes',
-      ux_link: 'Discuter de votre projet →',
-      cta_h2: 'Parlons de votre projet',
-      cta_subtitle: 'Chaque mission commence par un échange de 30 minutes pour comprendre votre contexte, vos contraintes et ce que vous cherchez à résoudre. À partir de là, je vous propose une approche adaptée — pas un forfait standard.',
-      cta_btn: 'Décrire mon projet'
+      ux_link: 'Discuter de votre projet →'
     },
 
     /* ── Common case-study labels ─────────────────────────── */
@@ -516,10 +513,7 @@ const translations = {
       ux_li2: 'Journey and process restructuring',
       ux_li3: 'Interface design',
       ux_li4: 'Structuring complex experiences',
-      ux_link: 'Discuss your project →',
-      cta_h2: "Let's talk about your project",
-      cta_subtitle: 'Every engagement starts with a 30-minute conversation to understand your context, constraints and what you are trying to solve. From there, I propose a tailored approach — not a standard package.',
-      cta_btn: 'Describe my project'
+      ux_link: 'Discuss your project →'
     },
 
     /* ── Common case-study labels ─────────────────────────── */
