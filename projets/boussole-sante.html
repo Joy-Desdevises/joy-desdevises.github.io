@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boussole Santé — cadrer et prototyper une plateforme pour l'éducation à la santé — Joy Desdevises</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <link rel="icon" href="../images/logo-uxcog.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap">
+</head>
+<body class="case-study-page">
+  <nav>
+        <div class="nav-inner">
+      <a href="../index.html" class="nav-logo"><img src="../images/logo-uxcog.png" alt="UXcog"></a>
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">🇫🇷 FR</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">🇬🇧 EN</button>
+      </div>
+      <div class="nav-links">
+        <a href="../index.html" data-i18n="nav.home">Accueil</a>
+        <a href="../portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="../Ressources/index.html" data-i18n="nav.resources">Ressources</a>
+        <a href="../Services.html" data-i18n="nav.services">Services</a>
+        <a href="../a-propos.html" data-i18n="nav.about">À propos</a>
+        <a href="../contact.html" data-i18n="nav.contact">Contact</a>
+      </div>
+  </nav>
+
+  <main class="case-study-main">
+    <div class="case-study-container">
+      <header class="case-hero">
+        <p class="case-kicker">Étude de cas</p>
+        <h1>Boussole Santé — cadrer et prototyper une plateforme pour l'éducation à la santé</h1>
+        <p class="case-subtitle">
+          Traduire les décisions d'un atelier de cadrage en identité visuelle, UI Kit et prototypes cliquables
+          pour une plateforme de ressources en éducation à la santé destinée aux enseignants,
+          portée par la Croix-Rouge française.
+        </p>
+
+        <div class="case-meta">
+          <div class="case-meta-card">
+            <div class="case-meta-label">Mon rôle</div>
+            <div class="case-meta-value">Product Design — UX/UI</div>
+          </div>
+          <div class="case-meta-card">
+            <div class="case-meta-label">Durée</div>
+            <div class="case-meta-value">Mai 2026 – Juin 2026</div>
+          </div>
+          <div class="case-meta-card">
+            <div class="case-meta-label">Type de projet</div>
+            <div class="case-meta-value">Start-up naissante / EdTech santé</div>
+          </div>
+        </div>
+      </header>
+
+      <!-- INTRO -->
+      <section class="case-section">
+        <div class="case-section-card">
+          <div class="case-intro-text">
+            <h2>Le point de départ</h2>
+            <p>
+              Boussole Santé est une plateforme numérique destinée aux enseignants et personnels éducatifs
+              (de la maternelle au lycée) pour trouver, explorer et utiliser des ressources fiables en éducation
+              à la santé — traitée dans sa dimension globale, telle que définie par l'OMS (bien-être physique,
+              mental et social).
+            </p>
+            <p>
+              L'objectif n'est pas de créer de nouvelles ressources, mais de <b>centraliser et rendre accessibles
+              les ressources existantes</b>, aujourd'hui dispersées entre de multiples outils (Eduscol, Réseau
+              Canopé…) sans portail unifié adapté aux besoins réels des enseignants.
+            </p>
+            <p>
+              Le projet est porté par la <b>Croix-Rouge française</b>, partenaire principal confirmé, avec des
+              partenariats institutionnels visés (Éducation nationale, Réseau Canopé, Ministère de la Santé…).
+            </p>
+            <p>
+              <span class="text-grey"><i>
+                Un atelier vision &amp; cadrage a permis de challenger le brief initial, de confirmer les décisions
+                clés et d'identifier les points restant à trancher avant le développement. J'ai ensuite créé
+                l'identité visuelle, le UI Kit et les prototypes sur Figma.
+              </i></span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CADRAGE / PERSONAS -->
+      <section class="case-section">
+        <div class="case-section-card">
+          <h2>Cadrer avant de designer</h2>
+
+          <p>
+            Avant de concevoir quoi que ce soit, j'ai animé un atelier vision &amp; cadrage avec les parties
+            prenantes du projet : challenger le brief initial, trancher les décisions clés et poser un périmètre
+            clair pour le MVP avant de passer à la conception.
+          </p>
+
+          <div class="case-metrics">
+            <div class="case-metric">
+              <div class="case-metric-value">2 personas prioritaires</div>
+              <div class="case-metric-label">Enseignant(e) de primaire sensibilisé(e) et direction d'établissement, pour cibler l'adoption initiale</div>
+            </div>
+            <div class="case-metric">
+              <div class="case-metric-value">3 usages retenus pour le MVP</div>
+              <div class="case-metric-label">Trouver une ressource, consulter sa fiche détaillée, être guidé par l'assistant IA</div>
+            </div>
+            <div class="case-metric">
+              <div class="case-metric-value">Périmètre du MVP clarifié</div>
+              <div class="case-metric-label">Fonctionnalités IA avancées repoussées en V1, priorités de développement tranchées</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PARCOURS / ECRANS -->
+      <section class="case-section case-deliverables">
+        <div class="case-section-card">
+          <h2>Des parcours concrets, prototypés</h2>
+          <p>
+            Le prototype couvre les trois usages coeur du MVP : découvrir la plateforme, être guidé par
+            l'assistant IA pour trouver une ressource, et consulter une fiche ressource détaillée et actionnable
+            en classe.
+          </p>
+          <div class="case-deliverables-grid">
+            <figure>
+              <figcaption><b><i>Page d'accueil</i></b></figcaption>
+              <img src="../images/BOUSSOLE/boussole-home.jpg" alt="Page d'accueil complète du prototype Boussole Santé" />
+            </figure>
+
+            <figure>
+              <figcaption><b><i>Conversation avec l'assistant IA pour construire une séance sur mesure, avec filtres et résultats en base de données</i></b></figcaption>
+              <img src="../images/BOUSSOLE/boussole-chat-ia.jpg" alt="Conversation avec l'assistant IA de Boussole Santé" />
+            </figure>
+
+            <figure>
+              <figcaption><b><i>Fiche ressource détaillée, prête à l'emploi pour une séance en classe</i></b></figcaption>
+              <img src="../images/BOUSSOLE/boussole-fiche-ressource.jpg" alt="Fiche détaillée d'une ressource pédagogique" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- UI KIT -->
+      <section class="case-section case-deliverables">
+        <div class="case-section-card">
+          <h2>Un système visuel dédié : création d'un UI Kit</h2>
+          <p>
+            Avant même la première ligne de code, un UI Kit donne à un projet naissant un langage visuel unique :
+            une référence commune sur les couleurs, la typographie et les composants, qui évite les incohérences
+            d'écran en écran et les allers-retours coûteux une fois le développement lancé. C'est aussi un support
+            concret pour aligner les parties prenantes sur une direction visuelle avant de s'engager plus loin.
+          </p>
+          <div class="case-deliverables-grid">
+            <figure>
+              <figcaption><b><i>Aperçu du UI Kit — palette, typographie, icônes et boutons</i></b></figcaption>
+              <img src="../images/BOUSSOLE/boussole-uikit-apercu.jpg" alt="Aperçu du UI Kit Boussole Santé : palette, typographie, icônes et boutons" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- APPORT -->
+      <section class="case-section">
+        <div class="case-section-card">
+          <h2>Ce que j'ai apporté à ce projet</h2>
+          <p>
+            J'ai traduit les décisions de l'atelier de cadrage en un système d'interface complet et des
+            prototypes cliquables couvrant les parcours clés — recherche filtrée, assistant IA, fiche ressource —
+            posant des bases visuelles et fonctionnelles directement exploitables avant le développement.
+          </p>
+          <p>
+            Ce projet illustre ma capacité à intervenir tôt dans un projet naissant, dans un contexte où
+            beaucoup reste encore à trancher, en produisant des livrables structurants pour la suite : cadrage
+            produit, documentation pour les développeurs, et vision partagée entre les parties prenantes.
+          </p>
+        </div>
+      </section>
+
+      <footer class="case-footer">
+        <div class="case-footer-card">
+          <div class="case-footer-text">
+            <h3>Envie d'en discuter ?</h3>
+            <p>
+              Je travaille sur des produits et services complexes, à l'intersection de la recherche utilisateur,
+              de la donnée, des environnements métier et de l'aide à la décision.
+            </p>
+          </div>
+          <div class="case-footer-actions">
+            <a href="../portfolio.html" class="case-button case-button-secondary">← Retour au portfolio</a>
+            <a href="../contact.html" class="case-button case-button-primary">Me contacter</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="../images/logo-uxcog.png" alt="UXcog">
+                <p class="footer-tagline" data-i18n="footer.tagline">Product &amp; Service Designer indépendante — produits complexes, data et IA.</p>
+            </div>
+            <div class="footer-nav">
+                <p class="footer-heading">Navigation</p>
+                <a href="../index.html" data-i18n="nav.home">Accueil</a>
+                <a href="../portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+                <a href="../Ressources/index.html" data-i18n="nav.resources">Ressources</a>
+                <a href="../Services.html" data-i18n="nav.services">Services</a>
+                <a href="../a-propos.html" data-i18n="nav.about">À propos</a>
+                <a href="../contact.html" data-i18n="nav.contact">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <p class="footer-heading">Contact</p>
+                <a href="mailto:desdevisesjoy.pro@proton.me">desdevisesjoy.pro@proton.me</a>
+                <a href="https://www.linkedin.com/in/joydesdevises-product-designer/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2026 Joy Desdevises — UXcog. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+    </div>
+</footer>
+
+<script src="../translations.js"></script>
+<script src="../i18n.js"></script>
+<script src="../reveal.js"></script>
+</body>
+</html>

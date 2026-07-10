@@ -6,6 +6,19 @@ const CATEGORY_LABELS = {
 
 const projects = [
   {
+    id: 11,
+    slug: "boussole-sante",
+    category: "product",
+    client: "Croix-Rouge française",
+    clientEn: "French Red Cross",
+    title: "Boussole Santé — plateforme d'éducation à la santé",
+    titleEn: "Boussole Santé — health education platform",
+    description: "Créer l'identité visuelle et les prototypes d'une plateforme de ressources en éducation à la santé pour les enseignants.",
+    descriptionEn: "Creating the visual identity and prototypes for a health-education resource platform for teachers.",
+    url: "projets/boussole-sante.html",
+    endDate: "2026-06"
+  },
+  {
     id: 10,
     slug: "bobbee",
     category: "service",
@@ -68,7 +81,7 @@ const projects = [
     description: "Transformer des données de bien-être en décisions concrètes à l'échelle de l'entreprise.",
     descriptionEn: "Transforming wellbeing data into concrete decisions at company scale.",
     url: "projets/ohc.html",
-    endDate: "2026-12",
+    endDate: "2025-12",
     extraTag: "Data analyses",
     extraTagEn: "Data analysis"
   },
