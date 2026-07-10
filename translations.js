@@ -71,10 +71,8 @@ const translations = {
       linkedin_desc: '<br>Pour en savoir plus sur mon parcours ou me contacter via la messagerie LinkedIn.'
     },
     services: {
-      kicker: 'Product & Service Designer — accompagnement et conseil',
-      h1: 'Moins de flou, plus d\'impact.',
-      intro: '<b>Design, recherche, facilitation et conseil</b> — produits numériques, services, data/IA, transformation organisationnelle.',
-      explore_cta: 'Explorer les cas de figure',
+      kicker: 'Conseil aux entreprises',
+      h1: 'Cadrage produit et service, recherche utilisateur, conception UX/UI, amélioration de process, pilotage de projet, innovation par la donnée et l\'IA',
       h2_overview: 'Les situations récurrentes sur lesquelles j\'interviens',
       card1_title: 'Vous avez le sujet, pas encore la direction : cadrer pour mieux avancer.',
       card1_text: 'Vous avez un sujet, une intuition ou une ambition, mais il reste à clarifier le problème, les enjeux et les priorités.',
@@ -484,10 +482,8 @@ const translations = {
       linkedin_desc: '<br>To find out more about my background or to contact me via LinkedIn messaging.'
     },
     services: {
-      kicker: 'Product & Service Designer — consulting and support',
-      h1: 'Less ambiguity, more impact.',
-      intro: '<b>Design, research, facilitation and consulting</b> — digital products, services, data/AI, organisational transformation.',
-      explore_cta: 'Explore use cases',
+      kicker: 'Business consulting',
+      h1: 'Product and service framing, user research, UX/UI design, process improvement, project management, data and AI-driven innovation',
       h2_overview: 'Recurring situations I address',
       card1_title: 'You have the subject, but not yet the direction: frame it to move forward.',
       card1_text: 'You have a topic, an intuition or an ambition, but the problem, the stakes and the priorities still need to be clarified.',
