@@ -51,10 +51,10 @@
         au product design, à la data et à la conception de services numériques.
       </p>
 
-      <div class="resources-toc">
-        <a href="#articles" class="cta-button">Articles</a>
-        <a href="#outils" class="cta-button">Outils</a>
-      </div>
+      <nav class="jump-links">
+        <a href="#articles">Articles <span>↓</span></a>
+        <a href="#outils">Outils <span>↓</span></a>
+      </nav>
     </div>
   </section>
 
@@ -77,15 +77,14 @@
 
       <div class="resources-section-header">
         <h2>Articles</h2>
+        <span id="articles-count" class="articles-count"></span>
       </div>
 
-      <div id="articles-filters" class="articles-filters"></div>
+      <div id="articles-filters" class="filters"></div>
 
-      <div id="articles-count" class="articles-count"></div>
+      <div id="featured-slot"></div>
 
-      <div id="articles-list" class="articles-list"></div>
-
-      <div id="articles-pagination" class="articles-pagination"></div>
+      <div id="articles-list" class="article-grid"></div>
 
     </div>
   </section>
@@ -99,6 +98,8 @@
       </div>
 
       <div id="tools-grid" class="tools-grid"></div>
+
+      <p id="tools-note" class="tools-note">D'autres outils arrivent bientôt.</p>
 
     </div>
   </section>
