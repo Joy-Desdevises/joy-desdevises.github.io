@@ -110,7 +110,7 @@ a.cta-button:focus {
 }
 
 #hero .trust-label {
-    margin: 0 0 24px;
+    margin: 0 auto 20px;
     font-size: 0.78rem;
     font-weight: 600;
     letter-spacing: 0.08em;
@@ -154,6 +154,11 @@ a.cta-button:focus {
     opacity: 1;
     filter: none;
     transition: transform 0.2s ease;
+}
+
+.logo-strip img.logo-lg {
+    max-width: 260px;
+    max-height: 88px;
 }
 
 .logo-strip img:hover {
@@ -202,6 +207,11 @@ a.cta-button:focus {
         max-width: 170px;
         max-height: 56px;
     }
+
+    .logo-strip img.logo-lg {
+        max-width: 220px;
+        max-height: 77px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -238,6 +248,11 @@ a.cta-button:focus {
     .logo-strip,
     .logo-track {
         gap: 20px;
+    }
+
+    .logo-strip img.logo-lg {
+        max-width: 190px;
+        max-height: 66px;
     }
 
     .logo-strip img {
