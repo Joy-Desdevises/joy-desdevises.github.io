@@ -5,16 +5,14 @@ const translations = {
       portfolio: 'Portfolio',
       resources: 'Ressources',
       services: 'Services',
-      about: 'À propos',
-      contact: 'Contact'
+      about: 'À propos & Contact'
     },
     page: {
       title: {
         home: 'Joy Desdevises - Designer Produit',
         portfolio: 'Portfolio - Joy Desdevises',
         services: 'Services - Joy Desdevises',
-        about: 'À propos - Joy Desdevises',
-        contact: 'Contact - Joy Desdevises'
+        about: 'À propos - Joy Desdevises'
       }
     },
     home: {
@@ -33,42 +31,22 @@ const translations = {
       kicker: 'Product & Service Designer — accompagnement et conseil',
       title: 'À propos - Joy Desdevises',
       tagline: '<b><i>« Je transforme des systèmes complexes en expériences compréhensibles »</i></b>',
-      example_p1: 'Par exemple, sur 1 jeune 1 solution, la plateforme nationale du Ministère du Travail, j\'ai conçu de bout en bout l\'expérience d\'un service public utilisé par des millions de jeunes de 15 à 30 ans — du cadrage initial jusqu\'à l\'amélioration continue en production.',
-      example_p2: 'Un produit complexe, des contraintes institutionnelles fortes, des utilisateurs aux profils très variés. C\'est exactement le type de sujet sur lequel je suis le plus utile.',
-      h2_background: 'Background',
-      background: 'Docteure en sciences cognitives (2018–2022), je travaille en product design depuis 2022. J\'ai exercé au sein d\'OCTO Technology, où j\'ai accompagné des organisations comme Thales, Isagri, La Fabrique de la Donnée, le Ministère du Travail et le Ministère de la Transition écologique sur des produits numériques complexes — SaaS, plateformes data, services publics.<br>Ce qui me distingue : je combine une compréhension fine du comportement humain, une culture de la donnée et une pratique concrète du design produit, là où beaucoup de sujets restent flous ou mal cadrés.',
-      h2_expertise: 'Expertises',
-      expertise_lead: 'Mes domaines d\'expertise incluent notamment :',
-      exp1_title: 'Recherche utilisateur & compréhension des usages',
-      exp1_text: 'Entretiens, questionnaires, observation des usages, analyse qualitative et quantitative pour comprendre les comportements utilisateurs et orienter les décisions produit.',
-      exp2_title: 'Conception de produits et services numériques',
-      exp2_text: 'Structuration de parcours utilisateurs, wireframes, prototypes et tests utilisateurs pour concevoir des expériences simples et efficaces, même dans des systèmes complexes.<br>Produits responsables : Accessibilité, design inclusif, éco-conception...',
-      exp3_title: 'Gestion, traitement et analyses de données',
-      exp3_text: 'Analyse de données quali/quanti, statistiques, data visualisation et conception d\'outils permettant d\'exploiter des données complexes de manière compréhensible et utile.',
-      exp4_title: 'Automatisation et IA',
-      exp4_text: 'Exploration et conception de cas d\'usage intégrant l\'IA : automatisation de workflows, prototypage de fonctionnalités intelligentes et amélioration de l\'exploitation des données.',
-      exp5_title: 'Cadrage et discovery produit',
-      exp5_text: 'Clarification des problématiques, priorisation des besoins et accompagnement des équipes dans les phases amont de conception.',
-      h2_working: 'Ma manière de travailler',
-      working_p1: 'Je pars toujours des usages réels avant de proposer quoi que ce soit. Concrètement, ça passe par des entretiens utilisateurs, de l\'analyse de données — et parfois du code (Python) pour explorer des données brutes.',
-      working_p2: 'Mon objectif n\'est pas seulement de produire des livrables design, mais d\'apporter des éléments utiles à la décision pour les équipes produit.',
-      working_p3: 'J\'interviens principalement sur des produits où la complexité est réelle : systèmes multi-acteurs, forte composante data, intégration d\'IA, contraintes réglementaires (...). C\'est là que la rigueur méthodologique fait vraiment la différence.',
+      example_p1: 'Sur 1jeune1solution, la plateforme nationale du Ministère du Travail, j\'ai conçu de bout en bout l\'expérience d\'un service public utilisé par des milliers de jeunes de 15 à 30 ans.',
+      example_p2: 'Produit, service ou processus complexe, contraintes institutionnelles fortes, utilisateurs aux profils très variés. C\'est exactement le type de sujet sur lequel je suis le plus utile.',
+      h2_background: 'Mon parcours',
+      background: 'Mon parcours part de la compréhension du comportement humain : un doctorat en sciences cognitives (2018–2022), entre expérimentations et analyses de données. Depuis 2022, je mets cette rigueur au service des produits numériques — design, intégration de l\'IA, dialogue avec les équipes tech — et de l\'accompagnement des organisations, en gestion de projet comme en relation client, d\'abord chez OCTO Technology puis avec UXcog.<br><br>Ce qui me distingue : je combine une compréhension fine du comportement humain, une culture de la donnée et une pratique concrète, du cadrage jusqu\'à la mise en œuvre, là où beaucoup de sujets restent flous ou mal cadrés.',
+      h2_working: 'Mon approche',
+      working_intro: 'Ma méthode reste la même quel que soit le sujet :',
+      working_bullet1: 'Comprendre avant de décider',
+      working_bullet2: 'Documenter plutôt que supposer',
+      working_outro: 'Une rigueur héritée de la recherche scientifique que j\'applique au cadrage de projet, à la conception ou l\'optimisation de produits/services/processus, à l\'analyse de données ou encore à l\'intégration de l\'IA.',
+      working_p3: 'Mon terrain de prédilection : les systèmes complexes, où usages, technique et enjeux business doivent s\'aligner pour construire quelque chose qui tient dans le temps.',
       h2_together: 'Travaillons ensemble',
-      together_intro: 'Je suis particulièrement intéressée par les projets impliquant :',
-      bullet1: 'des produits numériques complexes',
-      bullet2: 'des produits ou plateformes data-driven',
-      bullet3: 'de l\'IA et/ou de l\'automatisation appliquée aux produits numériques',
-      bullet4: 'des services numériques publics ou à impact',
-      cta: 'Me contacter'
+      together_intro: 'Décrivez-moi votre contexte en quelques lignes — je vous réponds sous 48h.'
     },
     contact: {
-      kicker: 'Product & Service Designer — accompagnement et conseil',
-      title: 'Discutons de votre projet',
-      intro: 'Vous travaillez sur un produit complexe et cherchez un regard extérieur pour cadrer, concevoir ou faire évoluer l\'expérience ? Décrivez-moi votre contexte en quelques lignes — je vous réponds sous 48h.',
       label_email: 'Email',
-      email_desc: '<br>Pour décrire votre projet, poser une question ou prévoir appel/visio/rencontre.',
-      label_linkedin: 'LinkedIn',
-      linkedin_desc: '<br>Pour en savoir plus sur mon parcours ou me contacter via la messagerie LinkedIn.'
+      label_linkedin: 'LinkedIn'
     },
     services: {
       kicker: 'Conseil aux entreprises',
@@ -413,16 +391,14 @@ const translations = {
       portfolio: 'Portfolio',
       resources: 'Resources',
       services: 'Services',
-      about: 'About',
-      contact: 'Contact'
+      about: 'About & Contact'
     },
     page: {
       title: {
         home: 'Joy Desdevises - Product Designer',
         portfolio: 'Portfolio - Joy Desdevises',
         services: 'Services - Joy Desdevises',
-        about: 'About - Joy Desdevises',
-        contact: 'Contact - Joy Desdevises'
+        about: 'About - Joy Desdevises'
       }
     },
     home: {
@@ -441,42 +417,22 @@ const translations = {
       kicker: 'Product & Service Designer — consulting and support',
       title: 'About - Joy Desdevises',
       tagline: '<b><i>"I turn complex systems into understandable experiences"</i></b>',
-      example_p1: 'For instance, on 1 jeune 1 solution — the national platform of the French Ministry of Labour — I designed the end-to-end experience of a public service used by millions of young people aged 15–30, from initial scoping through to continuous improvement in production.',
-      example_p2: 'A complex product, strong institutional constraints, users with very diverse profiles. This is exactly the type of challenge where I add the most value.',
+      example_p1: 'On 1jeune1solution, the national platform of the French Ministry of Labour, I designed the end-to-end experience of a public service used by thousands of young people aged 15–30.',
+      example_p2: 'A complex product, service or process, strong institutional constraints, users with very diverse profiles. This is exactly the type of challenge where I add the most value.',
       h2_background: 'Background',
-      background: 'PhD in Cognitive Sciences (2018–2022), I have been working in product design since 2022. I worked at OCTO Technology, supporting organisations such as Thales, Isagri, La Fabrique de la Donnée, the Ministry of Labour and the Ministry of Ecological Transition on complex digital products — SaaS, data platforms, public services.<br>What sets me apart: I combine a deep understanding of human behaviour, a data culture and hands-on product design practice, in areas where many subjects remain unclear or poorly defined.',
-      h2_expertise: 'Areas of expertise',
-      expertise_lead: 'My areas of expertise include:',
-      exp1_title: 'User research & understanding behaviour',
-      exp1_text: 'Interviews, surveys, usage observation, qualitative and quantitative analysis to understand user behaviour and inform product decisions.',
-      exp2_title: 'Digital product and service design',
-      exp2_text: 'User journey mapping, wireframes, prototypes and usability testing to design simple and effective experiences, even within complex systems.<br>Responsible products: Accessibility, inclusive design, eco-design...',
-      exp3_title: 'Data management, processing and analysis',
-      exp3_text: 'Qualitative/quantitative data analysis, statistics, data visualisation and tool design to make complex data understandable and actionable.',
-      exp4_title: 'Automation and AI',
-      exp4_text: 'Exploring and designing AI-integrated use cases: workflow automation, prototyping intelligent features and improving data exploitation.',
-      exp5_title: 'Product framing & discovery',
-      exp5_text: 'Clarifying problems, prioritising needs and supporting teams through the early stages of design.',
-      h2_working: 'How I work',
-      working_p1: 'I always start from real-world usage before proposing anything. In practice, this means user interviews, data analysis — and sometimes code (Python) to explore raw data.',
-      working_p2: 'My goal is not simply to deliver design artefacts, but to provide useful inputs for product team decision-making.',
-      working_p3: 'I work primarily on products where complexity is real: multi-stakeholder systems, strong data components, AI integration, regulatory constraints (...). This is where methodological rigour genuinely makes a difference.',
+      background: 'My path starts with understanding human behaviour: a PhD in Cognitive Sciences (2018–2022), between experiments and data analysis. Since 2022, I have put this rigour to work for digital products — design, AI integration, dialogue with tech teams — and for supporting organisations, in project management as well as client relations, first at OCTO Technology and now with UXcog.<br><br>What sets me apart: I combine a deep understanding of human behaviour, a data culture and hands-on practice, from framing through to implementation, in areas where many subjects remain unclear or poorly defined.',
+      h2_working: 'My approach',
+      working_intro: 'My method stays the same whatever the subject:',
+      working_bullet1: 'Understand before deciding',
+      working_bullet2: 'Document rather than assume',
+      working_outro: 'A rigour inherited from scientific research that I apply to project scoping, to the design or optimisation of products/services/processes, to data analysis, or to AI integration.',
+      working_p3: 'My area of choice: complex systems, where usage, technology and business stakes must align to build something that lasts.',
       h2_together: "Let's work together",
-      together_intro: 'I am particularly interested in projects involving:',
-      bullet1: 'complex digital products',
-      bullet2: 'data-driven products or platforms',
-      bullet3: 'AI and/or automation applied to digital products',
-      bullet4: 'public or impact-driven digital services',
-      cta: 'Get in touch'
+      together_intro: "Describe your context in a few lines — I'll get back to you within 48 hours."
     },
     contact: {
-      kicker: 'Product & Service Designer — consulting and support',
-      title: "Let's discuss your project",
-      intro: "Working on a complex product and looking for an outside perspective to frame, design or improve the experience? Describe your context in a few lines — I'll get back to you within 48 hours.",
       label_email: 'Email',
-      email_desc: '<br>To describe your project, ask a question or schedule a call, video or in-person meeting.',
-      label_linkedin: 'LinkedIn',
-      linkedin_desc: '<br>To find out more about my background or to contact me via LinkedIn messaging.'
+      label_linkedin: 'LinkedIn'
     },
     services: {
       kicker: 'Business consulting',

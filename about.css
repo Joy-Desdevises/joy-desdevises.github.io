@@ -45,6 +45,8 @@
 .about-title-block {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    min-width: 0;
     gap: 14px; /* ⬅️ AVANT 14 → plus respirant */
     text-align: left;
 }
@@ -84,7 +86,7 @@
     text-align: left;
     margin-left: 0;
     margin-right: auto;
-    margin-top: 32px;
+    margin-top: 10px;
 }
 
 .about-example p {
@@ -210,7 +212,7 @@
 }
 
 .about-bullets {
-    margin: 24px 0 28px;
+    margin: 8px 0 8px;
     padding-left: 20px;
 }
 
