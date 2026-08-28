@@ -23,9 +23,10 @@ const translations = {
       trust_label: 'Ils me font confiance'
     },
     portfolio: {
-      kicker: 'Product & Service Designer — accompagnement et conseil',
       title: 'Mes projets antérieurs',
-      intro: 'Une sélection de projets autour de la conception de produits et services numériques, de la recherche utilisateur et de l\'analyse de données.'
+      sort_label: 'Trier par',
+      sort_date: 'Plus récent',
+      sort_category: 'Catégorie'
     },
     about: {
       kicker: 'Product & Service Designer — accompagnement et conseil',
@@ -49,7 +50,6 @@ const translations = {
       label_linkedin: 'LinkedIn'
     },
     services: {
-      kicker: 'Product & Service Designer — accompagnement et conseil',
       h1: 'Cadrer, concevoir, améliorer',
       hero_subtitle: 'Un accompagnement sur mesure, du produit au processus.',
       h2_need: 'Quel est votre besoin principal ?',
@@ -61,19 +61,19 @@ const translations = {
       discovery_li2: 'Ateliers de cadrage et priorisation',
       discovery_li3: 'Exploration de cas d\'usage data, IA ou automatisation',
       discovery_li4: 'Expérimentation : tests de faisabilité et validation d\'hypothèses',
-      discovery_link: 'Travaillons ensemble',
+      discovery_link: 'Travaillons ensemble →',
       research_p: 'Je vous aide à comprendre les besoins, attentes et pratiques réelles de vos utilisateurs pour concevoir des solutions qui répondent à un usage réel — sur un produit, un service ou un processus.',
       research_li1: 'Analyses qualitatives (entretiens, enquêtes)',
       research_li2: 'Prototypage et tests de solutions (Figma et outils IA)',
       research_li3: 'Analyses quantitatives (data-analytics, questionnaires)',
       research_li4: 'Synthèse des enseignements et recommandations documentées',
-      research_link: 'Travaillons ensemble',
+      research_link: 'Travaillons ensemble →',
       ux_p: 'Je vous aide à retrouver de la clarté et de la cohérence dans un produit, un service ou un processus devenu difficile à comprendre, à utiliser ou à faire évoluer.',
       ux_li1: 'Audit UX et diagnostic de l\'existant',
       ux_li2: 'Restructuration de parcours et de process',
       ux_li3: 'Refonte d\'interfaces',
       ux_li4: 'Réduction de la complexité organisationnelle ou fonctionnelle',
-      ux_link: 'Travaillons ensemble'
+      ux_link: 'Travaillons ensemble →'
     },
 
     /* ── Common case-study labels ─────────────────────────── */
@@ -399,9 +399,10 @@ const translations = {
       trust_label: 'Trusted by'
     },
     portfolio: {
-      kicker: 'Product & Service Designer — consulting and support',
       title: 'Previous projects',
-      intro: 'A selection of projects in digital product and service design, user research, and data analysis.'
+      sort_label: 'Sort by',
+      sort_date: 'Most recent',
+      sort_category: 'Category'
     },
     about: {
       kicker: 'Product & Service Designer — consulting and support',
@@ -425,7 +426,6 @@ const translations = {
       label_linkedin: 'LinkedIn'
     },
     services: {
-      kicker: 'Product & Service Designer — consulting and support',
       h1: 'Frame, design, improve',
       hero_subtitle: 'Tailored support, from product to process.',
       h2_need: 'What is your main need?',
@@ -437,19 +437,19 @@ const translations = {
       discovery_li2: 'Framing workshops and prioritisation',
       discovery_li3: 'Exploring data, AI or automation use cases',
       discovery_li4: 'Experimentation: feasibility testing and hypothesis validation',
-      discovery_link: "Let's work together",
+      discovery_link: "Let's work together →",
       research_p: "I help you understand your users' real needs, expectations and practices to design solutions that meet a real-world use — for a product, a service or a process.",
       research_li1: 'Qualitative analysis (interviews, surveys)',
       research_li2: 'Prototyping and solution testing (Figma and AI tools)',
       research_li3: 'Quantitative analysis (data analytics, questionnaires)',
       research_li4: 'Documented synthesis of findings and recommendations',
-      research_link: "Let's work together",
+      research_link: "Let's work together →",
       ux_p: 'I help you restore clarity and coherence to a product, service or process that has become difficult to understand, use or evolve.',
       ux_li1: 'UX audit and diagnosis of the current state',
       ux_li2: 'Journey and process restructuring',
       ux_li3: 'Interface redesign',
       ux_li4: 'Reducing organisational or functional complexity',
-      ux_link: "Let's work together"
+      ux_link: "Let's work together →"
     },
 
     /* ── Common case-study labels ─────────────────────────── */
