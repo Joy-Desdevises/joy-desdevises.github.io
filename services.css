@@ -34,12 +34,20 @@
 }
 
 .hero h1 {
-    font-size: 1.8rem;
-    line-height: 1.4;
+    font-size: 3.5rem;
+    line-height: 1.05;
     font-weight: 500;
     color: var(--color-ink);
     margin: 0;
-    max-width: 700px;
+    max-width: 85%;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-muted);
+    margin: 0;
+    max-width: 600px;
 }
 
 section {
@@ -153,19 +161,12 @@ section {
 
 .service {
     display: none;
-    margin-top: 36px;
+    margin-top: 4px;
     background: #ffffff;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
     padding: 36px;
     box-shadow: var(--shadow-md);
-}
-
-.service h3 {
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: var(--color-ink);
-    margin-bottom: 18px;
 }
 
 .service ul {
@@ -198,11 +199,20 @@ section {
     margin-bottom: 20px;
 }
 
+.service-lead {
+    font-weight: 600;
+    color: var(--color-ink);
+}
+
 /* =========================
    Responsive
 ========================= */
 
 @media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
     .problem-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -214,7 +224,7 @@ section {
     }
 
     .hero h1 {
-        font-size: 1.5rem;
+        font-size: 2.4rem;
         max-width: 100%;
     }
 
