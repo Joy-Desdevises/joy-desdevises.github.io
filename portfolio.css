@@ -11,14 +11,14 @@
 ========================= */
 
 .portfolio-hero {
-    padding: 80px 0 20px;
+    padding: 5rem 0 1.25rem;
 }
 
 .portfolio-hero .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 1.5rem;
     text-align: center;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .portfolio-intro {
-    max-width: 860px;
+    max-width: 53.75rem;
     margin: 0;
     font-size: 1.15rem;
     line-height: 1.8;
@@ -53,7 +53,7 @@
 ========================= */
 
 .portfolio-projects {
-    padding: 48px 0 96px;
+    padding: 3rem 0 6rem;
     background: var(--color-bg);
 }
 
@@ -61,8 +61,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 28px;
+    gap: 0.625rem;
+    margin-bottom: 1.75rem;
 }
 
 .portfolio-toolbar label {
@@ -74,7 +74,7 @@
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    padding: 8px 30px 8px 14px;
+    padding: 0.5rem 1.875rem 0.5rem 0.875rem;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235b6472' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center;
@@ -116,20 +116,20 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    gap: 8px;
-    padding: 28px;
+    gap: 0.5rem;
+    padding: 1.75rem;
 }
 
 .project-label-row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 6px;
+    gap: 0.5rem;
+    margin-bottom: 0.375rem;
 }
 
 .project-label {
-    padding: 5px 12px;
+    padding: 0.3125rem 0.75rem;
     border-radius: var(--radius-pill);
     color: #fff;
     font-size: 0.7rem;
@@ -152,7 +152,7 @@
 }
 
 .project-label-extra {
-    padding: 5px 12px;
+    padding: 0.3125rem 0.75rem;
     border-radius: var(--radius-pill);
     background: var(--color-muted);
     color: #fff;
@@ -176,7 +176,7 @@
 }
 
 .project-role {
-    margin: 10px 0 0;
+    margin: 0.625rem 0 0;
     font-size: 0.95rem;
     line-height: 1.6;
     color: var(--color-body);
@@ -191,7 +191,7 @@
     display: inline-block;
     align-self: flex-end;
     margin-top: auto;
-    padding-top: 8px;
+    padding-top: 0.5rem;
     color: var(--color-primary);
     font-weight: 600;
     transition: color 0.2s ease;
@@ -207,7 +207,7 @@
 
 @media (max-width: 1024px) {
     .portfolio-hero {
-        padding: 72px 0 40px;
+        padding: 4.5rem 0 2.5rem;
     }
 
     .portfolio-hero h1 {
@@ -216,18 +216,18 @@
     }
 
     .portfolio-intro {
-        max-width: 760px;
+        max-width: 47.5rem;
         font-size: 1.05rem;
     }
 }
 
 @media (max-width: 768px) {
     .portfolio-hero {
-        padding: 64px 0 36px;
+        padding: 4rem 0 2.25rem;
     }
 
     .portfolio-hero .container {
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .portfolio-hero h1 {
@@ -245,11 +245,11 @@
     }
 
     .portfolio-projects {
-        padding: 40px 0 72px;
+        padding: 2.5rem 0 4.5rem;
     }
 
     .project-content {
-        padding: 20px;
+        padding: 1.25rem;
     }
 
     .project-content h3 {

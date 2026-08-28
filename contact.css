@@ -7,17 +7,17 @@
 }
 
 .contact-hero {
-    min-height: calc(100vh - 73px);
+    min-height: calc(100vh - 4.5625rem);
     display: flex;
     align-items: flex-start;
-    padding: 80px 0 40px;
+    padding: 5rem 0 2.5rem;
 }
 
 .contact-hero .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 1.5rem;
     text-align: center;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .contact-intro {
-    max-width: 860px;
+    max-width: 53.75rem;
     font-size: 1.15rem;
     line-height: 1.8;
     color: var(--color-muted);
@@ -56,18 +56,18 @@
 
 .contact-cards {
     width: 100%;
-    max-width: 760px;
+    max-width: 47.5rem;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
-    margin-top: 8px;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 .contact-card {
     background: #fff;
     border: 1px solid var(--color-border);
-    border-radius: 16px;
-    padding: 28px 24px;
+    border-radius: 1rem;
+    padding: 1.75rem 1.5rem;
     box-shadow: var(--shadow-sm);
     text-align: center;
 }
@@ -78,7 +78,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--color-muted);
-    margin: 0 0 12px 0;
+    margin: 0 0 0.75rem 0;
 }
 
 .contact-card a {
@@ -95,11 +95,11 @@
 }
 
 .contact-description {
-    max-width: 760px;
+    max-width: 47.5rem;
     font-size: 1rem;
     line-height: 1.8;
     color: var(--color-muted);
-    margin: 8px 0 0 0;
+    margin: 0.5rem 0 0 0;
 }
 
 /* =========================
@@ -119,11 +119,11 @@
 @media (max-width: 768px) {
     .contact-hero {
         min-height: auto;
-        padding: 64px 0 72px;
+        padding: 4rem 0 4.5rem;
     }
 
     .contact-hero .container {
-        gap: 24px;
+        gap: 1.5rem;
     }
 
     .contact-hero h1 {
@@ -137,11 +137,11 @@
 
     .contact-cards {
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: 1rem;
     }
 
     .contact-card {
-        padding: 22px 18px;
+        padding: 1.375rem 1.125rem;
     }
 
     .contact-card a {

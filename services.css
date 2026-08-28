@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 14px;
+    gap: 0.875rem;
 }
 
 .hero .services-kicker {
@@ -56,7 +56,7 @@
     line-height: 1.6;
     color: var(--color-muted);
     margin: 0;
-    max-width: 600px;
+    max-width: 37.5rem;
 }
 
 section {
@@ -93,7 +93,7 @@ section {
     font-weight: 500;
     color: var(--color-ink);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 /* =========================
@@ -103,15 +103,15 @@ section {
 .problem-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
-    margin-top: 40px;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
 }
 
 .card {
     background: #ffffff;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
-    padding: 28px;
+    padding: 1.75rem;
     box-shadow: var(--shadow-md);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -126,7 +126,7 @@ section {
     font-weight: 600;
     line-height: 1.35;
     color: var(--color-ink);
-    margin-bottom: 14px;
+    margin-bottom: 0.875rem;
 }
 
 .card p {
@@ -144,12 +144,12 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 14px;
-    margin-top: 36px;
+    gap: 0.875rem;
+    margin-top: 2.25rem;
 }
 
 .decision-buttons button {
-    padding: 14px 20px;
+    padding: 0.875rem 1.25rem;
     border: 1px solid #d9e3ec;
     border-radius: var(--radius-pill);
     background: #ffffff;
@@ -172,7 +172,7 @@ section {
 
 .service {
     display: none;
-    margin-top: 4px;
+    margin-top: 0.25rem;
     margin-bottom: 4.25rem;
     background: #ffffff;
     border: 1px solid var(--color-border);
@@ -182,12 +182,12 @@ section {
 }
 
 .service ul {
-    margin: 0 0 24px 20px;
+    margin: 0 0 1.5rem 1.25rem;
     padding: 0;
 }
 
 .service li {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     line-height: 1.75;
     color: var(--color-muted);
 }
@@ -209,7 +209,7 @@ section {
     font-size: 1.02rem;
     line-height: 1.8;
     color: var(--color-muted);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .service-lead {
@@ -243,11 +243,11 @@ section {
 
     .problem-grid {
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 1.5rem;
     }
 
     .card {
-        padding: 28px 24px;
+        padding: 1.75rem 1.5rem;
     }
 
     .service {
