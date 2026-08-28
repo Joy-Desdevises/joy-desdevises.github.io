@@ -19,9 +19,9 @@ const translations = {
     },
     home: {
       kicker: 'Product & Service Designer — accompagnement et conseil',
-      intro: 'Spécialisée dans les produits complexes, la data et l\'intégration de l\'IA.<br><br>Des clients comme le Ministère du Travail, Thales, l\'ADEME ou le Ministère de la Transition écologique ont fait confiance à mon approche qui allie rigueur et capacité à m\'adapter à des contextes complexes.',
+      intro: '1 doctorat. 5 ans de consulting. 8+ organisations accompagnées.<br>Spécialisée dans les produits ou processus complexes, la data et l\'intégration de l\'IA.',
       cta_contact: 'Me contacter',
-      cta_services: 'Mes services',
+      cta_services: 'Mon portfolio',
       trust_label: 'Ils me font confiance'
     },
     portfolio: {
@@ -429,7 +429,7 @@ const translations = {
       kicker: 'Product & Service Designer — consulting and support',
       intro: 'Specialised in complex products, data and AI integration.<br><br>Clients such as the French Ministry of Labour, Thales, ADEME and the Ministry of Ecological Transition have trusted my approach, which combines methodological rigour with the ability to adapt to complex environments.',
       cta_contact: 'Get in touch',
-      cta_services: 'My services',
+      cta_services: 'My portfolio',
       trust_label: 'Trusted by'
     },
     portfolio: {
