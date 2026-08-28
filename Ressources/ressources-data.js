@@ -3,7 +3,7 @@ const articles = [
     category: "Résumé d'article scientifique",
     typeTag: "Résumé d'article scientifique",
     themes: ["IA et Data", "Innovation", "Cognition"],
-    title: "IA générative et créativité : puissante pour générer, biaisée et aveugle pour trier",
+    title: "IA générative et créativité : puissante pour générer mais biaisée et aveugle pour trier",
     description:
       "ChatGPT génère 4 fois plus d'idées que les humains et 3 fois plus d'idées originales. Mais il reproduit les mêmes biais cognitifs et ne distingue pas ses meilleures idées de ses idées banales. Ce que ça change pour les équipes qui innovent.",
     urlInternal: "articles/ia-generative-creativite-biais-cognitif-2025.html",
@@ -23,7 +23,7 @@ const articles = [
     category: "Résumé d'article scientifique",
     typeTag: "Résumé d'article scientifique",
     themes: ["Innovation", "Cognition"],
-    title: "Comment la compétition entre groupes et au sein d'un groupe influence-t-elle la génération d'idées dans la résolution créative de problèmes ?",
+    title: "Comment la compétition influence-t-elle la génération d'idées dans la résolution créative de problèmes ?",
     description:
       "Rivaliser contre un groupe extérieur produit plus d'idées originales. Rivaliser contre ses propres collègues, non. Et ce n'est pas qu'une question de motivation.",
     urlInternal: "articles/competition-groupes-creativite.html",
@@ -140,13 +140,11 @@ function createFeaturedCard(article) {
       <div class="featured-body">
         <div class="eyebrow-row">
           <span class="eyebrow ${meta.cls}">${article.category}</span>
-          <span class="featured-label">Le plus récent</span>
+          <span class="featured-label">À la une</span>
         </div>
         <h3>${article.title}</h3>
-        <p>${article.description}</p>
         <span class="read-link">Lire →</span>
       </div>
-      <div class="featured-art" aria-hidden="true"></div>
     </a>
   `;
 }
@@ -164,7 +162,6 @@ function createArticleCard(article) {
     <a class="article-card ${meta.cls}" href="${url}"${target}>
       <div class="eyebrow-row"><span class="eyebrow ${meta.cls}">${meta.short}</span></div>
       <h4>${article.title}</h4>
-      <p>${article.description}</p>
       ${themeTags ? `<div class="theme-tags">${themeTags}</div>` : ""}
       <span class="read-link">Lire →</span>
     </a>

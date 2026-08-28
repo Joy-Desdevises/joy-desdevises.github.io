@@ -6,9 +6,9 @@
 ========================= */
 
 .resources-page {
-    --color-bg: #0d1117;
-    --color-surface: #171d27;
-    --color-surface-raised: #1d2430;
+    --color-bg: #1a2233;
+    --color-surface: #232c40;
+    --color-surface-raised: #2c3650;
     --color-primary: #52a9ea;
     --color-primary-dark: #82c4f5;
     --color-accent: #e59a5f;
@@ -16,22 +16,31 @@
     --color-ink: #f2f5f8;
     --color-body: #ccd3db;
     --color-muted: #8891a0;
-    --color-border: #262e3a;
+    --color-border: #37415a;
 
-    --shadow-sm: 0 2px 14px rgba(0, 0, 0, 0.35);
-    --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.45);
-    --shadow-lg: 0 14px 40px rgba(0, 0, 0, 0.55);
+    --shadow-sm: 0 2px 14px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.38);
+    --shadow-lg: 0 14px 40px rgba(0, 0, 0, 0.46);
 
     background: var(--color-bg);
 }
 
-/* nav.nav-scrolled hardcodes a light backdrop in style.css — override for this page */
-.resources-page nav.nav-scrolled {
-    background-color: rgba(13, 17, 23, 0.85);
+/* The header/nav must stay identical to every other (light) page — reset the
+   tokens back to the root light values just for that subtree. */
+.resources-page header {
+    --color-bg: #f8f9fa;
+    --color-surface: #ffffff;
+    --color-primary: #007acc;
+    --color-primary-dark: #005999;
+    --color-accent: #b35a1f;
+    --color-ink: #1a2233;
+    --color-body: #3a4048;
+    --color-muted: #5b6472;
+    --color-border: #e8e8e8;
 }
 
-/* the UXcog logo is black-on-transparent; render it as a white mark on dark backgrounds */
-.resources-page .nav-logo img,
+/* the UXcog logo is black-on-transparent; render it as a white mark only where
+   it sits on the dark content background (footer), not in the light header */
 .resources-page .footer-brand img {
     filter: brightness(0) invert(1);
 }
@@ -244,7 +253,7 @@ section {
 
 .featured {
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 1fr;
     gap: 0;
     background: var(--color-surface-raised);
     border: 1px solid var(--color-border);
@@ -295,9 +304,9 @@ section {
 
 .featured h3 {
     font-family: var(--font-display);
-    font-size: 1.7rem;
+    font-size: 1.35rem;
     font-weight: 600;
-    line-height: 1.28;
+    line-height: 1.3;
     color: var(--color-ink);
     margin: 0 0 14px;
     text-wrap: balance;
@@ -328,15 +337,6 @@ section {
 .article-card:hover .read-link,
 .tool-card:hover .read-link {
     color: var(--color-primary-dark);
-}
-
-.featured-art {
-    position: relative;
-    background:
-        radial-gradient(circle at 30% 20%, rgba(82, 169, 234, 0.22), transparent 55%),
-        radial-gradient(circle at 75% 70%, rgba(82, 169, 234, 0.14), transparent 50%),
-        repeating-linear-gradient(135deg, rgba(82, 169, 234, 0.06) 0 2px, transparent 2px 26px);
-    border-left: 1px solid var(--color-border);
 }
 
 /* =========================
@@ -574,14 +574,6 @@ html {
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
-    }
-
-    .featured {
-        grid-template-columns: 1fr;
-    }
-
-    .featured-art {
-        display: none;
     }
 
     .featured-body {
