@@ -142,6 +142,7 @@ nav.nav-scrolled {
 .nav-home {
     display: inline-flex;
     align-items: center;
+    margin-right: 32px;
 }
 
 .nav-home svg {

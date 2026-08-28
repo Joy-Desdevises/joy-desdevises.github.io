@@ -180,7 +180,6 @@ function createToolCard(tool) {
       <div class="tool-content">
         <span class="eyebrow type-article">${tool.type}</span>
         <h4>${tool.title}</h4>
-        <p>${tool.description}</p>
         <span class="read-link">Accéder →</span>
       </div>
     </a>

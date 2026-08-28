@@ -80,7 +80,7 @@ a.cta-button:focus {
     background: var(--color-primary);
     color: #fff;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.125rem;
     line-height: 1;
     box-shadow: var(--shadow-primary);
