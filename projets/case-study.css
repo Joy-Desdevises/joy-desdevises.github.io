@@ -481,6 +481,18 @@
   transition: all 0.2s ease;
 }
 
+.cta-cadrage,
+.cta-delivery {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+.cta-cadrage .case-button,
+.cta-delivery .case-button {
+  padding: 0.625rem 1.125rem;
+  font-size: 0.9rem;
+}
+
 .case-button-primary {
   background: var(--color-primary);
   color: #fff;
