@@ -11,6 +11,8 @@ const projects = [
     id: 12,
     slug: "waxshelf",
     category: "product",
+    categoryLabel: "UX-UI Design",
+    categoryLabelEn: "UX-UI Design",
     client: "Projet personnel",
     clientEn: "Personal project",
     title: "WaxShelf",
@@ -20,7 +22,9 @@ const projects = [
     description: "Projet personnel - Concevoir et développer une plateforme de gestion et de découverte de collection vinyles connectée à Discogs.",
     descriptionEn: "Personal project — Designing and developing a vinyl-collection management and discovery platform connected to Discogs.",
     url: "projets/waxshelf.html",
-    endDate: "2026-08"
+    endDate: "2026-08",
+    extraTag: "Développement",
+    extraTagEn: "Development"
   },
   {
     id: 11,
@@ -216,7 +220,8 @@ function createProjectCard(project) {
   var lang = (typeof localStorage !== 'undefined' && localStorage.getItem('uxcog_lang')) || 'fr';
   var title = (lang === 'en' && project.titleEn) ? project.titleEn : project.title;
   var role = (lang === 'en' && project.roleEn) ? project.roleEn : project.role;
-  var categoryLabel = CATEGORY_LABELS[project.category][lang] || CATEGORY_LABELS[project.category].fr;
+  var categoryLabel = (lang === 'en' && project.categoryLabelEn) ? project.categoryLabelEn :
+    (project.categoryLabel || CATEGORY_LABELS[project.category][lang] || CATEGORY_LABELS[project.category].fr);
   var extraTag = (lang === 'en' && project.extraTagEn) ? project.extraTagEn : project.extraTag;
   var roleLabel = lang === 'en' ? 'My role: ' : 'Mon rôle : ';
   var link  = lang === 'en' ? 'Discover the project →' : 'Découvrir le projet →';
