@@ -244,6 +244,17 @@
   margin-bottom: 0;
 }
 
+.case-deliverables h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.case-deliverables h3:not(:first-child) {
+  margin-top: 2.5rem;
+}
+
 /* =========================
    Intro layout (texte + image)
 ========================= */
