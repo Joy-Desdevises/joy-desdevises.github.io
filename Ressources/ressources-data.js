@@ -46,7 +46,7 @@ const articles = [
     title: "La perception-action à travers l'affordance : ingéniosité ou illusion ? L'interaction intuitive est-elle réellement possible ?",
     description:
       "Les affordances révèlent la façon dont nous percevons les possibilités d'interaction avec notre environnement. Explorer la façon dont la perception influence nos actions, nos choix, permet de comprendre davantage les comportements/attitudes humains.",
-    urlFr: "https://blog.octo.com/la-perception-action--affordances-ingeniosite-ou-illusions-demystifions-le-mythe-de-l'interaction-intuitive-pc5",
+    urlInternal: "articles/affordance-interaction-intuitive.html",
   },
 
   {
@@ -56,7 +56,7 @@ const articles = [
     title: "La perception auditive : comprendre et mettre en pratique ses principes",
     description:
       "La conception centrée utilisateur a accordé une importance prépondérante à la dimension visuelle. Mais l'environnement est également composé de sons, vibrations, significations auditives qui influencent nos expériences.",
-    urlFr: "https://blog.octo.com/la-perception-auditive--comprendre-et-mettre-en-pratique-ses-principes-pc4",
+    urlInternal: "articles/perception-auditive-principes-applications.html",
   },
 
   {
@@ -66,7 +66,7 @@ const articles = [
     title: "La perception visuelle : 5 lois à appliquer absolument",
     description:
       "Proximité, similarité, bonne forme… découvrez 5 lois de perception visuelle issues de la psychologie cognitive et apprenez à les appliquer pour concevoir des interfaces plus efficaces.",
-    urlFr: "https://blog.octo.com/la-perception-visuelle--les-5-lois-a-appliquer-absolument-!-pc3",
+    urlInternal: "articles/perception-visuelle-5-lois-gestalt.html",
   },
 
   {
@@ -76,7 +76,7 @@ const articles = [
     title: "La perception visuelle : comment notre cerveau forge-t-il notre vision du réel ?",
     description:
       "Pourquoi est-ce essentiel de considérer et d'appliquer ces connaissances dans vos pratiques ?",
-    urlFr: "https://blog.octo.com/la-perception-visuelle--comment-notre-cerveau-forge-t-il-notre-vision-du-reel-pc2",
+    urlInternal: "articles/perception-visuelle-cerveau-vision-reel.html",
   },
 
   {
@@ -86,7 +86,7 @@ const articles = [
     title: "La psychologie cognitive : une nécessité pour la conception centrée sur l'humain",
     description:
       "Pourquoi la psychologie cognitive est-elle essentielle à la conception centrée utilisateur ? Comprendre le fonctionnement humain pour concevoir des expériences plus efficaces et pertinentes.",
-    urlFr: "https://blog.octo.com/la-psychologie-cognitive--une-necessite-pour-la-conception-centree-sur-l'humain-pc1",
+    urlInternal: "articles/psychologie-cognitive-conception-humain.html",
   }
 ];
 

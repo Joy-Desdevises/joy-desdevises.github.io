@@ -59,15 +59,18 @@
       </header>
 
       <!-- TABLE OF CONTENTS -->
-      <nav class="article-toc" aria-label="Sommaire">
-        <span class="article-toc-label">Sommaire</span>
-        <a href="#besoin">Le contexte</a>
-        <a href="#etude">L'étude de Dunning &amp; Kruger</a>
-        <a href="#methode">La méthode</a>
-        <a href="#resultats">Les résultats</a>
-        <a href="#discussion">La discussion</a>
-        <a href="#retenir">Ce qu'on peut en faire</a>
-      </nav>
+      <div class="article-toc" role="navigation" aria-label="Sommaire">
+        <p class="article-toc-title">Sommaire</p>
+        <div class="article-toc-list">
+          <a href="#besoin" class="article-toc-item">Le contexte</a>
+          <a href="#etude" class="article-toc-item">L'étude de Dunning &amp; Kruger</a>
+          <a href="#methode" class="article-toc-item">La méthode</a>
+          <a href="#resultats" class="article-toc-item">Les résultats</a>
+          <a href="#discussion" class="article-toc-item">La discussion</a>
+          <a href="#retenir" class="article-toc-item">Ce qu'on peut en faire</a>
+          <a href="#references" class="article-toc-item">Références</a>
+        </div>
+      </div>
 
       <!-- SECTION 1 : LE CONTEXTE -->
       <section id="besoin" class="article-section">
@@ -310,8 +313,14 @@
               moins crédible ; il est plus précis.
             </p>
           </div>
+        </div>
+      </section>
 
-          <h3 class="article-section-subheading">Références bibliographiques</h3>
+      <!-- SECTION 7 : RÉFÉRENCES -->
+      <section id="references" class="article-section">
+        <div class="article-section-card">
+          <span class="article-section-label">07 — Références</span>
+          <h2>Références bibliographiques</h2>
           <ul class="article-references">
             <li>Dunning, D., Meyerowitz, J. A., &amp; Holzberg, A. D. (1989). Ambiguity and self-evaluation. <em>Journal of Personality and Social Psychology</em>, 57, 1082–1090.</li>
             <li>Gignac, G. E., &amp; Zajenkowski, M. (2020). The Dunning-Kruger effect is (mostly) a statistical artefact. <em>Intelligence</em>, 80, 101449.</li>
@@ -324,69 +333,8 @@
         </div>
       </section>
 
-      <!-- NEWSLETTER -->
-      <div class="newsletter-article-banner">
-        <div class="newsletter-article-text">
-          <strong>Ce que la recherche dit, en clair</strong>
-          <p>Reçois les prochains articles directement dans ta boîte mail — une fois par mois, pas de bruit.</p>
-        </div>
-        <button class="article-button article-button-primary" onclick="openNewsletterModal()">✉&nbsp; S'inscrire</button>
-      </div>
-
-      <div class="article-footer-card">
-        <div class="article-footer-text">
-          <h3>Lire l'article original</h3>
-          <p>Version anglaise disponible sur Medium.</p>
-        </div>
-        <div class="article-footer-actions">
-          <a
-            href="https://medium.com/@joydesdevises/the-ignorance-paradox-why-those-who-know-the-least-often-think-they-know-the-most-238bb54cd5f6"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="article-button article-button-primary"
-          >
-            Lire en anglais
-          </a>
-          <a href="../index.html" class="article-button article-button-secondary">
-            ← Toutes les ressources
-          </a>
-        </div>
-      </div>
-
     </div>
   </main>
-
-
-<!-- NEWSLETTER MODAL -->
-<div id="newsletter-modal" class="newsletter-modal" onclick="closeNewsletterModal(event)">
-  <div class="newsletter-modal-box">
-    <button class="newsletter-modal-close" onclick="closeNewsletterModal()" aria-label="Fermer">×</button>
-    <iframe width="540" height="305" src="https://0d635eb9.sibforms.com/serve/MUIFAC7JQPYVM9I8jEz9Zxjfqu4UTqtRx4txY224EPThB7b7KvoziOwV1GVgdMf5mvx0DZAFifQNji6xcweXpxOwa1SWjd9Iu5sVWgFzzLdWoYfYXuPU4_rs4Z8uNPrhT02gPvhSHIXj491vLm7tsa-2H8ERY0ohzZ-GZuVvG8RFlD1uA23yIp0sSg6ioQgwr12Ymh0AK7Ixyn-c5Q==" frameborder="0" scrolling="auto" allowfullscreen style="display:block;margin:0 auto;max-width:100%;"></iframe>
-  </div>
-</div>
-
-<!-- NEWSLETTER FAB -->
-<button class="newsletter-fab" onclick="openNewsletterModal()" aria-label="S'inscrire à la newsletter">
-  ✉&nbsp; S'inscrire
-</button>
-
-<script>
-  function openNewsletterModal() {
-    document.getElementById('newsletter-modal').classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeNewsletterModal(e) {
-    var modal = document.getElementById('newsletter-modal');
-    if (!e || e.target === modal) {
-      modal.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-  }
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeNewsletterModal();
-  });
-</script>
-
 
 <footer class="site-footer">
     <div class="container">

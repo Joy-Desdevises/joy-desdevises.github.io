@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La perception visuelle : 5 lois à appliquer absolument — Joy Desdevises</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="article.css" />
+  <link rel="icon" href="../../images/logo-uxcog.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Special+Elite&display=swap">
+</head>
+<body class="article-page">
+
+  <nav>
+        <div class="nav-inner">
+      <a href="../../index.html" class="nav-logo"><img src="../../images/logo-uxcog.png" alt="UXcog"></a>
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">🇫🇷 FR</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">🇬🇧 EN</button>
+      </div>
+      <div class="nav-links">
+        <a href="../../index.html" class="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/></svg><span class="sr-only" data-i18n="nav.home">Accueil</span></a>
+        <a href="../../portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="../../Services.html" data-i18n="nav.services">Services</a>
+        <a href="../../a-propos.html" data-i18n="nav.about">À propos</a>
+        <a href="../index.html" class="nav-resources" data-i18n="nav.resources">Ressources</a>
+      </div>
+  </nav>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <!-- HERO -->
+      <header class="article-hero">
+        <div class="article-hero-nav">
+          <a href="../index.html" class="article-back">← Ressources</a>
+          <p class="article-kicker">Article</p>
+        </div>
+        <h1>La perception visuelle&nbsp;: 5 lois à appliquer absolument</h1>
+        <p class="article-subtitle">
+          Proximité, similarité, bonne forme, continuité, clôture&nbsp;: 5 lois de la
+          Gestalt à connaître pour structurer vos interfaces, vos documents et vos
+          présentations — avec des exemples concrets pour chacune.
+        </p>
+        <div class="article-info-row">
+          <span class="article-info-chip">Cognition & Product Design</span>
+          <span class="article-info-chip">~10 min de lecture</span>
+        </div>
+        <p class="article-reference">
+          Cet article a été écrit en collaboration avec Nora Kabbani.
+        </p>
+      </header>
+
+      <!-- TABLE OF CONTENTS -->
+      <div class="article-toc" role="navigation" aria-label="Sommaire">
+        <p class="article-toc-title">Sommaire</p>
+        <div class="article-toc-list">
+          <a href="#proximite" class="article-toc-item">La loi de proximité</a>
+          <a href="#similarite" class="article-toc-item">La loi de similarité</a>
+          <a href="#bonne-forme" class="article-toc-item">La loi de la bonne forme</a>
+          <a href="#continuite" class="article-toc-item">La loi de continuité</a>
+          <a href="#cloture" class="article-toc-item">La loi de clôture</a>
+          <a href="#retenir" class="article-toc-item">Ce qu'on peut en retirer</a>
+          <a href="#references" class="article-toc-item">Références</a>
+        </div>
+      </div>
+
+      <!-- INTRO -->
+      <section class="article-section">
+        <div class="article-section-card">
+          <p>
+            Les connaissances en perception sont un atout essentiel pour optimiser vos
+            contenus ou services. Les appliquer vous permettra d'augmenter votre force
+            d'argumentation auprès de clients ou de votre équipe, mais aussi d'améliorer
+            la pertinence de vos conceptions en design graphique, de vos communications,
+            de vos documents collaboratifs (read.me, design system, etc.).
+          </p>
+          <p>
+            Les lois que nous allons aborder ont été établies par un courant de
+            psychologie allemand du 20ème siècle&nbsp;: la <strong>Gestalt</strong>. Ce
+            courant a instauré une théorie influente mettant l'accent sur la perception
+            des schémas et des formes globales plutôt que sur les éléments individuels
+            (une forêt plutôt que des arbres). Les psychologues de la Gestalt
+            considèrent que l'esprit humain organise naturellement les stimuli en
+            configurations significatives, formant des structures cohérentes et
+            intégrées (Palmer, 1999).
+          </p>
+          <p>
+            Voici 5 de ces lois, des exemples d'application concrets, puis les
+            conséquences et avantages cognitifs qui découlent de leur utilisation.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 1 : PROXIMITÉ -->
+      <section id="proximite" class="article-section">
+        <div class="article-section-card">
+          <span class="article-section-label">01 — La loi de proximité</span>
+          <h2>Grouper ce qui est proche</h2>
+          <p>
+            La loi de proximité est la tendance à grouper entre eux les éléments qui
+            sont le plus proches.
+          </p>
+
+          <figure class="article-figure">
+            <img
+              src="images/gestalt-loi-proximite-clusters.png"
+              alt="Trois groupes de points bleus et gris espacés : un groupe de 9 points, un groupe de 6 points et un groupe de 3 points, séparés par des espaces vides"
+              loading="lazy"
+            />
+            <figcaption>
+              Figure 1. La partie de gauche est considérée comme un ensemble de 9
+              points, mais la partie de droite est perçue comme ayant 2 entités (un
+              groupe de 6 points et un groupe de 3 points) | Source&nbsp;: créé par Joy
+              Desdevises (2023).
+            </figcaption>
+          </figure>
+
+          <h3 class="article-section-subheading">Exemple 1 — La rédaction d'un texte</h3>
+          <p>
+            La loi de proximité est utile lorsque vous rédigez un mail, un compte-rendu,
+            ou que vous affichez du texte sur une interface&nbsp;: il est nécessaire de
+            porter attention aux regroupements et séparations de mots, phrases ou
+            paragraphes. Le lecteur sera plus à même d'identifier rapidement les titres,
+            paragraphes et idées principales, ce qui augmente la vitesse de lecture et
+            favorise la mémorisation, en sollicitant moins son attention.
+          </p>
+
+          <h3 class="article-section-subheading">Exemple 2 — La conception d'interface (e-commerce)</h3>
+          <figure class="article-figure">
+            <img
+              src="images/gestalt-loi-proximite-ecommerce.png"
+              alt="Deux captures d'écran de sites e-commerce de chaussures : à gauche une disposition ambiguë où prix et produits ne sont pas clairement associés, à droite une disposition claire où chaque produit et son prix sont regroupés"
+              loading="lazy"
+            />
+            <figcaption>
+              Figure 2. Captures d'écran de 2 sites e-commerce | Source&nbsp;: Tran-Van
+              (2020) pour l'image de gauche, zalando.com pour l'image de droite.
+            </figcaption>
+          </figure>
+          <p>
+            Contrôler les espacements et les regroupements entre informations
+            textuelles et imagées est essentiel pour que l'utilisateur perçoive
+            rapidement et sans erreur lesquelles sont liées entre elles. Dans la
+            première partie de la Figure 2, la disposition laisse plusieurs
+            interprétations possibles&nbsp;: le prix de 137,31&nbsp;€ pourrait aussi
+            bien être lié au modèle du haut qu'à celui du bas. Le non-respect de la loi
+            de proximité augmente le temps de traitement de l'information et mène
+            l'utilisateur à l'erreur. Dans la seconde partie, l'utilisateur identifie
+            rapidement et correctement les informations affichées, ce qui rend l'achat
+            plus facile et plus plaisant.
+          </p>
+
+          <h3 class="article-section-subheading">Exemple 3 — La facilitation d'ateliers</h3>
+          <figure class="article-figure">
+            <img
+              src="images/gestalt-loi-proximite-post-it.png"
+              alt="À gauche, un mur de post-it colorés empilés sans organisation. À droite, des post-it organisés en groupes clairs sur un mur, avec deux personnes en train de les regrouper"
+              loading="lazy"
+            />
+            <figcaption>
+              Figure 3. Photos d'ateliers de génération d'idées | Source&nbsp;: images
+              libres de droits.
+            </figcaption>
+          </figure>
+          <p>
+            Dès lors qu'un grand nombre d'informations se retrouvent au même endroit, la
+            loi de proximité devient un allié puissant&nbsp;: en atelier, les idées
+            générées sur des post-it doivent être regroupées par ensembles, reliées
+            entre elles par un paramètre commun. Cette méthode crée une structure,
+            minimise le nombre d'informations à traiter et réduit la charge mentale
+            sollicitée. Les couleurs jouent aussi un rôle important sur des post-it —
+            mais font davantage référence à la loi suivante&nbsp;: la loi de similarité.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 2 : SIMILARITÉ -->
+      <section id="similarite" class="article-section">
+        <div class="article-section-card">
+          <span class="article-section-label">02 — La loi de similarité</span>
+          <h2>Grouper ce qui se ressemble</h2>
+          <p>
+            La loi de similarité est la tendance à regrouper entre eux les éléments qui
+            se ressemblent (couleur, forme, texture, taille). Ces éléments seront alors
+            considérés comme étant de la même famille, ou comme ayant la même fonction.
+          </p>
+
+          <figure class="article-figure">
+            <img
+              src="images/gestalt-loi-similarite-points.png"
+              alt="24 points disposés en grille régulière de 3 lignes et 8 colonnes, tous espacés de manière identique : les 5 premières colonnes sont bleues, les 3 dernières sont grises"
+              loading="lazy"
+            />
+            <figcaption>
+              Figure 4. Ensemble de points perçus selon leurs couleurs bien qu'ils
+              soient disposés et espacés exactement de la même manière | Source&nbsp;:
+              créé par Joy Desdevises (2023).
+            </figcaption>
+          </figure>
+
+          <h3 class="article-section-subheading">Exemple 1 — La rédaction d'un document ou d'une présentation</h3>
+          <figure class="article-figure">
+            <img
+              src="images/gestalt-loi-similarite-slides.png"
+              alt="Trois slides de formation avec des styles visuels cohérents : une slide de titre de niveau 1 en bleu marine foncé, une slide de titre de niveau 2 en bleu turquoise, et une slide de contenu avec titre et texte sur fond blanc"
+              loading="lazy"
+            />
+            <figcaption>
+              Figure 5. Exemple de slides de formation | Source&nbsp;: illustration
+              tirée d'une formation (Joy Desdevises, 2023).
+            </figcaption>
+          </figure>
+          <p>
+            La loi de similarité est communément utilisée dans la construction de
+            supports de présentation&nbsp;: nous utilisons des styles visuels différents
+            selon le type d'information, mais réutilisons ces mêmes styles quand le type
+            d'information est identique. Le lecteur identifie ainsi plus rapidement les
+            sections et sous-sections, se situe dans la structure globale, et capte plus
+            efficacement les informations transmises.
+          </p>
+
+          <h3 class="article-section-subheading">Exemple 2 — La conception d'interface (boutons d'un site web)</h3>
+          <p>
+            Les similarités graphiques induisent un sens identique, des fonctions
+            similaires ou une importance commune. On utilisera par exemple une seule et
+            même forme pour tous les boutons d'un site, en ne faisant varier que
+            quelques propriétés selon les besoins&nbsp;: la taille pour s'adapter aux
+            différents appareils (mobile vs desktop), ou la couleur pour distinguer un
+            bouton actif d'un bouton inactif.
+          </p>
+
+          <h3 class="article-section-subheading">Exemple 3 — La visualisation de données</h3>
+          <figure class="article-figure">
+            <img
+              src="images/gestalt-loi-similarite-graphique-co2.png"
+              alt="Deux graphiques en barres représentant les émissions de CO2 par pays : à gauche, chaque barre a une couleur différente sans signification claire ; à droite, toutes les barres sont rouges sauf mise en avant, rendant la lecture plus claire"
+              loading="lazy"
+            />
+            <figcaption>
+              Figure 6. Graphiques représentant le taux d'émissions de CO2 par pays |
+              Source&nbsp;: Owens, R. <em>10 Good and bad examples of data
+              visualisation.</em> Polymer.
+            </figcaption>
+          </figure>
+          <p>
+            On retrouve l'application de la loi de similarité en visualisation de
+            données&nbsp;: sur un graphique, la couleur n'est pas qu'un élément
+            esthétique — si différentes couleurs sont utilisées, elles doivent avoir
+            une signification. Dans l'exemple de droite, la couleur n'interfère pas avec
+            la compréhension des informations. Dans celui de gauche, 7 couleurs
+            différentes sans signification interfèrent avec la bonne compréhension du
+            graphique et réduisent la rapidité de lecture.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 3 : BONNE FORME -->
+      <section id="bonne-forme" class="article-section">
+        <div class="article-section-card">
+          <span class="article-section-label">03 — La loi de la bonne forme</span>
+          <h2>Percevoir des formes connues</h2>
+          <p>
+            La loi de la bonne forme est la tendance à percevoir des formes connues
+            plutôt que toute autre forme.
+          </p>
+
+          <figure class="article-figure">
+            <img
+              src="images/gestalt-loi-bonne-forme-triangle-rectangle.png"
+              alt="Une figure géométrique bleue formée d'un triangle et d'un rectangle superposés, créant une forme complexe à 11 côtés que l'œil interprète pourtant comme un simple triangle placé devant un rectangle"
+              loading="lazy"
+            />
+            <figcaption>
+              Figure 7. Figure géométrique composée d'un triangle derrière un rectangle
+              | Source&nbsp;: créé par Joy Desdevises (2023).
+            </figcaption>
+          </figure>
+
+          <p>
+            Dans l'exemple ci-dessus, il y a très peu de chance que vous perceviez une
+            forme complexe à 11 côtés. Toujours à la recherche de formes simples, les
+            plus équilibrées et stables possible, vous allez plutôt percevoir d'emblée
+            un rectangle placé devant un triangle.
+          </p>
+
+          <h3 class="article-section-subheading">Exemple — La structure d'une page web</h3>
+          <p>
+            Un des objectifs à atteindre lorsqu'on conçoit une interface est d'appliquer
+            du contraste, notamment au niveau de la structure. Pour cela, on dispose les
+            éléments de façon à concevoir des formes géométriques simples, afin de créer
+            un ordre visuel. Utiliser des rectangles et des carrés pour structurer une
+            page rend le traitement de l'information limpide et rapide, donne du sens
+            aux regroupements d'éléments et s'accorde avec le sens de lecture naturel.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 4 : CONTINUITÉ -->
+      <section id="continuite" class="article-section">
+        <div class="article-section-card">
+          <span class="article-section-label">04 — La loi de continuité</span>
+          <h2>Suivre le prolongement</h2>
+          <p>
+            La loi de continuité est la tendance à regrouper les éléments qui se
+            situent dans le prolongement les uns des autres.
+          </p>
+
+          <figure class="article-figure">
+            <img
+              src="images/gestalt-loi-continuite-points.png"
+              alt="Huit points bleus et gris alignés en ligne droite en bas, et huit autres points bleus et gris disposés en courbe au-dessus"
+              loading="lazy"
+            />
+            <figcaption>
+              Figure 8. Cercles de différentes couleurs qui auront tendance à être
+              associés par la ligne qu'ils forment | Source&nbsp;: créé par Joy
+              Desdevises (2023).
+            </figcaption>
+          </figure>
+
+          <p>
+            Plus les éléments prennent la forme d'une continuité, d'un chemin, plus ils
+            sont associés les uns aux autres. Dans la représentation ci-dessus, nous
+            percevons une ligne droite en bas et une courbe en haut. Cette loi permet
+            par exemple d'expliquer l'intérêt d'utiliser des listes en bullet-point.
+          </p>
+
+          <h3 class="article-section-subheading">Exemple 1 — La structure d'une page web</h3>
+          <figure class="article-figure">
+            <img
+              src="images/gestalt-loi-continuite-pinterest.png"
+              alt="Capture d'écran de l'interface Pinterest montrant des bandeaux d'images d'oiseaux exotiques disposés en quinconce sur plusieurs colonnes"
+              loading="lazy"
+            />
+            <figcaption>
+              Figure 9. Capture d'écran de Pinterest | Source&nbsp;: pinterest.fr.
+            </figcaption>
+          </figure>
+          <p>
+            Plus les éléments d'une interface sont proches les uns des autres, plus il
+            est aisé de percevoir un lien entre eux&nbsp;: un prolongement, une
+            continuité qui les unit. L'exemple ci-dessus s'appuie grandement sur ce
+            principe&nbsp;: les bandeaux d'images sont disposés en quinconce, de sorte
+            que les utilisateurs relient une image à celle d'à côté, et ainsi de suite.
+            Cela crée un effet « balayage » sur l'ensemble de l'écran, et incite à
+            scroller toujours plus bas pour suivre cette forme infinie.
+          </p>
+
+          <h3 class="article-section-subheading">Exemple 2 — La conception d'un dashboard</h3>
+          <figure class="article-figure">
+            <img
+              src="images/gestalt-loi-continuite-dashboard.png"
+              alt="Deux exemples de dashboard : à gauche, une grille dense de chiffres clés difficile à parcourir ; à droite, une organisation par sections (indicateurs à l'année, indicateurs à l'heure) plus facile à balayer"
+              loading="lazy"
+            />
+            <figcaption>
+              Figure 10. Captures d'écran de dashboard.
+            </figcaption>
+          </figure>
+          <p>
+            Les lois de la Gestalt fonctionnent souvent en interdépendance. Dans
+            l'exemple de gauche, la loi de continuité est appliquée et chaque donnée est
+            présentée de la même façon (lois de la bonne forme et de similarité
+            respectées), ce qui permet d'identifier correctement les informations
+            liées aux chiffres clés. La lecture reste toutefois plus difficile que dans
+            l'exemple de droite&nbsp;: celui-ci s'appuie en plus sur la loi de
+            proximité, en jouant sur les regroupements et séparations des chiffres
+            clés, ce qui augmente la vitesse de balayage et la compréhension du
+            lecteur.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 5 : CLÔTURE -->
+      <section id="cloture" class="article-section">
+        <div class="article-section-card">
+          <span class="article-section-label">05 — La loi de clôture</span>
+          <h2>Fermer les formes ouvertes</h2>
+          <p>
+            La loi de clôture (ou de fermeture) est la tendance à percevoir un objet
+            fermé plutôt qu'ouvert, et à le traiter plus rapidement s'il est fermé
+            qu'ouvert.
+          </p>
+
+          <figure class="article-figure">
+            <img
+              src="images/gestalt-loi-cloture-cercle-carre.png"
+              alt="Un cercle et un carré dessinés en pointillés, dont il manque certains segments, mais que le cerveau perçoit comme des formes fermées"
+              loading="lazy"
+            />
+            <figcaption>
+              Figure 11. Un cercle et un carré dont il manque certains segments |
+              Source&nbsp;: glossaire.infowebmaster.fr.
+            </figcaption>
+          </figure>
+
+          <p>
+            Notre cerveau est capable de combler les vides, de fermer les formes qui
+            visuellement ne le sont pas&nbsp;: nous créons de manière abstraite les
+            éléments manquants. Percevoir des formes fermées permet de réduire le temps
+            de traitement de l'information.
+          </p>
+
+          <h3 class="article-section-subheading">Exemple 1 — Le design graphique (logos et icônes)</h3>
+          <figure class="article-figure">
+            <img
+              src="images/gestalt-loi-cloture-logos.png"
+              alt="À gauche, le logo du panda de WWF composé de formes simples et ouvertes. À droite, le logo IBM composé de bandes horizontales sans lettres complètes, pourtant lisible comme les lettres I, B et M"
+              loading="lazy"
+            />
+            <figcaption>
+              Figure 12. Logo de WWF (World Wildlife Fund) et logo d'IBM (International
+              Business Machines Corporation) | Source&nbsp;: wwf.fr et ibm.com.
+            </figcaption>
+          </figure>
+          <p>
+            En design graphique, cette loi est très utilisée pour créer des styles ou
+            éléments graphiques minimalistes tout en restant efficaces et agréables
+            visuellement&nbsp;: de nombreux logos célèbres reposent sur elle. Le panda
+            de WWF est facilement identifiable bien qu'il ne soit composé que de formes
+            simples et non fermées. Le logo d'IBM est composé de segments noirs et non
+            de lettres complètes — pourtant, le cerveau n'a aucun mal à percevoir les 3
+            lettres de l'entreprise. Utiliser la loi de clôture pour créer des icônes ou
+            logos permet de proposer des motifs simples, que les utilisateurs
+            reconnaissent et mémorisent plus facilement.
+          </p>
+
+          <h3 class="article-section-subheading">Exemple 2 — Les langages informatiques</h3>
+          <p>
+            La loi de clôture s'applique aussi aux langages informatiques&nbsp;: les
+            parenthèses vides « () » représentent un appel de fonction ou une création
+            d'instance sans argument. Notre cerveau perçoit ces parenthèses vides comme
+            une « forme complète ». Si un développeur utilise une fonction comme
+            <code>configure_settings()</code> sans spécifier certains paramètres, le
+            langage applique automatiquement des valeurs par défaut&nbsp;: le cerveau du
+            développeur complète mentalement les parenthèses vides grâce à sa
+            connaissance de ces valeurs par défaut. La loi de clôture permet ainsi de
+            gagner du temps lors de la rédaction de ces lignes, mais aussi lors de leur
+            lecture par d'autres collaborateurs.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 6 : CE QU'ON PEUT EN RETIRER -->
+      <section id="retenir" class="article-section">
+        <div class="article-section-card">
+          <span class="article-section-label">06 — Ce qu'on peut en retirer</span>
+          <h2>Les conséquences cognitives de ces 5 lois</h2>
+          <p>
+            Se reposer sur les lois de la Gestalt permet de structurer des contenus
+            captivants, ce qui va entre autres&nbsp;:
+          </p>
+          <ul class="article-list">
+            <li>Augmenter significativement la vitesse de lecture ou de traitement des informations, en aidant le cerveau à les assimiler plus aisément.</li>
+            <li>Attirer l'attention sur les éléments les plus importants, ce qui diminue la charge mentale, l'attention et la concentration sollicitées.</li>
+            <li>Limiter les erreurs et les frustrations, et donc améliorer l'utilisabilité de vos produits, documents ou tout autre support.</li>
+            <li>Favoriser la mémorisation et l'apprentissage.</li>
+          </ul>
+          <div class="article-highlight">
+            <p>
+              De nombreuses bonnes pratiques sont déjà mises en place au quotidien. Mais
+              il est essentiel de pouvoir les expliquer, de les appliquer en conscience
+              des processus mentaux qui se cachent derrière. Cela permet de prendre des
+              décisions éclairées et objectives&nbsp;: éviter les biais et limiter les
+              risques (perte financière, perte de temps) d'une part, être capable
+              d'argumenter et d'expliquer chacune de ses décisions à son équipe ou son
+              client d'autre part. Vous n'en serez que plus rigoureux et plus crédible.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 7 : RÉFÉRENCES -->
+      <section id="references" class="article-section">
+        <div class="article-section-card">
+          <span class="article-section-label">07 — Références</span>
+          <h2>Références bibliographiques</h2>
+          <ul class="article-references">
+            <li>Owens, R. (s. d.). <em>10 Good and bad examples of data visualisation.</em> Polymer.</li>
+            <li>Palmer, S. E. (1999). <em>Vision science: Photons to phenomenology.</em> MIT Press.</li>
+            <li>Tran-Van, M. (2020). Qu'est-ce que l'UX Design&nbsp;? <em>Blog Business / Web Marketing / Management.</em></li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="../../images/logo-uxcog.png" alt="UXcog">
+                <p class="footer-tagline" data-i18n="footer.tagline">Product &amp; Service Designer indépendante — produits complexes, data et IA.</p>
+            </div>
+            <div class="footer-nav">
+                <p class="footer-heading">Navigation</p>
+                <a href="../../index.html" data-i18n="nav.home">Accueil</a>
+                <a href="../../portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+                <a href="../../Ressources/index.html" data-i18n="nav.resources">Ressources</a>
+                <a href="../../Services.html" data-i18n="nav.services">Services</a>
+                <a href="../../a-propos.html" data-i18n="nav.about">À propos</a>
+            </div>
+            <div class="footer-contact">
+                <p class="footer-heading">Contact</p>
+                <a href="mailto:desdevisesjoy.pro@proton.me">desdevisesjoy.pro@proton.me</a>
+                <a href="https://www.linkedin.com/in/joydesdevises-product-designer/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2026 Joy Desdevises — UXcog. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+    </div>
+</footer>
+
+<script src="../../translations.js"></script>
+<script src="../../i18n.js"></script>
+<script src="../../reveal.js"></script>
+</body>
+</html>
