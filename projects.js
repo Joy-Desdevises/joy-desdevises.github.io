@@ -8,6 +8,21 @@ const CATEGORY_ORDER = ['product', 'service', 'research'];
 
 const projects = [
   {
+    id: 12,
+    slug: "waxshelf",
+    category: "product",
+    client: "Projet personnel",
+    clientEn: "Personal project",
+    title: "WaxShelf",
+    titleEn: "WaxShelf",
+    role: "Design produit, UI et développement full-stack",
+    roleEn: "Product design, UI and full-stack development",
+    description: "Projet personnel - Concevoir et développer une plateforme de gestion et de découverte de collection vinyles connectée à Discogs.",
+    descriptionEn: "Personal project — Designing and developing a vinyl-collection management and discovery platform connected to Discogs.",
+    url: "projets/waxshelf.html",
+    endDate: "2026-08"
+  },
+  {
     id: 11,
     slug: "boussole-sante",
     category: "product",

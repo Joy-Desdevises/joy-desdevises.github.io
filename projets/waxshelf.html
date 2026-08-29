@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WaxShelf — Concevoir et développer une plateforme de gestion de collection vinyles — Joy Desdevises</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <link rel="icon" href="../images/logo-uxcog.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Special+Elite&display=swap">
+  <style>
+    .case-deliverables-grid img {
+      cursor: zoom-in;
+      transition: opacity 0.15s ease;
+    }
+    .case-deliverables-grid img:hover {
+      opacity: 0.92;
+    }
+    .case-lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 300;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem;
+      background: rgba(10, 14, 22, 0.86);
+      cursor: zoom-out;
+    }
+    .case-lightbox.active {
+      display: flex;
+    }
+    .case-lightbox img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 0.75rem;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    }
+    .case-lightbox-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      border: none;
+      background: rgba(255, 255, 255, 0.14);
+      color: #fff;
+      font-size: 1.5rem;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .case-lightbox-close:hover {
+      background: rgba(255, 255, 255, 0.24);
+    }
+  </style>
+</head>
+<body class="case-study-page">
+  <nav>
+        <div class="nav-inner">
+      <a href="../index.html" class="nav-logo"><img src="../images/logo-uxcog.png" alt="UXcog"></a>
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">🇫🇷 FR</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">🇬🇧 EN</button>
+      </div>
+      <div class="nav-links">
+        <a href="../index.html" class="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/></svg><span class="sr-only" data-i18n="nav.home">Accueil</span></a>
+        <a href="../portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="../Services.html" data-i18n="nav.services">Services</a>
+        <a href="../a-propos.html" data-i18n="nav.about">À propos</a>
+        <a href="../Ressources/index.html" class="nav-resources" data-i18n="nav.resources">Ressources</a>
+      </div>
+  </nav>
+
+  <main class="case-study-main">
+    <div class="case-study-container">
+      <header class="case-hero">
+        <p class="case-kicker">Projet</p>
+        <h1>WaxShelf<span class="case-hero-title">Concevoir et développer une plateforme de gestion de collection vinyles</span></h1>
+        <div class="case-meta">
+          <div class="case-meta-card">
+            <div class="case-meta-label">Mon rôle</div>
+            <div class="case-meta-value">Design produit, UI et développement full-stack</div>
+          </div>
+          <div class="case-meta-card">
+            <div class="case-meta-label">Durée</div>
+            <div class="case-meta-value">Juillet-Août 2026</div>
+          </div>
+          <div class="case-meta-card">
+            <div class="case-meta-label">Type de projet</div>
+            <div class="case-meta-value">Application web / side project</div>
+          </div>
+        </div>
+      </header>
+
+      <div class="case-toc" role="navigation" aria-label="Raccourcis">
+        <p class="case-toc-title">Raccourcis</p>
+        <div class="case-toc-list">
+          <a href="#point-de-depart" class="case-toc-item">
+            <span class="case-toc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="4" y1="22" x2="4" y2="2"/><path d="M4 4h14l-3 4 3 4H4"/></svg></span>
+            <span>Contexte et objectif</span>
+          </a>
+          <a href="#projet" class="case-toc-item">
+            <span class="case-toc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 2 8l10 5 10-5-10-5z"/><path d="M2 13l10 5 10-5"/></svg></span>
+            <span>Ma démarche</span>
+          </a>
+          <a href="#livrables" class="case-toc-item">
+            <span class="case-toc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 15l-5-5-9 9"/></svg></span>
+            <span>Les livrables</span>
+          </a>
+          <a href="#changement" class="case-toc-item">
+            <span class="case-toc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span>
+            <span>Les résultats</span>
+          </a>
+          <a href="#apport" class="case-toc-item">
+            <span class="case-toc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></span>
+            <span>Ce que j'ai apporté</span>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- INTRO -->
+      <section class="case-section" id="point-de-depart">
+        <div class="case-section-card case-intro-layout">
+          <div class="case-intro-text">
+            <h2>Contexte et objectif</h2>
+            <p>
+              Les collectionneurs de vinyles utilisent massivement Discogs pour cataloguer, estimer et
+              acheter leurs disques. Mais Discogs reste avant tout un outil de marketplace&nbsp;: une fois
+              la collection indexée, il offre peu d'occasions d'y revenir pour le plaisir — la parcourir,
+              se souvenir d'un disque, ou encore décider quoi écouter.
+            </p>
+            <p>
+              WaxShelf part de ce constat&nbsp;: construire une couche produit au-dessus des données
+              Discogs, pensée non plus pour l'achat mais pour la redécouverte quotidienne d'une collection
+              existante — avec une dimension ludique et sociale que l'outil d'origine n'adresse pas.
+            </p>
+            <p>
+              Le projet couvre les deux volets de bout en bout&nbsp;: le design produit et son
+              développement, jusqu'à une plateforme fonctionnelle en production.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- COEUR DU PROJET -->
+      <section class="case-section" id="projet">
+        <div class="case-section-card">
+          <h2>Ma démarche</h2>
+
+          <p>
+            L'objectif n'était pas de recréer Discogs, mais de construire par-dessus son catalogue une
+            expérience pensée pour l'usage récurrent&nbsp;: retrouver un disque, le redécouvrir, et se
+            laisser guider quand on ne sait pas quoi écouter.
+          </p>
+
+          <div class="case-grid-2">
+            <div class="case-card-light">
+              <h3>Centraliser les données via l'API Discogs</h3>
+              <ul class="case-list">
+                <li>Connexion à l'API Discogs plutôt qu'une base reconstruite de zéro&nbsp;: sync automatique de la collection, prix estimés et métadonnées fiables, sans ressaisie manuelle</li>
+                <li>Fiche disque enrichie&nbsp;: notes personnelles privées, note en étoiles, tags de style</li>
+                <li>Recherche et filtres par genre, décennie et pays&nbsp;; wantlist pour suivre les disques à acquérir</li>
+              </ul>
+            </div>
+
+            <div class="case-card-light">
+              <h3>Créer des rituels de découverte</h3>
+              <ul class="case-list">
+                <li>Widget « What should I listen to? » — suggestion basée sur l'humeur, le temps disponible et le genre préféré</li>
+                <li>Vinyle retourné au survol&nbsp;: infos clés et anecdote musicale générée par IA, stockée dans un fichier unique par référence</li>
+                <li>Journal d'écoute&nbsp;: historique des sessions, disque le plus joué, écoutes de la semaine</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="case-card-light case-full">
+            <h3>Ajouter une couche sociale légère</h3>
+            <p>
+              Sans en faire un réseau social à part entière, WaxShelf permet de rendre sa collection
+              publique, de suivre d'autres collectionneurs, de liker et commenter un disque. Une page
+              « Stat &amp; Social » réunit la valeur estimée de la collection, les disques les plus
+              précieux, la répartition par genre, décennie et pays d'origine.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXEMPLES DE LIVRABLES -->
+      <section class="case-section case-deliverables" id="livrables">
+        <div class="case-section-card">
+          <h2>Les livrables</h2>
+          <div class="case-deliverables-grid">
+            <figure>
+              <figcaption><b><i>Accueil — synchronisation Discogs et collections publiques</i></b></figcaption>
+              <img src="../images/Waxshelf/waxshelf-accueil.png" alt="Page d'accueil de WaxShelf avec bouton de synchronisation Discogs et liste des collections publiques" />
+            </figure>
+            <figure>
+              <figcaption><b><i>Collection — grille filtrable par genre, décennie et pays</i></b></figcaption>
+              <img src="../images/Waxshelf/waxshelf-collection.png" alt="Grille de la collection de vinyles avec recherche et filtres" />
+            </figure>
+            <figure>
+              <figcaption><b><i>Vinyle retourné au survol — infos clés et anecdote générée par IA</i></b></figcaption>
+              <img src="../images/Waxshelf/waxshelf-anecdote-ia.png" alt="Deux exemples de pochettes retournées au survol dans la grille, révélant titre, artiste, année et une anecdote musicale générée par IA (5150 de Van Halen, Indiana Jones de John Williams)" />
+            </figure>
+            <figure>
+              <figcaption><b><i>Fiche vinyle — notes personnelles, note, likes et commentaires</i></b></figcaption>
+              <img src="../images/Waxshelf/waxshelf-detail-vinyle.png" alt="Fiche détail d'un vinyle avec notes personnelles privées, notation en étoiles et commentaires" />
+            </figure>
+            <figure>
+              <figcaption><b><i>Widget « What should I listen to? » — recommandation par humeur</i></b></figcaption>
+              <img src="../images/Waxshelf/waxshelf-widget-recommandation.png" alt="Widget de recommandation posant des questions sur l'humeur, la durée disponible et le genre préféré" />
+            </figure>
+            <figure>
+              <figcaption><b><i>Journal d'écoute — historique des sessions</i></b></figcaption>
+              <img src="../images/Waxshelf/waxshelf-journal-ecoute.png" alt="Journal d'écoute listant les sessions passées par date" />
+            </figure>
+            <figure>
+              <figcaption><b><i>Stat &amp; Social — valeur de la collection et tops</i></b></figcaption>
+              <img src="../images/Waxshelf/waxshelf-stats-1.png" alt="Page de statistiques : abonnés, valeur de la collection, disques les plus précieux" />
+            </figure>
+            <figure>
+              <figcaption><b><i>Stat &amp; Social — répartition par genre, décennie et pays</i></b></figcaption>
+              <img src="../images/Waxshelf/waxshelf-stats-2.png" alt="Graphiques de répartition de la collection par genre, décennie et pays d'origine" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- IMPACT -->
+      <section class="case-section" id="changement">
+        <div class="case-section-card">
+          <h2>Les résultats</h2>
+
+          <div class="case-metrics">
+            <div class="case-metric">
+              <div class="case-metric-value">API Discogs intégrée</div>
+              <div class="case-metric-label">Synchronisation automatique de la collection, des prix estimés et des métadonnées, sans ressaisie manuelle</div>
+            </div>
+            <div class="case-metric">
+              <div class="case-metric-value">5 espaces fonctionnels</div>
+              <div class="case-metric-label">Accueil, Collection, Stats, Wantlist et Journal d'écoute</div>
+            </div>
+            <div class="case-metric">
+              <div class="case-metric-value">De l'idée à la production</div>
+              <div class="case-metric-label">Design et développement portés en solo, du concept au produit fonctionnel</div>
+            </div>
+          </div>
+
+          <p>
+            WaxShelf est aujourd'hui un outil utilisé au quotidien pour gérer et redécouvrir une
+            collection — la preuve qu'une couche produit bien pensée peut transformer un usage utilitaire
+            (cataloguer ses disques) en un vrai rituel de découverte.
+          </p>
+        </div>
+      </section>
+
+      <!-- APPORT -->
+      <section class="case-section" id="apport">
+        <div class="case-section-card">
+          <h2>Ce que j'ai apporté</h2>
+          <p>
+            Un projet né d'un besoin réel, mené comme un vrai produit&nbsp;: du cadrage des cas d'usage à
+            l'identité visuelle, jusqu'au développement de la plateforme dans son ensemble.
+          </p>
+          <p>
+            Design et développement portés en solo, de l'idée à la mise en production&nbsp;: une
+            démonstration de la capacité à porter un produit de bout en bout, et à transformer une donnée
+            brute (ici, un catalogue Discogs) en une expérience qui donne envie d'y revenir.
+          </p>
+        </div>
+      </section>
+
+
+      <footer class="case-footer">
+        <div class="case-footer-card">
+          <div class="case-footer-text">
+            <h3>Envie d'en discuter ?</h3>
+            <p>
+              Je travaille sur des produits et services numériques complexes, souvent liés à la donnée, aux usages métiers et à l'aide à la décision.
+            </p>
+          </div>
+          <div class="case-footer-actions">
+            <a href="../portfolio.html" class="case-button case-button-secondary">← Retour au portfolio</a>
+            <a href="../a-propos.html#travaillons-ensemble" class="case-button case-button-primary">Me contacter</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="../images/logo-uxcog.png" alt="UXcog">
+                <p class="footer-tagline" data-i18n="footer.tagline">Product &amp; Service Designer indépendante — produits complexes, data et IA.</p>
+            </div>
+            <div class="footer-nav">
+                <p class="footer-heading">Navigation</p>
+                <a href="../index.html" data-i18n="nav.home">Accueil</a>
+                <a href="../portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+                <a href="../Ressources/index.html" data-i18n="nav.resources">Ressources</a>
+                <a href="../Services.html" data-i18n="nav.services">Services</a>
+                <a href="../a-propos.html" data-i18n="nav.about">À propos</a>
+            </div>
+            <div class="footer-contact">
+                <p class="footer-heading">Contact</p>
+                <a href="mailto:desdevisesjoy.pro@proton.me">desdevisesjoy.pro@proton.me</a>
+                <a href="https://www.linkedin.com/in/joydesdevises-product-designer/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2026 Joy Desdevises — UXcog. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+    </div>
+</footer>
+
+<div id="case-lightbox" class="case-lightbox" onclick="closeCaseLightbox(event)">
+  <button class="case-lightbox-close" onclick="closeCaseLightbox()" aria-label="Fermer">×</button>
+  <img id="case-lightbox-img" src="" alt="" />
+</div>
+
+<script>
+  document.querySelectorAll('.case-deliverables-grid img').forEach(function (img) {
+    img.addEventListener('click', function () {
+      var lightboxImg = document.getElementById('case-lightbox-img');
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      document.getElementById('case-lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  function closeCaseLightbox(e) {
+    var box = document.getElementById('case-lightbox');
+    if (!e || e.target === box || e.target.closest('.case-lightbox-close')) {
+      box.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeCaseLightbox();
+  });
+</script>
+
+<script src="../translations.js"></script>
+<script src="../i18n.js"></script>
+<script src="../reveal.js"></script>
+</body>
+</html>
