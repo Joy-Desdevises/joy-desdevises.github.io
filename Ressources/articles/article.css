@@ -1,11 +1,46 @@
 /* =========================
    Article page
-   Inherits base from ../../style.css
+   Identité sombre volontaire, alignée sur la page Ressources
+   (voir ../ressources.css). Les tokens sont redéfinis ici et
+   héritent naturellement dans le footer partagé ; le nav est
+   remis en clair pour rester identique aux autres pages.
 ========================= */
 
 .article-page {
-  background: #f8f9fa;
-  color: var(--color-ink);
+  --color-bg: #1a2233;
+  --color-surface: #232c40;
+  --color-surface-raised: #2c3650;
+  --color-primary: #52a9ea;
+  --color-primary-dark: #82c4f5;
+  --color-accent: #e59a5f;
+  --color-slate: #8fb7c8;
+  --color-ink: #f2f5f8;
+  --color-body: #ccd3db;
+  --color-muted: #8891a0;
+  --color-border: #37415a;
+
+  --shadow-sm: 0 2px 14px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.38);
+  --shadow-lg: 0 14px 40px rgba(0, 0, 0, 0.46);
+
+  background: var(--color-bg);
+  color: var(--color-body);
+}
+
+.article-page nav {
+  --color-bg: #f8f9fa;
+  --color-surface: #ffffff;
+  --color-primary: #007acc;
+  --color-primary-dark: #005999;
+  --color-accent: #b35a1f;
+  --color-ink: #1a2233;
+  --color-body: #3a4048;
+  --color-muted: #5b6472;
+  --color-border: #e8e8e8;
+}
+
+.article-page .footer-brand img {
+  filter: brightness(0) invert(1);
 }
 
 .article-page section,
@@ -89,18 +124,18 @@
 
 .article-info-chip {
   padding: 0.3125rem 0.75rem;
-  background: #eef3f7;
+  background: var(--color-surface-raised);
   border-radius: var(--radius-pill);
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #4a5560;
+  color: var(--color-body);
 }
 
 .article-reference {
   padding: 1.125rem 1.375rem;
-  background: #f0f4f8;
+  background: var(--color-surface);
   border-left: 4px solid var(--color-primary);
   border-radius: 0.625rem;
   font-size: 0.9rem;
@@ -126,10 +161,10 @@
 .article-toc {
   margin: 0 0 2rem;
   padding: 1.375rem 1.75rem;
-  background: #fff;
+  background: var(--color-surface-raised);
   border: 1px solid var(--color-border);
   border-radius: 1rem;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-md);
 }
 
 .article-toc-title {
@@ -137,7 +172,7 @@
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #777;
+  color: var(--color-muted);
 }
 
 .article-toc-list {
@@ -151,7 +186,7 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.625rem 1rem;
-  background: #fafafa;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-pill);
   color: var(--color-ink);
@@ -162,7 +197,7 @@
 }
 
 .article-toc-item:hover {
-  background: #eef5fc;
+  background: rgba(82, 169, 234, 0.14);
   border-color: var(--color-primary);
   color: var(--color-primary);
   transform: translateY(-2px);
@@ -178,10 +213,10 @@
 
 .article-section-card {
   padding: 2.25rem;
-  background: #fff;
+  background: var(--color-surface-raised);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-md);
 }
 
 .article-section-label {
@@ -241,7 +276,7 @@
 .article-highlight {
   margin: 1.375rem 0 0.375rem;
   padding: 1.125rem 1.375rem;
-  background: #f7fbff;
+  background: rgba(82, 169, 234, 0.1);
   border-left: 4px solid var(--color-primary);
   border-radius: 0.625rem;
 }
@@ -268,7 +303,7 @@
 .article-stat {
   padding: 1.25rem 1rem;
   text-align: center;
-  background: #fafafa;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
 }
@@ -338,24 +373,27 @@ html {
 
 .article-figure {
   margin: 1.75rem 0;
+  padding: 0.875rem;
   border-radius: 0.75rem;
-  overflow: hidden;
-  border: 1px solid #ebebeb;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
 }
 
 .article-figure img {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 0.5rem;
+  background: #fff;
 }
 
 .article-figure figcaption {
-  padding: 0.75rem 1rem;
-  background: #f8f9fa;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--color-border);
   font-size: 0.85rem;
-  color: #777;
+  color: var(--color-muted);
   line-height: 1.6;
-  border-top: 1px solid #ebebeb;
 }
 
 /* =========================
