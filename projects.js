@@ -1,5 +1,5 @@
 const CATEGORY_LABELS = {
-  product: { fr: 'Product Design — UX/UI', en: 'Product Design — UX/UI' },
+  product: { fr: 'Product Design : UX/UI', en: 'Product Design: UX/UI' },
   service: { fr: 'Service Design & Audit', en: 'Service Design & Audit' },
   research: { fr: 'Recherche appliquée', en: 'Applied research' }
 };
@@ -15,12 +15,12 @@ const projects = [
     categoryLabelEn: "UX-UI Design",
     client: "Projet personnel",
     clientEn: "Personal project",
-    title: "WaxShelf",
-    titleEn: "WaxShelf",
+    title: "WaxShelf (side project)",
+    titleEn: "WaxShelf (side project)",
     role: "Design produit, UI et développement full-stack",
     roleEn: "Product design, UI and full-stack development",
     description: "Projet personnel - Concevoir et développer une plateforme de gestion et de découverte de collection vinyles connectée à Discogs.",
-    descriptionEn: "Personal project — Designing and developing a vinyl-collection management and discovery platform connected to Discogs.",
+    descriptionEn: "Personal project - Designing and developing a vinyl-collection management and discovery platform connected to Discogs.",
     url: "projets/waxshelf.html",
     endDate: "2026-08",
     extraTag: "Développement",
@@ -189,7 +189,7 @@ const projects = [
     role: "Identité visuelle et prototypage d'une expérience web immersive",
     roleEn: "Visual identity and prototyping for an immersive web experience",
     description: "Projet personnel - Concevoir une expérience web immersive en travaillant identité visuelle, UI et prototypage interactif.",
-    descriptionEn: "Personal project — Designing an immersive web experience through visual identity, UI and interactive prototyping.",
+    descriptionEn: "Personal project - Designing an immersive web experience through visual identity, UI and interactive prototyping.",
     url: "projets/leopold-museum.html",
     endDate: null
   },

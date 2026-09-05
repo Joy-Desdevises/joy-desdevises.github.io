@@ -431,6 +431,15 @@
   color: var(--color-muted);
 }
 
+.case-metrics-heading {
+  margin: 2rem 0 1rem 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
 /* =========================
    Footer CTA
 ========================= */
