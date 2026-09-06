@@ -60,14 +60,6 @@
     margin: 0;
 }
 
-.about-hero h1 {
-    font-size: 3.5rem;
-    line-height: 1.05;
-    font-weight: 500;
-    color: var(--color-ink);
-    margin: 0;
-}
-
 .about-tagline {
     margin: 0;
     font-size: 1.2rem;
@@ -227,10 +219,6 @@
 ========================= */
 
 @media (max-width: 1024px) {
-    .about-hero h1 {
-        font-size: 3rem;
-    }
-
     .about-header {
         gap: 1.5rem;
     }
@@ -256,10 +244,6 @@
     .about-title-block {
         align-items: center;
         text-align: center;
-    }
-
-    .about-hero h1 {
-        font-size: 2.4rem;
     }
 
     .about-tagline {

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://joy-desdevises.github.io/sitemap.xml
