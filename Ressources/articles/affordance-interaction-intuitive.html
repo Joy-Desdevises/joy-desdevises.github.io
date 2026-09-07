@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-page="article_affordance">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,39 +47,39 @@
       <!-- HERO -->
       <header class="article-hero">
         <div class="article-hero-nav">
-          <a href="../index.html" class="article-back">← Ressources</a>
-          <p class="article-kicker">Article</p>
+          <a href="../index.html" class="article-back" data-i18n="resources.article_common.back">← Ressources</a>
+          <p class="article-kicker" data-i18n="articles.affordance.kicker">Article</p>
         </div>
-        <h1>La perception-action à travers l'affordance&nbsp;: ingéniosité ou illusion&nbsp;?</h1>
-        <p class="article-subtitle">
+        <h1 data-i18n="articles.affordance.h1">La perception-action à travers l'affordance&nbsp;: ingéniosité ou illusion&nbsp;?</h1>
+        <p class="article-subtitle" data-i18n="articles.affordance.subtitle">
           Les affordances révèlent la façon dont nous percevons les possibilités
           d'interaction avec notre environnement. L'interaction intuitive
           est-elle réellement possible, ou n'est-ce qu'un mythe&nbsp;?
         </p>
         <div class="article-info-row">
-          <span class="article-info-chip">Cognition & Product Design</span>
-          <span class="article-info-chip">~4 min de lecture</span>
+          <span class="article-info-chip" data-i18n="articles.affordance.chip_theme">Cognition & Product Design</span>
+          <span class="article-info-chip" data-i18n="articles.affordance.chip_time">~4 min de lecture</span>
         </div>
-        <p class="article-reference">
+        <p class="article-reference" data-i18n="articles.affordance.coauthor">
           Cet article a été écrit en collaboration avec Nora Kabbani.
         </p>
       </header>
 
       <!-- TABLE OF CONTENTS -->
       <div class="article-toc" role="navigation" aria-label="Sommaire">
-        <p class="article-toc-title">Sommaire</p>
+        <p class="article-toc-title" data-i18n="resources.article_common.toc_title">Sommaire</p>
         <div class="article-toc-list">
-          <a href="#definition" class="article-toc-item">Définition</a>
-          <a href="#interface" class="article-toc-item">Les affordances en interface</a>
-          <a href="#illusion" class="article-toc-item">Le mythe de l'interaction intuitive</a>
-          <a href="#references" class="article-toc-item">Références</a>
+          <a href="#definition" class="article-toc-item" data-i18n="articles.affordance.toc1">Définition</a>
+          <a href="#interface" class="article-toc-item" data-i18n="articles.affordance.toc2">Les affordances en interface</a>
+          <a href="#illusion" class="article-toc-item" data-i18n="articles.affordance.toc3">Le mythe de l'interaction intuitive</a>
+          <a href="#references" class="article-toc-item" data-i18n="resources.article_common.references_toc">Références</a>
         </div>
       </div>
 
       <!-- INTRO -->
       <section class="article-section">
         <div class="article-section-card">
-          <p>
+          <p data-i18n="articles.affordance.intro_p1">
             Les affordances (concept clé en psychologie cognitive) révèlent la façon
             dont nous percevons les possibilités d'interaction avec notre environnement.
             Explorer la façon dont la perception influence nos actions et nos choix
@@ -88,7 +88,7 @@
             l'expérience utilisateur en conception&nbsp;: interface, présentation,
             document technique partagé, dashboard.
           </p>
-          <p>
+          <p data-i18n="articles.affordance.intro_p2">
             Dans cet article, nous proposons de définir le concept d'affordance, de
             voir comment elle est utilisée en conception d'interface, puis de
             démystifier le mythe de l'interaction intuitive.
@@ -99,9 +99,9 @@
       <!-- SECTION 1 : DÉFINITION -->
       <section id="definition" class="article-section">
         <div class="article-section-card">
-          <span class="article-section-label">01 : Définition</span>
-          <h2>Quand l'objet lui-même induit une action</h2>
-          <p>
+          <span class="article-section-label" data-i18n="articles.affordance.label1">01 : Définition</span>
+          <h2 data-i18n="articles.affordance.h2_1">Quand l'objet lui-même induit une action</h2>
+          <p data-i18n-html="articles.affordance.s1_p1">
             La psychologie cognitive révèle une fascinante capacité du cerveau humain à
             traduire les signaux sensoriels (vue, ouïe, équilibre, etc.) en actions
             rapides et adaptées. Lorsque quelqu'un vous envoie une pomme, le signal
@@ -114,7 +114,7 @@
             une <strong>affordance</strong>.
           </p>
           <div class="article-highlight">
-            <p>
+            <p data-i18n="articles.affordance.s1_highlight">
               Une affordance est définie comme la capacité d'un objet ou d'un système à
               évoquer son utilisation, sa fonction. Elle provoque une interaction
               spontanée entre un environnement et son utilisateur (Gibson, 1950, 1977).
@@ -129,7 +129,7 @@
               alt="À gauche, schéma d'une poignée de porte : la main pousse du côté sans poignée (Push) et tire du côté avec poignée (Pull), légendé « Good Affordance ». À droite, photo d'un passage piéton peint en trompe-l'œil 3D en Islande, avec un enfant qui semble marcher sur des blocs suspendus"
               loading="lazy"
             />
-            <figcaption>
+            <figcaption data-i18n-html="articles.affordance.fig1_caption">
               Figure 1. À gauche, schéma d'une porte affordante. À droite, photo d'un
               passage piéton peint en 3D en Islande | Sources&nbsp;: atrioom.fr/blog/affordance
               pour l'image de gauche&nbsp;; Philippe-Viela, O. (2017). <em>L'Islande
@@ -137,14 +137,14 @@
             </figcaption>
           </figure>
 
-          <p>
+          <p data-i18n="articles.affordance.s1_p2">
             Qui n'a jamais poussé une porte alors qu'il fallait la tirer, et
             vice-versa&nbsp;? Dans le premier exemple, on parle de porte affordante car
             l'absence de poignée d'un côté induit l'action de pousser, et la poignée de
             l'autre côté induit l'action de tirer. L'affordance permet ici de limiter
             les erreurs et d'optimiser l'expérience utilisateur.
           </p>
-          <p>
+          <p data-i18n="articles.affordance.s1_p3">
             Dans le second exemple, le passage piéton 3D peut être qualifié de plus
             affordant qu'un passage piéton classique en 2D. Mis en place en Islande, il
             a permis de diminuer significativement la vitesse des automobilistes, sans
@@ -157,9 +157,9 @@
       <!-- SECTION 2 : LES AFFORDANCES EN INTERFACE -->
       <section id="interface" class="article-section">
         <div class="article-section-card">
-          <span class="article-section-label">02 : Les affordances en conception d'interface</span>
-          <h2>L'ingéniosité des concepteurs&nbsp;?</h2>
-          <p>
+          <span class="article-section-label" data-i18n="articles.affordance.label2">02 : Les affordances en conception d'interface</span>
+          <h2 data-i18n="articles.affordance.h2_2">L'ingéniosité des concepteurs&nbsp;?</h2>
+          <p data-i18n="articles.affordance.s2_p1">
             Les affordances sont omniprésentes sur nos interfaces numériques. Elles
             doivent attirer l'attention de l'utilisateur et suggérer la fonction de
             l'élément concerné, en faisant appel à tous ses sens (son, vue, toucher).
@@ -167,12 +167,12 @@
             l'action&nbsp;:
           </p>
           <ul class="article-list">
-            <li>Les objets comme les boutons et liens hypertextes (« call-to-action »).</li>
-            <li>Les messages textuels focalisés sur l'action à effectuer&nbsp;: « envoyer », « répondre », « annuler », « valider ».</li>
-            <li>Les éléments graphiques&nbsp;: menu, flèches, loupe, etc.</li>
-            <li>Les icônes métaphoriques&nbsp;: enveloppe, téléphone, etc.</li>
+            <li data-i18n="articles.affordance.s2_li1">Les objets comme les boutons et liens hypertextes (« call-to-action »).</li>
+            <li data-i18n="articles.affordance.s2_li2">Les messages textuels focalisés sur l'action à effectuer&nbsp;: « envoyer », « répondre », « annuler », « valider ».</li>
+            <li data-i18n="articles.affordance.s2_li3">Les éléments graphiques&nbsp;: menu, flèches, loupe, etc.</li>
+            <li data-i18n="articles.affordance.s2_li4">Les icônes métaphoriques&nbsp;: enveloppe, téléphone, etc.</li>
           </ul>
-          <p>
+          <p data-i18n="articles.affordance.s2_p2">
             Les boutons cliquables d'une interface sont un bon exemple d'objets
             numériques affordants&nbsp;: en jouant avec la taille, les contrastes, les
             textures, l'objet suggère lui-même sa propre utilisation. La perception va
@@ -186,15 +186,15 @@
       <!-- SECTION 3 : LE MYTHE DE L'INTERACTION INTUITIVE -->
       <section id="illusion" class="article-section">
         <div class="article-section-card">
-          <span class="article-section-label">03 : Démystifions le mythe</span>
-          <h2>L'illusion collective de l'interaction intuitive magique</h2>
-          <p>
+          <span class="article-section-label" data-i18n="articles.affordance.label3">03 : Démystifions le mythe</span>
+          <h2 data-i18n="articles.affordance.h2_3">L'illusion collective de l'interaction intuitive magique</h2>
+          <p data-i18n="articles.affordance.s3_p1">
             En réalité, un objet ne suggère pas à lui seul sa propre utilisation. Les
             affordances ne sont pas un concept magique, uniquement lié aux objets ou à
             leur design. Les connaissances et expériences d'un individu face à un objet
             sont des conditions sine qua non à l'affordance.
           </p>
-          <p>
+          <p data-i18n="articles.affordance.s3_p2">
             Par exemple, lorsqu'un utilisateur se trouve face à une icône constituée de
             trois lignes horizontales, l'interprétation de cette icône en tant que moyen
             d'ouvrir une liste de liens cliquables dépendra de son expérience passée.
@@ -203,7 +203,7 @@
             connaissances ou des expériences antérieures liées à cette icône.
           </p>
           <div class="article-highlight">
-            <p>
+            <p data-i18n="articles.affordance.s3_highlight">
               Les affordances n'existent que grâce à nos propres modèles mentaux, nos
               connaissances et expériences (Creem-Regehr, Gill, Pointon, Bodenheimer
               &amp; Stefanucci, 2019). Il faut les considérer comme une méthode, un
@@ -215,7 +215,7 @@
               la marche acquise (Warren, 1984).
             </p>
           </div>
-          <p>
+          <p data-i18n="articles.affordance.s3_p3">
             Un objet ne suggère donc pas son utilisation à lui tout seul&nbsp;: il a
             besoin du cerveau humain pour exister.
           </p>
@@ -225,8 +225,8 @@
       <!-- SECTION 4 : RÉFÉRENCES -->
       <section id="references" class="article-section">
         <div class="article-section-card">
-          <span class="article-section-label">04 : Références</span>
-          <h2>Références bibliographiques</h2>
+          <span class="article-section-label" data-i18n="articles.affordance.label4">04 : Références</span>
+          <h2 data-i18n="resources.article_common.references_h2">Références bibliographiques</h2>
           <ul class="article-references">
             <li>Creem-Regehr, S. H., Gill, D., Pointon, G., Bodenheimer, B., &amp; Stefanucci, J. K. (2019). Mind the gap: gap affordance judgments of children, teens, and adults in an immersive virtual environment. <em>Frontiers in Robotics and AI</em>, 6.</li>
             <li>Gibson, J. J. (1950). <em>The Perception of the Visual World.</em> Houghton Mifflin.</li>

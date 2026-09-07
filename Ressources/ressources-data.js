@@ -1,6 +1,6 @@
 const articles = [
   {
-    category: "Résumé d'article scientifique",
+    i18nKey: "ia_generative",
     typeTag: "Résumé d'article scientifique",
     themes: ["IA et Data", "Innovation", "Cognition"],
     title: "IA générative et créativité : puissante pour générer mais biaisée et aveugle pour trier",
@@ -10,7 +10,7 @@ const articles = [
   },
 
   {
-    category: "Résumé d'article scientifique",
+    i18nKey: "prototypage",
     typeTag: "Résumé d'article scientifique",
     themes: ["IA et Data", "Product Design"],
     title: "Outils IA pour le design d'interface : le problème n'est pas la qualité, c'est le contrôle",
@@ -20,7 +20,7 @@ const articles = [
   },
 
   {
-    category: "Résumé d'article scientifique",
+    i18nKey: "competition",
     typeTag: "Résumé d'article scientifique",
     themes: ["Innovation", "Cognition"],
     title: "Comment la compétition influence-t-elle la génération d'idées dans la résolution créative de problèmes ?",
@@ -30,7 +30,7 @@ const articles = [
   },
 
   {
-    category: "Fun fact & biais cognitif",
+    i18nKey: "dunning_kruger",
     typeTag: "Fun Fact",
     themes: ["Cognition"],
     title: "Le paradoxe de l'ignorance : pourquoi ceux qui en savent le moins pensent souvent en savoir le plus",
@@ -40,7 +40,7 @@ const articles = [
   },
 
   {
-    category: "Article",
+    i18nKey: "affordance",
     typeTag: "Article",
     themes: ["Cognition", "Product Design"],
     title: "La perception-action à travers l'affordance : ingéniosité ou illusion ? L'interaction intuitive est-elle réellement possible ?",
@@ -50,7 +50,7 @@ const articles = [
   },
 
   {
-    category: "Article",
+    i18nKey: "perception_auditive",
     typeTag: "Article",
     themes: ["Cognition", "Product Design"],
     title: "La perception auditive : comprendre et mettre en pratique ses principes",
@@ -60,7 +60,7 @@ const articles = [
   },
 
   {
-    category: "Article",
+    i18nKey: "perception_gestalt",
     typeTag: "Article",
     themes: ["Cognition", "Product Design"],
     title: "La perception visuelle : 5 lois à appliquer absolument",
@@ -70,7 +70,7 @@ const articles = [
   },
 
   {
-    category: "Article",
+    i18nKey: "perception_cerveau",
     typeTag: "Article",
     themes: ["Cognition", "Product Design"],
     title: "La perception visuelle : comment notre cerveau forge-t-il notre vision du réel ?",
@@ -80,7 +80,7 @@ const articles = [
   },
 
   {
-    category: "Article",
+    i18nKey: "psychologie_cognitive",
     typeTag: "Article",
     themes: ["Cognition", "Product Design"],
     title: "La psychologie cognitive : une nécessité pour la conception centrée sur l'humain",
@@ -92,7 +92,8 @@ const articles = [
 
 const tools = [
   {
-    type: "Lien externe",
+    i18nKey: "guide_questionnaire",
+    typeTag: "Lien externe",
     title: "Guide pratique : construire un questionnaire en 4 étapes",
     description:
       "Le questionnaire est un outil puissant... A condition bien le construire ! Découvrez comment le faire en 4 étapes détaillées dans cet article.",
@@ -102,13 +103,21 @@ const tools = [
 ];
 
 // =========================
-// Type → visual mapping
+// i18n helpers
+// =========================
+
+function getLang() {
+  return (typeof localStorage !== "undefined" && localStorage.getItem("uxcog_lang")) || "fr";
+}
+
+// =========================
+// Type → visual + i18n mapping
 // =========================
 
 const TYPE_META = {
-  "Résumé d'article scientifique": { cls: "type-summary", short: "Résumé scientifique" },
-  "Fun Fact": { cls: "type-funfact", short: "Fun fact" },
-  "Article": { cls: "type-article", short: "Article" },
+  "Résumé d'article scientifique": { cls: "type-summary", catKey: "resources.category_summary", shortKey: "resources.type_summary" },
+  "Fun Fact": { cls: "type-funfact", catKey: "resources.category_funfact", shortKey: "resources.type_funfact" },
+  "Article": { cls: "type-article", catKey: "resources.category_article", shortKey: "resources.type_article" },
 };
 
 function typeMeta(typeTag) {
@@ -120,6 +129,13 @@ function articleUrl(article) {
 }
 
 const THEME_OPTIONS = ["Tous", "IA et Data", "Product Design", "Innovation", "Cognition"];
+const THEME_I18N_KEY = {
+  "Tous": "resources.theme_all",
+  "IA et Data": "resources.theme_ia_data",
+  "Product Design": "resources.theme_product_design",
+  "Innovation": "resources.theme_innovation",
+  "Cognition": "resources.theme_cognition",
+};
 
 let activeTheme = "Tous";
 
@@ -139,11 +155,11 @@ function createFeaturedCard(article) {
     <a class="featured ${meta.cls}" href="${url}"${target} data-themes="${(article.themes || []).join(",")}">
       <div class="featured-body">
         <div class="eyebrow-row">
-          <span class="eyebrow ${meta.cls}">${article.category}</span>
-          <span class="featured-label">À la une</span>
+          <span class="eyebrow ${meta.cls}" data-i18n="${meta.catKey}">${article.typeTag}</span>
+          <span class="featured-label" data-i18n="resources.featured_label">À la une</span>
         </div>
-        <h3>${article.title}</h3>
-        <span class="read-link">Lire →</span>
+        <h3 data-i18n="resources.articles.${article.i18nKey}.title">${article.title}</h3>
+        <span class="read-link" data-i18n="resources.read_more">Lire →</span>
       </div>
     </a>
   `;
@@ -155,15 +171,15 @@ function createArticleCard(article) {
   const target = url.startsWith("http") ? ' target="_blank" rel="noopener noreferrer"' : "";
 
   const themeTags = (article.themes || [])
-    .map(t => `<span class="theme-tag">${t}</span>`)
+    .map(t => `<span class="theme-tag" data-i18n="${THEME_I18N_KEY[t] || ''}">${t}</span>`)
     .join("");
 
   return `
     <a class="article-card ${meta.cls}" href="${url}"${target}>
-      <div class="eyebrow-row"><span class="eyebrow ${meta.cls}">${meta.short}</span></div>
-      <h4>${article.title}</h4>
+      <div class="eyebrow-row"><span class="eyebrow ${meta.cls}" data-i18n="${meta.shortKey}">${article.typeTag}</span></div>
+      <h4 data-i18n="resources.articles.${article.i18nKey}.title">${article.title}</h4>
       ${themeTags ? `<div class="theme-tags">${themeTags}</div>` : ""}
-      <span class="read-link">Lire →</span>
+      <span class="read-link" data-i18n="resources.read_more">Lire →</span>
     </a>
   `;
 }
@@ -178,9 +194,9 @@ function createToolCard(tool) {
         <img src="${tool.image}" alt="${tool.title}" loading="lazy" />
       </div>
       <div class="tool-content">
-        <span class="eyebrow type-article">${tool.type}</span>
-        <h4>${tool.title}</h4>
-        <span class="read-link">Accéder →</span>
+        <span class="eyebrow type-article" data-i18n="resources.type_external_link">${tool.typeTag}</span>
+        <h4 data-i18n="resources.tools.${tool.i18nKey}.title">${tool.title}</h4>
+        <span class="read-link" data-i18n="resources.access_more">Accéder →</span>
       </div>
     </a>
   `;
@@ -195,7 +211,7 @@ function buildFilterUI() {
   if (!container) return;
 
   container.innerHTML = THEME_OPTIONS.map((t, i) =>
-    `<button class="pill${i === 0 ? " active" : ""}" data-value="${t}">${t}</button>`
+    `<button class="pill${i === 0 ? " active" : ""}" data-value="${t}" data-i18n="${THEME_I18N_KEY[t]}">${t}</button>`
   ).join("");
 
   container.querySelectorAll(".pill").forEach(btn => {
@@ -231,8 +247,10 @@ function renderArticles() {
   }
 
   listEl.innerHTML = total === 0
-    ? `<p class="articles-empty">Aucun article ne correspond à cette thématique.</p>`
+    ? `<p class="articles-empty" data-i18n="resources.empty_state">Aucun article ne correspond à cette thématique.</p>`
     : filtered.map(createArticleCard).join("");
+
+  applyResourcesI18n();
 }
 
 // =========================
@@ -245,6 +263,20 @@ function renderTools() {
   if (!container) return;
   container.innerHTML = tools.map(createToolCard).join("");
   if (note) note.style.display = tools.length < 3 ? "" : "none";
+  applyResourcesI18n();
+}
+
+// =========================
+// Re-apply translations to freshly injected HTML
+// =========================
+
+function applyResourcesI18n() {
+  if (typeof translations === "undefined") return;
+  const lang = getLang();
+  document.querySelectorAll("#featured-slot [data-i18n], #articles-list [data-i18n], #tools-grid [data-i18n], #articles-filters [data-i18n]").forEach(el => {
+    const val = el.dataset.i18n.split(".").reduce((obj, k) => (obj && obj[k] !== undefined ? obj[k] : undefined), translations[lang]);
+    if (val !== undefined) el.textContent = val;
+  });
 }
 
 // =========================
@@ -255,3 +287,9 @@ document.getElementById("featured-slot").innerHTML = createFeaturedCard(featured
 buildFilterUI();
 renderArticles();
 renderTools();
+
+var _previousOnLanguageChange = window.onLanguageChange;
+window.onLanguageChange = function (lang) {
+  if (typeof _previousOnLanguageChange === "function") _previousOnLanguageChange(lang);
+  applyResourcesI18n();
+};

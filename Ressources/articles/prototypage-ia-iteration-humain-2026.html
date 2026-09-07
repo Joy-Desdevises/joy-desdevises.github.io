@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-page="article_prototypage">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,53 +47,53 @@
       <!-- HERO -->
       <header class="article-hero">
         <div class="article-hero-nav">
-          <a href="../index.html" class="article-back">← Ressources</a>
-          <p class="article-kicker">Résumé d'article scientifique</p>
+          <a href="../index.html" class="article-back" data-i18n="resources.article_common.back">← Ressources</a>
+          <p class="article-kicker" data-i18n="resources.category_summary">Résumé d'article scientifique</p>
         </div>
-        <h1>Outils IA pour le design d'interface : le problème n'est pas la qualité, c'est le contrôle</h1>
-        <p class="article-subtitle">
+        <h1 data-i18n="articles.prototypage.h1">Outils IA pour le design d'interface : le problème n'est pas la qualité, c'est le contrôle</h1>
+        <p class="article-subtitle" data-i18n="articles.prototypage.subtitle">
           Les outils de génération d'UI prolifèrent, mais ils produisent des résultats
           finaux sans exposer leur logique. Cette étude montre pourquoi c'est un problème
           et propose une approche qui remet le designer dans la boucle à chaque étape.
         </p>
         <div class="article-info-row">
-          <span class="article-info-chip">IA & Design</span>
+          <span class="article-info-chip" data-i18n="articles.prototypage.chip_theme">IA & Design</span>
           <span class="article-info-chip">Avril 2026</span>
-          <span class="article-info-chip">~5 min de lecture</span>
+          <span class="article-info-chip" data-i18n="articles.prototypage.chip_time">~5 min de lecture</span>
         </div>
         <p class="article-reference">
-          Yuan, M., Chen, J., Hu, Y., Feng, S., Xie, M., Mohammadi, G., Xing, Z., &amp; Quigley, A. (2026).
+          <span data-i18n="articles.prototypage.reference_intro">Yuan, M., Chen, J., Hu, Y., Feng, S., Xie, M., Mohammadi, G., Xing, Z., &amp; Quigley, A. (2026).
           <em>Towards Human–AI Synergy in UI Design: Supporting Iterative Generation with LLMs.</em>
-          ACM Transactions on Computer-Human Interaction, 33(1), Article 5.
+          ACM Transactions on Computer-Human Interaction, 33(1), Article 5.</span>
           <a href="https://doi.org/10.1145/3773035" target="_blank" rel="noopener noreferrer">https://doi.org/10.1145/3773035</a>
         </p>
       </header>
 
       <!-- TABLE OF CONTENTS -->
       <div class="article-toc" role="navigation" aria-label="Sommaire">
-        <p class="article-toc-title">Sommaire</p>
+        <p class="article-toc-title" data-i18n="resources.article_common.toc_title">Sommaire</p>
         <div class="article-toc-list">
-          <a href="#besoin" class="article-toc-item">Le besoin</a>
-          <a href="#question" class="article-toc-item">La question</a>
-          <a href="#objectif" class="article-toc-item">L'objectif</a>
-          <a href="#methode" class="article-toc-item">La méthode</a>
-          <a href="#resultats" class="article-toc-item">Les résultats</a>
-          <a href="#retenir" class="article-toc-item">Ce qu'on peut en retirer</a>
+          <a href="#besoin" class="article-toc-item" data-i18n="articles.prototypage.toc1">Le besoin</a>
+          <a href="#question" class="article-toc-item" data-i18n="articles.prototypage.toc2">La question</a>
+          <a href="#objectif" class="article-toc-item" data-i18n="articles.prototypage.toc3">L'objectif</a>
+          <a href="#methode" class="article-toc-item" data-i18n="articles.prototypage.toc4">La méthode</a>
+          <a href="#resultats" class="article-toc-item" data-i18n="articles.prototypage.toc5">Les résultats</a>
+          <a href="#retenir" class="article-toc-item" data-i18n="articles.prototypage.toc6">Ce qu'on peut en retirer</a>
         </div>
       </div>
 
       <!-- SECTION 1 : LE BESOIN -->
       <section id="besoin" class="article-section">
         <div class="article-section-card">
-          <span class="article-section-label">01 : Le besoin</span>
-          <h2>Un angle mort dans les outils génératifs</h2>
-          <p>
+          <span class="article-section-label" data-i18n="articles.prototypage.label1">01 : Le besoin</span>
+          <h2 data-i18n="articles.prototypage.h2_1">Un angle mort dans les outils génératifs</h2>
+          <p data-i18n="articles.prototypage.s1_p1">
             Les outils de génération automatique d'interfaces se multiplient. Uizard, Vercel V0, des plugins Figma :
             l'offre existe, et elle est de plus en plus présente dans les workflows de designers professionnels.
             Pourtant, un angle mort persiste. Ces outils produisent un résultat final, mais ne soutiennent pas
             le chemin qui y mène.
           </p>
-          <p>
+          <p data-i18n="articles.prototypage.s1_p2">
             Le designer reçoit un output souvent opaque dans sa logique, difficile à modifier sans tout recommencer.
             L'itération, au cœur de tout processus de conception sérieux, reste entièrement à la charge
             de l'humain, sans vrai support de l'outil. C'est précisément ce manque que cette étude cherche
@@ -105,15 +105,15 @@
       <!-- SECTION 2 : LA QUESTION -->
       <section id="question" class="article-section">
         <div class="article-section-card">
-          <span class="article-section-label">02 : La question qui se pose</span>
-          <h2>Comment garder la main à chaque étape&nbsp;?</h2>
-          <p>
+          <span class="article-section-label" data-i18n="articles.prototypage.label2">02 : La question qui se pose</span>
+          <h2 data-i18n="articles.prototypage.h2_2">Comment garder la main à chaque étape&nbsp;?</h2>
+          <p data-i18n="articles.prototypage.s2_p1">
             Comment les grands modèles de langage (LLMs) peuvent-ils soutenir un processus de conception
             d'interfaces réellement itératif, c'est-à-dire un processus où le designer peut corriger,
             affiner et co-construire avec l'outil plutôt que de simplement le subir&nbsp;?
           </p>
           <div class="article-highlight">
-            <p>
+            <p data-i18n="articles.prototypage.s2_highlight">
               La question n'est pas « est-ce que l'IA peut générer des interfaces&nbsp;? » : on sait
               que oui. La question est : à quel point le designer conserve-t-il le contrôle sur ce
               qui est produit, et à quel coût en révisions&nbsp;?
@@ -125,15 +125,15 @@
       <!-- SECTION 3 : L'OBJECTIF -->
       <section id="objectif" class="article-section">
         <div class="article-section-card">
-          <span class="article-section-label">03 : L'objectif</span>
-          <h2>Concevoir et valider une alternative</h2>
-          <p>
+          <span class="article-section-label" data-i18n="articles.prototypage.label3">03 : L'objectif</span>
+          <h2 data-i18n="articles.prototypage.h2_3">Concevoir et valider une alternative</h2>
+          <p data-i18n="articles.prototypage.s3_p1">
             Partant du constat que les outils existants traitent la génération d'UI comme un processus
             de bout en bout sans visibilité sur les étapes intermédiaires, les chercheurs se fixent
             un objectif concret : concevoir un système qui rende chaque étape de génération visible,
             compréhensible et modifiable par le designer.
           </p>
-          <p>
+          <p data-i18n="articles.prototypage.s3_p2">
             L'idée centrale est que la transparence du processus est une condition nécessaire à
             une vraie collaboration humain-IA. Ce n'est pas une hypothèse à tester : c'est un principe
             de conception qui guide le développement de leur outil, PrototypeFlow, et que les évaluations
@@ -145,26 +145,26 @@
       <!-- SECTION 4 : LA MÉTHODE -->
       <section id="methode" class="article-section">
         <div class="article-section-card">
-          <span class="article-section-label">04 : La méthode</span>
-          <h2>Trois temps : observer, construire, évaluer</h2>
-          <p>
+          <span class="article-section-label" data-i18n="articles.prototypage.label4">04 : La méthode</span>
+          <h2 data-i18n="articles.prototypage.h2_4">Trois temps : observer, construire, évaluer</h2>
+          <p data-i18n="articles.prototypage.s4_intro">
             L'étude se déroule en trois phases distinctes.
           </p>
-          <p>
+          <p data-i18n="articles.prototypage.s4_p1">
             D'abord, une étude formative : 10 designers UI/UX professionnels (issus de startups et de
             grands groupes, avec 1 à 10 ans d'expérience) sont interviewés pendant environ 30 minutes
             chacun sur leurs pratiques, leurs outils et les points de friction rencontrés avec les
             outils génératifs existants. L'analyse de ces entretiens fait émerger 5 besoins concrets,
             du manque de contrôle sur les inputs au problème de cohérence thématique entre composants.
           </p>
-          <p>
+          <p data-i18n-html="articles.prototypage.s4_p2">
             Ensuite, les chercheurs proposent <strong>PrototypeFlow</strong> : un système modulaire
             qui prend en entrée un wireframe et une description textuelle, génère d'abord un "thème"
             (couleurs, ambiance, style), puis orchestre des modules spécialisés (texte, images, icônes)
             pour produire un prototype SVG entièrement éditable. À chaque étape, le designer peut
             intervenir, modifier, relancer.
           </p>
-          <p>
+          <p data-i18n-html="articles.prototypage.s4_p3">
             Enfin, le système est évalué de deux façons. Quantitativement, sur 3&nbsp;738 interfaces,
             via deux métriques standards de génération d'images : le <strong>FID</strong> (Fréchet
             Inception Distance), qui mesure à quel point les images générées ressemblent statistiquement
@@ -180,10 +180,10 @@
       <!-- SECTION 5 : LES RÉSULTATS -->
       <section id="resultats" class="article-section">
         <div class="article-section-card">
-          <span class="article-section-label">05 : Les résultats</span>
-          <h2>Moins de révisions, plus de contrôle</h2>
+          <span class="article-section-label" data-i18n="articles.prototypage.label5">05 : Les résultats</span>
+          <h2 data-i18n="articles.prototypage.h2_5">Moins de révisions, plus de contrôle</h2>
 
-          <p>
+          <p data-i18n="articles.prototypage.s5_p1">
             Sur le plan de la qualité de génération, PrototypeFlow surpasse nettement les modèles
             de diffusion utilisés comme référence : un score FID de 23,76 contre 54,42 pour
             stable-diffusion-1-5 (rappel : plus le score est bas, meilleure est la qualité).
@@ -191,24 +191,24 @@
             interfaces réelles.
           </p>
 
-          <p>Mais le résultat le plus parlant vient des études utilisateurs :</p>
+          <p data-i18n="articles.prototypage.s5_p2">Mais le résultat le plus parlant vient des études utilisateurs :</p>
 
           <div class="article-stats">
             <div class="article-stat">
               <div class="article-stat-value">2,6</div>
-              <div class="article-stat-label">révisions moyennes avec PrototypeFlow</div>
+              <div class="article-stat-label" data-i18n="articles.prototypage.stat1_label">révisions moyennes avec PrototypeFlow</div>
             </div>
             <div class="article-stat">
               <div class="article-stat-value">4,3</div>
-              <div class="article-stat-label">révisions moyennes avec Uizard</div>
+              <div class="article-stat-label" data-i18n="articles.prototypage.stat2_label">révisions moyennes avec Uizard</div>
             </div>
             <div class="article-stat">
               <div class="article-stat-value">6,1</div>
-              <div class="article-stat-label">révisions moyennes avec Vercel V0</div>
+              <div class="article-stat-label" data-i18n="articles.prototypage.stat3_label">révisions moyennes avec Vercel V0</div>
             </div>
           </div>
 
-          <p>
+          <p data-i18n="articles.prototypage.s5_p3">
             Les designers ont également évalué les trois outils sur les 5 dimensions identifiées
             en étude formative, via une échelle de 1 à 5. PrototypeFlow se distingue nettement sur
             la qualité des suggestions de prompt (4,0/5 contre 1,6/5 pour Vercel V0), sur le contrôle
@@ -217,14 +217,14 @@
           </p>
 
           <div class="article-highlight">
-            <p>
+            <p data-i18n="articles.prototypage.s5_highlight">
               14 des 16 designers interrogés ont jugé les étapes intermédiaires de PrototypeFlow
               particulièrement bénéfiques pour interagir avec l'IA. Ce n'est pas qu'une question de
               résultat final : c'est une question de confiance dans le processus.
             </p>
           </div>
 
-          <p>
+          <p data-i18n="articles.prototypage.s5_p4">
             Les auteurs identifient plusieurs limites honnêtes : les métriques FID et GD reposent
             sur un réseau de neurones (Inception-v3) entraîné sur des images générales, pas sur des
             interfaces, ce qui limite leur pertinence pour évaluer précisément la qualité UI. La base
@@ -239,10 +239,10 @@
       <!-- SECTION 6 : CE QU'ON PEUT EN RETIRER -->
       <section id="retenir" class="article-section">
         <div class="article-section-card">
-          <span class="article-section-label">06 : Ce qu'on peut en retirer</span>
-          <h2>Trois enseignements pour les équipes produit</h2>
+          <span class="article-section-label" data-i18n="articles.prototypage.label6">06 : Ce qu'on peut en retirer</span>
+          <h2 data-i18n="articles.prototypage.h2_6">Trois enseignements pour les équipes produit</h2>
 
-          <p>
+          <p data-i18n-html="articles.prototypage.s6_p1">
             <strong>La transparence n'est pas un nice-to-have.</strong> Un outil de génération
             d'interfaces qui produit un résultat final sans exposer sa logique force le designer
             à travailler à l'aveugle, à deviner quel prompt modifiera quoi. Cette étude montre
@@ -250,14 +250,14 @@
             et que les designers les perçoivent comme essentielles à leur confiance dans l'outil.
           </p>
 
-          <p>
+          <p data-i18n-html="articles.prototypage.s6_p2">
             <strong>Combiner wireframe et description textuelle change la donne.</strong>
             Ni l'un ni l'autre seul ne suffit. Le wireframe ancre la structure fonctionnelle,
             le texte précise l'intention sémantique. Les designers interrogés formulent cette
             complémentarité très clairement, et les résultats quantitatifs le confirment.
           </p>
 
-          <p>
+          <p data-i18n-html="articles.prototypage.s6_p3">
             <strong>Le bon niveau d'intervention humaine dépend du stade du projet.</strong>
             En phase d'idéation, les designers expérimentés apprécient une génération plus libre,
             qui ouvre l'espace des possibles. En phase d'implémentation, ils préfèrent un cadre
@@ -266,28 +266,28 @@
           </p>
 
           <div class="article-highlight">
-            <p>
+            <p data-i18n="articles.prototypage.s6_highlight">
               Pour une équipe produit, cette étude suggère que la valeur des outils génératifs
               est maximale en amont, pour accélérer l'exploration avant que les décisions
               structurantes soient prises, et non en fin de parcours pour habiller un prototype.
             </p>
           </div>
 
-          <h3 class="article-section-subheading">Et en pratique, on fait quoi&nbsp;?</h3>
+          <h3 class="article-section-subheading" data-i18n="articles.prototypage.h3_1">Et en pratique, on fait quoi&nbsp;?</h3>
 
-          <p>
+          <p data-i18n="articles.prototypage.s6_p4">
             PrototypeFlow n'est pas disponible publiquement. L'outil a été développé dans
             le cadre de cette étude pour valider des principes de conception, pas pour être
             déployé en production. C'est une limite fréquente dans la recherche HCI : on
             démontre que quelque chose fonctionne, mais on ne le distribue pas.
           </p>
 
-          <p>
+          <p data-i18n="articles.prototypage.s6_p5">
             Ça ne veut pas dire que les principes sont inapplicables. Ils le sont, avec
             les outils qu'on a déjà, à condition de structurer sa démarche.
           </p>
 
-          <p>
+          <p data-i18n-html="articles.prototypage.s6_p6">
             <strong>Appliquer soi-même la logique des checkpoints.</strong> Avec Claude ou
             ChatGPT, plutôt que de décrire l'interface complète en un seul prompt, décomposer
             la génération en étapes séquentielles : proposer un thème (couleurs, ambiance,
@@ -296,7 +296,7 @@
             l'étude valide : la transparence des étapes intermédiaires.
           </p>
 
-          <p>
+          <p data-i18n-html="articles.prototypage.s6_p7">
             <strong>Construire un mini-agent qui implémente cette séquence.</strong> C'est
             l'option plus ambitieuse, mais accessible. Un agent simple pourrait fonctionner
             en trois appels successifs : le premier analyse la description du wireframe et
@@ -307,7 +307,7 @@
             à coder de zéro.
           </p>
 
-          <p>
+          <p data-i18n="articles.prototypage.s6_p8">
             Des outils comme Lovable ou Cursor permettent déjà une forme d'itération assistée,
             mais sans les checkpoints thématiques explicites. Ils restent utiles comme point
             de départ, à condition de compenser manuellement le manque de transparence en
