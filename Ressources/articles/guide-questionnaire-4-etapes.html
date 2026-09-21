@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="fr" data-page="article_guide_questionnaire">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comment construire un questionnaire en 4 étapes ? | Joy Desdevises</title>
+  <meta name="description" content="Le questionnaire est un outil puissant... à condition de bien le construire ! Découvrez comment le faire en 4 étapes détaillées dans cet article." />
+  <meta property="og:url" content="https://joy-desdevises.github.io/Ressources/articles/guide-questionnaire-4-etapes.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Comment construire un questionnaire en 4 étapes ? | Joy Desdevises" />
+  <meta property="og:description" content="Le questionnaire est un outil puissant... à condition de bien le construire ! Découvrez comment le faire en 4 étapes détaillées dans cet article." />
+  <meta property="og:image" content="https://joy-desdevises.github.io/images/logo-uxcog.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Comment construire un questionnaire en 4 étapes ? | Joy Desdevises" />
+  <meta name="twitter:description" content="Le questionnaire est un outil puissant... à condition de bien le construire ! Découvrez comment le faire en 4 étapes détaillées dans cet article." />
+  <meta name="twitter:image" content="https://joy-desdevises.github.io/images/logo-uxcog.png" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="article.css" />
+  <link rel="icon" href="../../images/logo-uxcog.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Special+Elite&display=swap">
+</head>
+<body class="article-page">
+
+  <nav>
+        <div class="nav-inner">
+      <a href="../../index.html" class="nav-logo"><img src="../../images/logo-uxcog.png" alt="UXcog"></a>
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">🇫🇷 FR</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">🇬🇧 EN</button>
+      </div>
+      <div class="nav-links">
+        <a href="../../index.html" class="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/></svg><span class="sr-only" data-i18n="nav.home">Accueil</span></a>
+        <a href="../../portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="../../Services.html" data-i18n="nav.services">Services</a>
+        <a href="../../a-propos.html" data-i18n="nav.about">À propos</a>
+        <a href="../index.html" class="nav-resources" data-i18n="nav.resources">Ressources</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <!-- HERO -->
+      <header class="article-hero">
+        <div class="article-hero-nav">
+          <a href="../index.html" class="article-back" data-i18n="resources.article_common.back">← Ressources</a>
+          <p class="article-kicker" data-i18n="articles.guide_questionnaire.kicker">Guide pratique</p>
+        </div>
+        <h1 data-i18n="articles.guide_questionnaire.h1">Comment construire un questionnaire en 4 étapes&nbsp;?</h1>
+        <p class="article-subtitle" data-i18n="articles.guide_questionnaire.subtitle">
+          Identifier des axes d'amélioration, analyser des habitudes, comprendre des
+          comportements... Un questionnaire est un outil puissant, à condition qu'il
+          soit bien construit. Voici un guide en 4 étapes, basé sur une méthode
+          scientifique rigoureuse mais accessible à toute personne souhaitant
+          construire un questionnaire pertinent, solide et exploitable.
+        </p>
+        <div class="article-info-row">
+          <span class="article-info-chip" data-i18n="articles.guide_questionnaire.chip_theme">Product Design & Recherche utilisateur</span>
+          <span class="article-info-chip" data-i18n="articles.guide_questionnaire.chip_time">~10 min de lecture</span>
+        </div>
+        <p class="article-reference" data-i18n="articles.guide_questionnaire.reference">
+          Publié pour la première fois en septembre 2022.
+        </p>
+      </header>
+
+      <!-- TABLE OF CONTENTS -->
+      <div class="article-toc" role="navigation" aria-label="Sommaire">
+        <p class="article-toc-title" data-i18n="resources.article_common.toc_title">Sommaire</p>
+        <div class="article-toc-list">
+          <a href="#definition" class="article-toc-item" data-i18n="articles.guide_questionnaire.toc1">En 2 minutes</a>
+          <a href="#processus" class="article-toc-item" data-i18n="articles.guide_questionnaire.toc2">Processus de construction</a>
+          <a href="#etape1" class="article-toc-item" data-i18n="articles.guide_questionnaire.toc3">Étape 1 : Structurer</a>
+          <a href="#etape2" class="article-toc-item" data-i18n="articles.guide_questionnaire.toc4">Étape 2 : Rédiger les items</a>
+          <a href="#etape3" class="article-toc-item" data-i18n="articles.guide_questionnaire.toc5">Étape 3 : Organiser les items</a>
+          <a href="#etape4" class="article-toc-item" data-i18n="articles.guide_questionnaire.toc6">Étape 4 : Administrer</a>
+          <a href="#glossaire" class="article-toc-item" data-i18n="articles.guide_questionnaire.toc7">Glossaire</a>
+          <a href="#references" class="article-toc-item" data-i18n="resources.article_common.references_toc">Références</a>
+        </div>
+      </div>
+
+      <!-- SECTION 0 : INTRO -->
+      <section id="intro" class="article-section">
+        <div class="article-section-card">
+          <span class="article-section-label" data-i18n="articles.guide_questionnaire.label0">01 : Le principe</span>
+          <h2 data-i18n="articles.guide_questionnaire.h2_0">Une technique de collecte de données quantifiables</h2>
+          <p data-i18n="articles.guide_questionnaire.s0_p1">
+            Un questionnaire est une technique de collecte de données quantifiables qui
+            se présente sous la forme d'une série d'items méthodiquement construits et
+            formulés. Il permet d'étudier plusieurs aspects d'un problème. On l'utilise
+            lorsqu'on cherche à obtenir une certaine quantité représentative
+            d'informations.
+          </p>
+          <p data-i18n="articles.guide_questionnaire.s0_p2">
+            Grâce au guide proposé dans cet article, vous pourrez&nbsp;:
+          </p>
+          <ul class="article-list">
+            <li data-i18n="articles.guide_questionnaire.s0_li1">Construire un questionnaire avec des items traduisant un objectif de recherche précis (ex&nbsp;: mesurer le bien-être des employés au travail) qui incitent le participant à coopérer et à fournir les informations correctement.</li>
+            <li data-i18n="articles.guide_questionnaire.s0_li2">Obtenir des données exploitables et interprétables en évitant les biais liés notamment au questionnaire lui-même, aux participants, ou aux conditions dans lesquelles on le fait passer.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION 1 : EN 2 MINUTES -->
+      <section id="definition" class="article-section">
+        <div class="article-section-card">
+          <span class="article-section-label" data-i18n="articles.guide_questionnaire.label1">02 : En 2 minutes</span>
+          <h2 data-i18n="articles.guide_questionnaire.h2_1">Qu'est-ce qu'un questionnaire&nbsp;?</h2>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s1_h_quoi">📌 Quoi&nbsp;?</h3>
+          <p data-i18n="articles.guide_questionnaire.s1_p_quoi">
+            Un outil permettant de collecter des informations grâce aux réponses ou aux
+            scores de vos participants faisant partie de votre cible.
+          </p>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s1_h_ou">📍 Où&nbsp;?</h3>
+          <p data-i18n="articles.guide_questionnaire.s1_p_ou">
+            Dans la plus grande majorité des cas, le questionnaire est envoyé en ligne&nbsp;:
+            le participant le complète en toute autonomie et ses réponses sont
+            enregistrées automatiquement.
+          </p>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s1_h_quand">⏱ Quand&nbsp;?</h3>
+          <p data-i18n="articles.guide_questionnaire.s1_p_quand">
+            À tout moment&nbsp;: au début d'un cycle de conception, en exploration, en
+            delivery pour tester des hypothèses, ou à la fin d'un projet.
+          </p>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s1_h_pourquoi">🤔 Pourquoi&nbsp;?</h3>
+          <p data-i18n="articles.guide_questionnaire.s1_p_pourquoi">
+            C'est un outil simple d'utilisation permettant de recueillir des
+            informations en quantité, notamment pour comprendre (ex&nbsp;: des
+            utilisateurs, des processus), décrire (ex&nbsp;: des comportements, des
+            préférences) et identifier des leviers d'action.
+          </p>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s1_h_comment">🔭 Comment&nbsp;?</h3>
+          <p data-i18n="articles.guide_questionnaire.s1_p_comment">
+            Il est fortement recommandé de construire le questionnaire en équipe. Une
+            co-construction à chaque étape (formulation de l'objectif, identification
+            des thématiques, rédaction des items) permet d'éviter les biais.
+          </p>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s1_h_qui">🔎 Qui&nbsp;?</h3>
+          <p data-i18n="articles.guide_questionnaire.s1_p_qui">
+            Pour la co-construction&nbsp;: le designer peut en prendre la responsabilité,
+            en clarifiant qui se chargera des analyses (spécialiste externe, UX interne...).
+            Pour les personnes qui compléteront le questionnaire&nbsp;: les participants
+            doivent correspondre à votre cible.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 2 : PROCESSUS DE CONSTRUCTION -->
+      <section id="processus" class="article-section">
+        <div class="article-section-card">
+          <span class="article-section-label" data-i18n="articles.guide_questionnaire.label2">03 : Vue d'ensemble</span>
+          <h2 data-i18n="articles.guide_questionnaire.h2_2">Les 6 questions à se poser pour procéder étape par étape</h2>
+          <p data-i18n="articles.guide_questionnaire.s2_p1">
+            Afin de minimiser les biais, il est préférable de mener les actions
+            suivantes en équipe, ou au moins avec une autre personne. Un biais est une
+            distorsion entre la façon dont nous devrions raisonner et la façon dont
+            nous raisonnons réellement (voir le glossaire pour une définition plus
+            précise). Lorsqu'on fait de la recherche, notamment lorsqu'on crée des
+            outils comme un questionnaire, nos connaissances, notre expertise, le
+            contexte qui nous entoure ou notre état du moment sont susceptibles de
+            venir entraver la validité de ce que l'on mesure, et donc des
+            interprétations et conclusions que l'on en tire. Adopter la démarche
+            scientifique décrite dans cet article permet de minimiser ces biais.
+          </p>
+
+          <figure class="article-figure">
+            <img
+              src="images/questionnaire-processus-6-questions.png"
+              alt="Les 6 questions à se poser étape par étape, avec une action à mener et un exemple concret pour chaque étape : objectif du questionnaire, thématiques principales, cible, contenu et items, mesures à récolter, présentation et organisation, puis validation du questionnaire construit."
+              loading="lazy"
+            />
+            <figcaption data-i18n="articles.guide_questionnaire.fig_processus_caption">
+              Les 6 questions à se poser pour construire son questionnaire étape par étape, avec une action à mener et un exemple concret pour chacune.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SECTION 3 : ÉTAPE 1 -->
+      <section id="etape1" class="article-section">
+        <div class="article-section-card">
+          <span class="article-section-label" data-i18n="articles.guide_questionnaire.label3">04 : Étape 1</span>
+          <h2 data-i18n="articles.guide_questionnaire.h2_3">Structurer son questionnaire</h2>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s3_h1">Les premières questions à se poser</h3>
+          <p data-i18n="articles.guide_questionnaire.s3_p1">
+            À quoi va servir notre questionnaire&nbsp;? Pourquoi construisons-nous un
+            questionnaire&nbsp;? Votre objectif doit être concret (ex&nbsp;: mesurer la
+            maturité design d'une organisation, obtenir un indicateur de performance
+            récurrent, évaluer le bien-être des employés).
+          </p>
+          <p data-i18n-html="articles.guide_questionnaire.s3_p2">
+            Un objectif concret et clair va vous aider à identifier les thématiques
+            visées. Vous pouvez vous documenter afin d'être guidé(e) et/ou de confirmer
+            vos choix. Vos thématiques - et sous-thématiques si nécessaire - répondent
+            notamment à la question&nbsp;: <em>quelles sont les informations dont j'ai
+            besoin&nbsp;?</em>
+          </p>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s3_h2">Exemple</h3>
+          <p data-i18n="articles.guide_questionnaire.s3_p3">
+            Si je souhaite mesurer la satisfaction au travail des employés de mon
+            entreprise afin d'identifier des leviers d'action pour améliorer son
+            fonctionnement&nbsp;:
+          </p>
+          <ul class="article-list">
+            <li data-i18n="articles.guide_questionnaire.s3_li1">Je brainstorme avec 1 à 2 autres personnes sur tout ce qui, selon nous, détermine le bien-être et la satisfaction d'un employé au sein de son entreprise, puis je synthétise ce qui est ressorti de la session.</li>
+            <li data-i18n="articles.guide_questionnaire.s3_li2">J'interroge des experts autour de moi et/ou je me documente en ligne sur les critères reconnus comme facteurs de bien-être au travail, afin de valider, compléter ou modifier les thématiques identifiées « intuitivement ».</li>
+          </ul>
+
+          <div class="article-highlight">
+            <p data-i18n="articles.guide_questionnaire.s3_highlight">
+              L'idéal est de déterminer l'objectif, les thématiques et sous-thématiques
+              de votre questionnaire avant de rédiger les items. Cela permet de limiter
+              un certain nombre de biais a priori et d'éviter de proposer des items non
+              pertinents qui viendraient biaiser le reste du questionnaire.
+            </p>
+          </div>
+
+          <figure class="article-figure">
+            <img
+              src="images/questionnaire-pyramide-construction.png"
+              alt="Pyramide des éléments à travailler lors de la construction d'un questionnaire. L'objectif est le socle de ce travail. S'en suit l'identification de thématiques, de sous-thématiques (facultatif) et la rédaction des items."
+              loading="lazy"
+            />
+            <figcaption data-i18n="articles.guide_questionnaire.fig_pyramide_caption">
+              Schéma 1. Pyramide des éléments à travailler lors de la construction d'un questionnaire. L'objectif est le socle de ce travail.
+            </figcaption>
+          </figure>
+
+          <p data-i18n="articles.guide_questionnaire.s3_p4">
+            Il est toutefois tout à fait possible d'adopter une démarche plus
+            exploratoire&nbsp;: on peut commencer par une liste d'items qui nous
+            intéressent, identifier ce que l'on souhaite mesurer, puis mener un travail
+            de suppression d'items non pertinents et de (re)catégorisation a posteriori.
+            Ce guide se concentre toutefois sur la première méthode, plus rigoureuse et
+            permettant un gain de temps significatif&nbsp;: quel que soit l'ordre
+            d'exécution, l'essentiel est de passer par toutes les réflexions et étapes
+            présentées dans cet article.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 4 : ÉTAPE 2 -->
+      <section id="etape2" class="article-section">
+        <div class="article-section-card">
+          <span class="article-section-label" data-i18n="articles.guide_questionnaire.label4">05 : Étape 2</span>
+          <h2 data-i18n="articles.guide_questionnaire.h2_4">Rédiger les items</h2>
+          <p data-i18n="articles.guide_questionnaire.s4_p1">
+            Avant tout&nbsp;: proposez uniquement des items nécessaires et utiles, qui
+            servent l'objectif et répondent à la thématique ou sous-thématique à
+            laquelle ils appartiennent. Évitez de surcharger vos thématiques d'items
+            qui ne seront pas réellement pertinents ou représentatifs de ce que vous
+            cherchez à mesurer.
+          </p>
+          <p data-i18n="articles.guide_questionnaire.s4_p2">
+            Il existe 3 grands types d'items utilisables dans un questionnaire&nbsp;: les
+            échelles de Likert (scores de 1 à 7 points), les items catégoriels et les
+            questions ouvertes.
+          </p>
+
+          <figure class="article-figure">
+            <img
+              src="images/questionnaire-types-items.png"
+              alt="Pour une mesure objective et factuelle, on utilise un item catégoriel : réponse binaire (oui/non, vrai/faux) ou liste de réponses prédéterminée (choix forcé ou multiple). Pour une mesure subjective (perception, avis, ressenti), on utilise une échelle de Likert en 7 points, qui limite la variabilité inter-individuelle, ou une question ouverte, plus difficile à interpréter et utilisée en complément pour redynamiser la complétion."
+              loading="lazy"
+            />
+            <figcaption data-i18n="articles.guide_questionnaire.fig_types_caption">
+              Comment choisir entre item catégoriel, échelle de Likert et question ouverte selon l'objectif visé.
+            </figcaption>
+          </figure>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s4_h1">Exemples de formulations selon l'objectif visé</h3>
+
+          <figure class="article-figure">
+            <img
+              src="images/questionnaire-exemples-formulations.png"
+              alt="Quatre exemples de formulation : mesure objective avec réponse binaire (« Il y a au moins 1 designer dans mon organisation », réponse oui/non) ; mesure objective avec plusieurs réponses possibles (nombre de designers dans l'organisation, choix forcé parmi une liste) ; mesure subjective avec échelle de Likert (« Je trouve qu'il y a assez de designers », score de 1 à 7) ; et question ouverte complémentaire pour laisser le participant préciser sa réponse précédente."
+              loading="lazy"
+            />
+            <figcaption data-i18n="articles.guide_questionnaire.fig_formulations_caption">
+              Exemples de formulations selon que l'on cherche une mesure objective (réponse binaire ou à choix multiples) ou subjective (échelle de Likert ou question ouverte).
+            </figcaption>
+          </figure>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s4_h2">Axes d'attention et de vigilance</h3>
+
+          <figure class="article-figure">
+            <img
+              src="images/questionnaire-echelles-likert-bonnes-pratiques.png"
+              alt="Bonnes pratiques pour les échelles de Likert : contrôler la valence émotionnelle (positive ou négative) de chaque item, contrôler la force de cette valence (« extrêmement » vs « assez »), utiliser une tournure affirmative plutôt que négative pour réduire l'effort mental, et utiliser la première personne plutôt qu'une formulation impersonnelle pour faciliter l'implication du participant."
+              loading="lazy"
+            />
+            <figcaption data-i18n="articles.guide_questionnaire.fig_likert_caption">
+              Échelles de Likert&nbsp;: contrôler la valence émotionnelle et sa force, préférer une tournure affirmative à la première personne.
+            </figcaption>
+          </figure>
+
+          <figure class="article-figure">
+            <img
+              src="images/questionnaire-items-categoriels-bonnes-pratiques.png"
+              alt="Bonnes pratiques pour les items catégoriels : supprimer les adverbes faisant appel à la subjectivité (par exemple « assez de designers » plutôt qu'un fait vérifiable), et contrôler le nombre de réponses possibles en se questionnant sur le choix forcé ou libre, pour les réponses binaires comme pour les réponses multiples."
+              loading="lazy"
+            />
+            <figcaption data-i18n="articles.guide_questionnaire.fig_categoriels_caption">
+              Items catégoriels&nbsp;: supprimer les adverbes subjectifs et contrôler le nombre de réponses possibles.
+            </figcaption>
+          </figure>
+
+          <figure class="article-figure">
+            <img
+              src="images/questionnaire-questions-ouvertes-bonnes-pratiques.png"
+              alt="Bonne pratique pour les questions ouvertes : ne pas restreindre la réponse du participant et la laisser facultative. Exemples : « Expliquez votre réponse précédente », « Voulez-vous ajouter quelque chose ? ». Le questionnaire répondant à un besoin quantitatif, les questions ouvertes sont utilisées de manière stratégique pour redynamiser la complétion, sans obligation de les analyser toutes."
+              loading="lazy"
+            />
+            <figcaption data-i18n="articles.guide_questionnaire.fig_ouvertes_caption">
+              Questions ouvertes&nbsp;: à laisser facultatives, sans restreindre la réponse du participant.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SECTION 5 : ÉTAPE 3 -->
+      <section id="etape3" class="article-section">
+        <div class="article-section-card">
+          <span class="article-section-label" data-i18n="articles.guide_questionnaire.label5">06 : Étape 3</span>
+          <h2 data-i18n="articles.guide_questionnaire.h2_5">Présenter et organiser les items</h2>
+          <p data-i18n="articles.guide_questionnaire.s5_p1">
+            À cette étape, vous devriez avoir votre objectif, vos thématiques et une
+            liste d'items pertinents et nécessaires par thématique. Il est désormais
+            important de se questionner sur la façon dont vous allez présenter et
+            organiser ces items.
+          </p>
+
+          <figure class="article-figure">
+            <img
+              src="images/questionnaire-organisation-items.png"
+              alt="Si le questionnaire est court (moins de 20 items), on évite le biais de fatigabilité sans précaution particulière. S'il est long (plus de 20 items), on varie le format des items, on veille à l'homogénéité des légendes de réponse, puis on envoie le questionnaire une fois validé en équipe et/ou pré-testé, éventuellement en plusieurs fois."
+              loading="lazy"
+            />
+            <figcaption data-i18n="articles.guide_questionnaire.fig_organisation_caption">
+              Bonnes pratiques d'organisation selon la longueur du questionnaire.
+            </figcaption>
+          </figure>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s5_h1">Varier les formats des items</h3>
+          <p data-i18n="articles.guide_questionnaire.s5_p2">
+            Si mon questionnaire comporte 40 échelles à remplir par exemple, je peux
+            couper la séquence tous les 10 items par une question ouverte. Cela évite
+            de fatiguer le participant ou de le pousser à répondre par automatisme
+            (c'est-à-dire sans réellement lire les items), et redynamise la complétion.
+            Si les objectifs s'y prêtent, j'essaie de varier entre questions en
+            oui/non, échelles de Likert, questions ouvertes et questions à choix
+            multiples.
+          </p>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s5_h2">Veiller à homogénéiser le format de réponse</h3>
+          <p data-i18n="articles.guide_questionnaire.s5_p3">
+            On cherche à diversifier pour stimuler le répondant, mais à homogénéiser
+            pour faciliter la complétion&nbsp;: on vise la cohérence. Par exemple, sur mes
+            40 échelles de Likert, même coupées tous les 10 items par une question
+            ouverte, j'essaie de les structurer de sorte que la légende reste la même
+            tout au long du questionnaire&nbsp;: mes scores « 1 » signifient toujours « pas
+            du tout d'accord » et mes scores « 7 » signifient toujours « tout à fait
+            d'accord ».
+          </p>
+
+          <div class="article-highlight">
+            <p data-i18n="articles.guide_questionnaire.s5_highlight">
+              Trouvez le bon équilibre pour éviter l'ennui et la difficulté de
+              traitement des informations.
+            </p>
+          </div>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s5_h3">Aléatoiriser les items</h3>
+          <p data-i18n="articles.guide_questionnaire.s5_p4">
+            Lorsque le questionnaire est construit, une bonne pratique consiste à
+            rendre aléatoire, dès que possible, l'ordre de présentation des
+            thématiques mais aussi des items au sein d'une thématique. On supprime
+            ainsi tout biais de fatigabilité, d'ennui ou d'apprentissage.
+          </p>
+          <p data-i18n-html="articles.guide_questionnaire.s5_p5">
+            <em>Par exemple, si votre questionnaire contient 6 thématiques avec chacune
+            4 items (soit 24 items), il se peut qu'on observe moins de motivation ou de
+            concentration de la part du participant sur la dernière thématique. Les
+            résultats seraient ainsi biaisés. En rendant aléatoire la présentation des
+            thématiques, certains participants verront une thématique donnée dès le
+            début du questionnaire, d'autres au milieu, d'autres à la fin&nbsp;: on
+            supprime alors le biais de fatigabilité.</em>
+          </p>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s5_h4">Exemple de présentation et d'organisation, à faire ou à ne pas faire</h3>
+
+          <figure class="article-figure">
+            <img
+              src="images/questionnaire-exemple-do-dont.png"
+              alt="À ne pas faire : des items formulés sans structure commune (« Selon moi, il fait beau aujourd'hui », « Quand je travaille au soleil je suis... », « Il a beaucoup plu cette année »). À faire : une seule et même structure de phrase pour chaque item (« En tant que Designer, je pense... qu'il fait beau aujourd'hui / que je suis à l'aise lorsque je travaille au soleil / qu'il a beaucoup plu cette année »), avec des échelles de 1 à 7 dont la légende reste identique."
+              loading="lazy"
+            />
+            <figcaption data-i18n="articles.guide_questionnaire.fig_dodont_caption">
+              Exemple à ne pas suivre (à gauche) et exemple à suivre (à droite) pour la structure, les légendes et les mesures des items.
+            </figcaption>
+          </figure>
+
+          <p data-i18n-html="articles.guide_questionnaire.s5_p6">
+            <strong>La structure / l'organisation&nbsp;:</strong> dans l'exemple de droite,
+            les items sont formulés de façon à s'articuler le plus facilement et
+            correctement possible&nbsp;: une seule et même structure de phrase est
+            proposée pour chaque item à traiter.
+          </p>
+          <p data-i18n-html="articles.guide_questionnaire.s5_p7">
+            <strong>Les légendes&nbsp;:</strong> les légendes sont homogénéisées afin de
+            minimiser la charge cognitive sollicitée. Toutes les échelles de 1 à 7
+            correspondent à la même évaluation, à savoir le niveau d'accord ou de
+            désaccord.
+          </p>
+          <p data-i18n-html="articles.guide_questionnaire.s5_p8">
+            <strong>Les mesures&nbsp;:</strong> les mesures sont choisies en fonction des
+            objectifs. Dans l'exemple de gauche, le dernier item correspond à une
+            mesure objective&nbsp;: il aurait fallu proposer un format de réponse en
+            oui/non. Dans l'exemple de droite, on souhaitait évaluer le ressenti des
+            participants (mesure subjective)&nbsp;: le format de réponse en échelle de
+            Likert est donc conservé, mais l'item est reformulé (« je pense qu'il a
+            beaucoup plu cette année ») afin qu'il corresponde réellement à l'objectif.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 6 : ÉTAPE 4 -->
+      <section id="etape4" class="article-section">
+        <div class="article-section-card">
+          <span class="article-section-label" data-i18n="articles.guide_questionnaire.label6">07 : Étape 4</span>
+          <h2 data-i18n="articles.guide_questionnaire.h2_6">Administrer le questionnaire&nbsp;: les bonnes pratiques avant l'envoi</h2>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s6_h_a">a. Solliciter les autres avant de se lancer 🤝</h3>
+          <p data-i18n="articles.guide_questionnaire.s6_p_a1">
+            Assurez-vous que le questionnaire a été validé en équipe, ou au moins par
+            une autre personne plus ou moins impliquée dans le processus.
+          </p>
+          <p data-i18n="articles.guide_questionnaire.s6_p_a2">
+            Assurez-vous également qu'il a été prétesté auprès de quelques
+            participants naïfs (ex&nbsp;: des collègues)&nbsp;: est-il compris&nbsp;? Y a-t-il des
+            points bloquants ou gênants&nbsp;?
+          </p>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s6_h_b">b. Informer vos participants avant la complétion 👀</h3>
+          <p data-i18n="articles.guide_questionnaire.s6_p_b1">
+            Si le questionnaire doit être rempli sur la base du volontariat, rédigez un
+            court texte de consentement éclairé (anonymat, utilisation des données...)
+            pour chaque participant. S'il accepte, il accède au questionnaire&nbsp;; s'il
+            refuse, il ne le remplit pas.
+          </p>
+          <p data-i18n="articles.guide_questionnaire.s6_p_b2">
+            Avant ou dans ce texte, informez le participant des objectifs du
+            questionnaire et de sa forme. Par exemple&nbsp;:
+          </p>
+          <div class="article-highlight">
+            <p data-i18n="articles.guide_questionnaire.s6_highlight_b">
+              « Ce questionnaire vise à mesurer le bien-être des employés au travail.
+              Il sera composé d'une série d'items divisés en thématiques. Pour chaque
+              affirmation, vous devrez dire à quel point vous êtes d'accord ou non avec
+              celle-ci. Il n'y a ni bonne ni mauvaise réponse, vous êtes libre de
+              répondre ce que vous souhaitez. »
+            </p>
+          </div>
+          <p data-i18n="articles.guide_questionnaire.s6_p_b3">
+            De plus, certaines thématiques abordées peuvent être considérées comme
+            « sensibles » (ex&nbsp;: santé, expériences vécues, questions personnelles sur
+            certaines habitudes). Dans ce cas, il est de votre responsabilité de
+            prévenir le participant en amont, avant qu'il se soit engagé dans la
+            complétion, de ce dont il retourne&nbsp;: en toute connaissance de cause, il
+            acceptera ou non de compléter votre questionnaire. À la fin de celui-ci,
+            n'oubliez pas d'ajouter un mot de remerciement pour son implication et son
+            temps.
+          </p>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s6_h_c">c. Faire attention à l'éthique 🫵</h3>
+          <p data-i18n="articles.guide_questionnaire.s6_p_c1">
+            À quel point le questionnaire doit-il être anonyme&nbsp;? Ne demandez que les
+            informations nécessaires (ex&nbsp;: profession, âge, genre) pour répondre à
+            vos objectifs et problématiques. Évitez ainsi de récolter des données
+            pouvant être directement reliées à une personne physique (ex&nbsp;: prénom,
+            e-mail).
+          </p>
+          <p data-i18n="articles.guide_questionnaire.s6_p_c2">
+            Toutefois, si le participant veut obtenir ou visualiser ses résultats, vous
+            pouvez lui proposer, de manière facultative et en fin de questionnaire, de
+            renseigner son e-mail, en lui expliquant que cette donnée ne sera pas
+            conservée et sera uniquement utilisée à des fins de partage des résultats.
+          </p>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s6_h_d">d. Réfléchir au mode d'administration 📞</h3>
+          <p data-i18n="articles.guide_questionnaire.s6_p_d1">
+            Vous pouvez administrer votre questionnaire de différentes façons&nbsp;: lors
+            d'un entretien (face à face, seul ou en groupe), sur ordinateur (sur place
+            ou via internet), ou par courrier ou téléphone.
+          </p>
+          <p data-i18n="articles.guide_questionnaire.s6_p_d2">
+            Le choix est libre, mais on cherche à limiter au maximum les interactions
+            sociales, notamment pour éviter le biais de désirabilité sociale (la
+            tendance des individus à répondre pour faire plaisir ou pour se donner une
+            image la plus appréciable possible). Conseil si vous administrez le
+            questionnaire en entretien&nbsp;: laissez votre participant seul dans une
+            pièce lors de la complétion. Si plusieurs personnes sont présentes,
+            séparez-les afin que chacune ait son espace.
+          </p>
+
+          <h3 class="article-section-subheading" data-i18n="articles.guide_questionnaire.s6_h_e">e. Contrôler le recrutement 🫣</h3>
+          <p data-i18n="articles.guide_questionnaire.s6_p_e1">
+            Lors du processus de préparation, vous avez répondu à la question « à qui
+            dois-je m'adresser&nbsp;? » et identifié votre cible principale. Lors de
+            l'envoi du questionnaire, deux stratégies sont possibles&nbsp;: l'envoyer de
+            manière contrôlée aux personnes respectant vos critères cibles, ou l'envoyer
+            en masse puis contrôler/sélectionner par la suite.
+          </p>
+          <p data-i18n="articles.guide_questionnaire.s6_p_e2">
+            Quelle que soit votre stratégie, il est vivement conseillé d'inclure
+            quelques items en début de questionnaire permettant de caractériser vos
+            participants à partir d'éléments relatifs à votre cible. Ces items ne
+            répondent pas directement à vos objectifs de recherche mais permettent de
+            contrôler ou vérifier que vos participants appartiennent bien à la cible
+            visée&nbsp;: les données de ceux qui n'y appartiennent pas peuvent être
+            supprimées.
+          </p>
+          <p data-i18n="articles.guide_questionnaire.s6_p_e3">
+            Concernant la quantité d'individus à viser, il n'existe pas de seuil exact.
+            Ce nombre dépend de vos objectifs, du nombre de paramètres auxquels vous
+            vous intéressez et du type d'analyse que vous mènerez.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 7 : GLOSSAIRE -->
+      <section id="glossaire" class="article-section">
+        <div class="article-section-card">
+          <span class="article-section-label" data-i18n="articles.guide_questionnaire.label7">08 : Glossaire</span>
+          <h2 data-i18n="articles.guide_questionnaire.h2_7">Les notions clés</h2>
+          <ul class="article-list">
+            <li data-i18n-html="articles.guide_questionnaire.g_item"><strong>Item&nbsp;:</strong> énoncé d'une question ou élément utilisé dans le questionnaire. On utilise ce terme général car tous les éléments d'un questionnaire ne sont pas forcément des questions&nbsp;: il peut s'agir d'affirmations pour lesquelles le participant donne son degré d'accord ou de désaccord.</li>
+            <li data-i18n-html="articles.guide_questionnaire.g_participant"><strong>Participant&nbsp;:</strong> la personne qui complète le questionnaire. On parle aussi de « répondant », mais ce guide utilise le terme « participant », comme en recherche.</li>
+            <li data-i18n-html="articles.guide_questionnaire.g_biais"><strong>Biais&nbsp;:</strong> déviation dans le traitement cognitif d'une information, schéma de pensée trompeur et faussement logique. Un biais résulte le plus souvent de l'application d'une heuristique, un raccourci mental qui permet de prendre une décision ou de porter un jugement rapidement, au détriment d'un mode de pensée rationnel et contrôlé. Il rend difficile l'interprétation et la confiance que l'on peut accorder aux résultats d'un questionnaire.</li>
+            <li data-i18n-html="articles.guide_questionnaire.g_likert"><strong>Échelles de Likert&nbsp;:</strong> échelles de scores sur lesquelles les participants se positionnent. Les échelles en 7 points sont les plus pertinentes&nbsp;: elles limitent certains biais, notamment la variabilité inter-individuelle.</li>
+            <li data-i18n-html="articles.guide_questionnaire.g_naifs"><strong>Participants naïfs&nbsp;:</strong> personnes à qui l'on demande un retour ou une relecture du questionnaire sans qu'elles aient été impliquées, au préalable, dans le processus de construction.</li>
+            <li data-i18n-html="articles.guide_questionnaire.g_charge"><strong>Charge cognitive&nbsp;:</strong> quantité de ressources cognitives investies par un individu lors de la réalisation d'une tâche. Elle dépend de la complexité de la tâche, des ressources de l'individu et de la manière dont la tâche est présentée. L'objectif est d'éviter la surcharge cognitive.</li>
+            <li data-i18n-html="articles.guide_questionnaire.g_fatigabilite"><strong>Biais de fatigabilité&nbsp;:</strong> le fait qu'un individu soit fatigable peut engendrer un biais&nbsp;: la fatigue, physique ou psychologique, diminue l'efficience attentionnelle et favorise l'apparition d'erreurs ou d'omissions dans l'exécution d'une tâche, ici la complétion du questionnaire.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION 8 : RÉFÉRENCES -->
+      <section id="references" class="article-section">
+        <div class="article-section-card">
+          <span class="article-section-label" data-i18n="articles.guide_questionnaire.label8">09 : Références</span>
+          <h2 data-i18n="resources.article_common.references_h2">Références bibliographiques</h2>
+          <ul class="article-references">
+            <li>Alwin, D.F., &amp; Krosnick, J.A. (1991). The Reliability of Survey Attitude Measurement: The Influence of Question and Respondent Attributes. <em>Sociological Methods &amp; Research</em>, 20(1), 139-181.</li>
+            <li>Maydeu-Olivares, A., Fairchild, A.J., &amp; Hall, A.G. (2017). Goodness of Fit in Item Factor Analysis: Effect of the Number of Response Alternatives. <em>Structural Equation Modeling: A Multidisciplinary Journal</em>, 24(4), 495-505.</li>
+            <li>Bernaud, J.L. (2014). <em>Méthodes de tests et questionnaires en psychologie.</em> Dunod.</li>
+            <li>Tourangeau, R., Rips, L., &amp; Rasinski, K. (2000). <em>The psychology of survey response.</em> Cambridge University Press.</li>
+            <li>Weisberg, H., Krosnick, J., &amp; Bowen, B. (1996). <em>An introduction to survey research, polling and data analysis.</em> Sage.</li>
+            <li>Cadet, B. (2016). Fatigue attentionnelle. Dans P. Zawieja (dir.), <em>Dictionnaire de la fatigue</em> (pp. 267-274). Librairie Droz.</li>
+            <li>Grimm, P. (2010). Social desirability bias. <em>Wiley International Encyclopedia of Marketing.</em></li>
+            <li>Chung, J., &amp; Monroe, G. S. (2003). Exploring social desirability bias. <em>Journal of Business Ethics</em>, 44(4), 291-302.</li>
+            <li>Ma, D. S., Correll, J., Wittenbrink, B., Bar-Anan, Y., Sriram, N., &amp; Nosek, B. A. (2013). When fatigue turns deadly: The association between fatigue and racial bias in the decision to shoot. <em>Basic and Applied Social Psychology</em>, 35(6), 515-524.</li>
+            <li>Holgado, D., Sanabria, D., Perales, J. C., &amp; Vadillo, M. A. (2020). Mental fatigue might be not so bad for exercise performance after all: A systematic review and bias-sensitive meta-analysis. <em>Journal of Cognition</em>, 3(1).</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="../../images/logo-uxcog.png" alt="UXcog">
+                <p class="footer-tagline" data-i18n="footer.tagline">Product &amp; Service Designer indépendante : produits complexes, data et IA.</p>
+            </div>
+            <div class="footer-nav">
+                <p class="footer-heading">Navigation</p>
+                <a href="../../index.html" data-i18n="nav.home">Accueil</a>
+                <a href="../../portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+                <a href="../../Ressources/index.html" data-i18n="nav.resources">Ressources</a>
+                <a href="../../Services.html" data-i18n="nav.services">Services</a>
+                <a href="../../a-propos.html" data-i18n="nav.about">À propos</a>
+                <a href="../../sitemap.xml" data-i18n="footer.sitemap">Plan du site</a>
+            </div>
+            <div class="footer-contact">
+                <p class="footer-heading">Contact</p>
+                <a href="mailto:desdevisesjoy.pro@proton.me">desdevisesjoy.pro@proton.me</a>
+                <a href="https://www.linkedin.com/in/joydesdevises-product-designer/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2026 Joy Desdevises, UXcog. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+    </div>
+</footer>
+
+<script src="../../translations.js"></script>
+<script src="../../i18n.js"></script>
+<script src="../../reveal.js"></script>
+</body>
+</html>

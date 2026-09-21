@@ -94,11 +94,11 @@ const tools = [
   {
     i18nKey: "guide_questionnaire",
     typeTag: "Lien externe",
-    title: "Guide pratique : construire un questionnaire en 4 étapes",
+    title: "Comment construire un questionnaire en 4 étapes ?",
     description:
       "Le questionnaire est un outil puissant... A condition bien le construire ! Découvrez comment le faire en 4 étapes détaillées dans cet article.",
     image: "../Ressources/Files/outil-questionnaire.png",
-    url: "files/guide-exemple.pdf",
+    url: "articles/guide-questionnaire-4-etapes.html",
   }
 ];
 
@@ -270,12 +270,19 @@ function renderTools() {
 // Re-apply translations to freshly injected HTML
 // =========================
 
+let _resourcesDecoderEl = null;
+function decodeEntities(text) {
+  if (!_resourcesDecoderEl) _resourcesDecoderEl = document.createElement("textarea");
+  _resourcesDecoderEl.innerHTML = text;
+  return _resourcesDecoderEl.value;
+}
+
 function applyResourcesI18n() {
   if (typeof translations === "undefined") return;
   const lang = getLang();
   document.querySelectorAll("#featured-slot [data-i18n], #articles-list [data-i18n], #tools-grid [data-i18n], #articles-filters [data-i18n]").forEach(el => {
     const val = el.dataset.i18n.split(".").reduce((obj, k) => (obj && obj[k] !== undefined ? obj[k] : undefined), translations[lang]);
-    if (val !== undefined) el.textContent = val;
+    if (val !== undefined) el.textContent = decodeEntities(val);
   });
 }
 

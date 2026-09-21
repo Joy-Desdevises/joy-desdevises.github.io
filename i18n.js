@@ -11,12 +11,19 @@
     }, translations[lang]);
   }
 
+  var decoderEl = null;
+  function decodeEntities(text) {
+    if (!decoderEl) decoderEl = document.createElement('textarea');
+    decoderEl.innerHTML = text;
+    return decoderEl.value;
+  }
+
   function apply(lang) {
     document.documentElement.lang = lang;
 
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       var val = get(lang, el.dataset.i18n);
-      if (val !== undefined) el.textContent = val;
+      if (val !== undefined) el.textContent = decodeEntities(val);
     });
 
     document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
