@@ -9,7 +9,7 @@ const translations = {
     },
     page: {
       title: {
-        home: 'Joy Desdevises - Designer Produit',
+        home: 'Joy Desdevises - Consultante produit, data & IA',
         portfolio: 'Portfolio - Joy Desdevises',
         services: 'Services - Joy Desdevises',
         about: 'À propos - Joy Desdevises',
@@ -39,8 +39,8 @@ const translations = {
       }
     },
     home: {
-      kicker: 'Product & Service Designer, accompagnement et conseil',
-      intro: '1 doctorat. 5 ans de consulting. 8+ organisations accompagnées.<br>Spécialisée dans les produits ou processus complexes, la data et l\'intégration de l\'IA.',
+      kicker: 'Consultante produit, data & IA',
+      intro: '1 doctorat. Près de 5 ans de conseil. 8+ organisations accompagnées.<br>Spécialisée dans les produits et processus complexes, pilotés par la data et transformés par l\'IA.',
       cta_contact: 'Me contacter',
       cta_services: 'Mon portfolio',
       trust_label: 'Ils me font confiance'
@@ -1222,7 +1222,7 @@ const translations = {
     },
     page: {
       title: {
-        home: 'Joy Desdevises - Product Designer',
+        home: 'Joy Desdevises - Product, Data & AI Consultant',
         portfolio: 'Portfolio - Joy Desdevises',
         services: 'Services - Joy Desdevises',
         about: 'About - Joy Desdevises',
@@ -1252,8 +1252,8 @@ const translations = {
       }
     },
     home: {
-      kicker: 'Product & Service Designer, consulting and support',
-      intro: '1 PhD. 5 years of consulting. 8+ organisations supported.<br>Specialised in complex products or processes, data and AI integration.',
+      kicker: 'Product, Data & AI Consultant',
+      intro: '1 PhD. Nearly 5 years of consulting. 8+ organisations supported.<br>Specialised in complex products and processes, driven by data and transformed by AI.',
       cta_contact: 'Get in touch',
       cta_services: 'My portfolio',
       trust_label: 'Trusted by'
