@@ -127,7 +127,7 @@ const translations = {
       }
     },
     about: {
-      kicker: 'Product & Service Designer, accompagnement et conseil',
+      kicker: 'Consultante produit, data & IA',
       tagline: '<b><i>« Je transforme des systèmes complexes en expériences compréhensibles »</i></b>',
       example_p1: 'Sur 1jeune1solution, la plateforme nationale du Ministère du Travail, j\'ai conçu de bout en bout l\'expérience d\'un service public utilisé par environ 250 000 visiteurs par mois, de 15 à 30 ans.',
       example_p2: 'Produit, service ou processus complexe, contraintes institutionnelles fortes, utilisateurs aux profils très variés. C\'est exactement le type de sujet sur lequel je suis le plus utile.',
@@ -1203,7 +1203,7 @@ const translations = {
       }
     },
     footer: {
-      tagline: 'Product & Service Designer indépendante : produits complexes, data et IA.',
+      tagline: 'Consultante produit, data & IA indépendante : produits et processus complexes.',
       sitemap: 'Plan du site',
       rights: 'Tous droits réservés.'
     }
@@ -1340,7 +1340,7 @@ const translations = {
       }
     },
     about: {
-      kicker: 'Product & Service Designer, consulting and support',
+      kicker: 'Product, Data & AI Consultant',
       tagline: '<b><i>"I turn complex systems into understandable experiences"</i></b>',
       example_p1: 'On 1jeune1solution, the national platform of the French Ministry of Labour, I designed the end-to-end experience of a public service used by around 250,000 visitors per month, aged 15–30.',
       example_p2: 'A complex product, service or process, strong institutional constraints, users with very diverse profiles. This is exactly the type of challenge where I add the most value.',
@@ -2416,7 +2416,7 @@ const translations = {
       }
     },
     footer: {
-      tagline: 'Independent Product & Service Designer: complex products, data and AI.',
+      tagline: 'Independent Product, Data & AI Consultant: complex products and processes.',
       sitemap: 'Sitemap',
       rights: 'All rights reserved.'
     }
