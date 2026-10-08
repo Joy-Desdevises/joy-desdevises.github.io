@@ -138,28 +138,29 @@
     text-transform: uppercase;
 }
 
-.project-label.cat-product {
+.project-label.tag-product {
     background: var(--color-primary);
 }
 
-.project-label.cat-service {
-    background: #c17a45;
-}
-
-.project-label.cat-research {
+.project-label.tag-data {
     background: #ded7f6;
     color: #4b3f80;
 }
 
-.project-label-extra {
-    padding: 0.3125rem 0.75rem;
-    border-radius: var(--radius-pill);
+.project-label.tag-ai {
+    background: #4b3f80;
+}
+
+.project-label.tag-transformation {
+    background: var(--color-accent);
+}
+
+.project-label.tag-audit {
+    background: var(--color-ink);
+}
+
+.project-label.tag-dev {
     background: var(--color-muted);
-    color: #fff;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
 }
 
 .project-content h3 {

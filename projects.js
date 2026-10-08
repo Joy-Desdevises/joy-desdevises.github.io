@@ -1,18 +1,19 @@
-const CATEGORY_LABELS = {
-  product: { fr: 'Product Design : UX/UI', en: 'Product Design: UX/UI' },
-  service: { fr: 'Service Design & Audit', en: 'Service Design & Audit' },
-  research: { fr: 'Recherche appliquée', en: 'Applied research' }
+const TAG_LABELS = {
+  product: { fr: 'Produit', en: 'Product' },
+  data: { fr: 'Data', en: 'Data' },
+  ai: { fr: 'IA', en: 'AI' },
+  transformation: { fr: 'Transformation', en: 'Transformation' },
+  audit: { fr: 'Audit', en: 'Audit' },
+  dev: { fr: 'Développement', en: 'Development' }
 };
 
-const CATEGORY_ORDER = ['product', 'service', 'research'];
+const TAG_ORDER = ['product', 'data', 'ai', 'transformation', 'audit', 'dev'];
 
 const projects = [
   {
     id: 12,
     slug: "waxshelf",
-    category: "product",
-    categoryLabel: "UX-UI Design",
-    categoryLabelEn: "UX-UI Design",
+    tags: ['product', 'dev'],
     client: "Projet personnel",
     clientEn: "Personal project",
     title: "WaxShelf",
@@ -22,20 +23,18 @@ const projects = [
     description: "Projet personnel - Concevoir et développer une plateforme de gestion et de découverte de collection vinyles connectée à Discogs.",
     descriptionEn: "Personal project - Designing and developing a vinyl-collection management and discovery platform connected to Discogs.",
     url: "projets/waxshelf.html",
-    endDate: "2026-08",
-    extraTag: "Développement",
-    extraTagEn: "Development"
+    endDate: "2026-08"
   },
   {
     id: 11,
     slug: "boussole-sante",
-    category: "product",
+    tags: ['product', 'ai'],
     client: "Croix-Rouge française",
     clientEn: "French Red Cross",
     title: "Boussole Santé – Croix-Rouge française",
     titleEn: "Boussole Santé – French Red Cross",
-    role: "Identité visuelle et prototypage d'une plateforme d'éducation à la santé",
-    roleEn: "Visual identity and prototyping for a health-education platform",
+    role: "Cadrage d'une plateforme IA pour les équipes éducatives",
+    roleEn: "Framing an AI platform for education teams",
     description: "Créer l'identité visuelle et les prototypes d'une plateforme de ressources en éducation à la santé pour les enseignants.",
     descriptionEn: "Creating the visual identity and prototypes for a health-education resource platform for teachers.",
     url: "projets/boussole-sante.html",
@@ -44,7 +43,7 @@ const projects = [
   {
     id: 10,
     slug: "bobbee",
-    category: "service",
+    tags: ['audit', 'product'],
     client: "Isagri",
     clientEn: "Isagri",
     title: "Bobbee – Isagri",
@@ -59,13 +58,13 @@ const projects = [
   {
     id: 9,
     slug: "ademe",
-    category: "service",
+    tags: ['data', 'transformation'],
     client: "ADEME",
     clientEn: "ADEME",
     title: "Fabrique de la donnée – ADEME",
     titleEn: "Data Factory – ADEME",
-    role: "Cadrage et structuration d'une offre de service data multi-acteurs",
-    roleEn: "Framing and structuring a multi-stakeholder data service offering",
+    role: "Diagnostic des processus de gestion de la donnée",
+    roleEn: "Diagnosing data management processes",
     description: "Structurer et améliorer une offre de services data multi-acteurs à partir des usages terrain.",
     descriptionEn: "Structuring and improving a multi-stakeholder data service offering from real-world usage insights.",
     url: "projets/ademe.html",
@@ -74,13 +73,13 @@ const projects = [
   {
     id: 8,
     slug: "T-SRU",
-    category: "product",
+    tags: ['product', 'data'],
     client: "Ministère de la Transition écologique",
     clientEn: "Ministry of Ecological Transition",
     title: "SRU – Ministère de l'Écologie",
     titleEn: "SRU – Ministry of Ecological Transition",
-    role: "Conception UI d'un outil métier de suivi des logements sociaux",
-    roleEn: "UI design for a business tool tracking social housing",
+    role: "Conception d'un outil de collecte de données réglementaires",
+    roleEn: "Designing a regulatory data-collection tool",
     description: "Concevoir une interface claire pour un outil public complexe de suivi des logements sociaux.",
     descriptionEn: "Designing a clear interface for a complex public tool for tracking social housing.",
     url: "projets/T-SRU.html",
@@ -89,13 +88,13 @@ const projects = [
   {
     id: 4,
     slug: "THALES",
-    category: "service",
+    tags: ['data', 'transformation'],
     client: "Thales",
     clientEn: "Thales",
     title: "Portefeuille applicatif – Thales",
     titleEn: "Application portfolio – Thales",
-    role: "Recherche utilisateur et arbitrage d'un portefeuille applicatif",
-    roleEn: "User research and arbitration of an application portfolio",
+    role: "Rationalisation d'un portefeuille de 1 200 applications",
+    roleEn: "Rationalising a portfolio of 1,200 applications",
     description: "Comprendre les usages pour aider à décider quelles applications conserver, transformer ou supprimer.",
     descriptionEn: "Understanding usage patterns to help decide which applications to keep, transform or retire.",
     url: "projets/thales.html",
@@ -104,30 +103,28 @@ const projects = [
   {
     id: 6,
     slug: "OHC",
-    category: "research",
+    tags: ['data'],
     client: "OCTO Technology",
     clientEn: "OCTO Technology",
     title: "OHC – OCTO Technology",
     titleEn: "OHC – OCTO Technology",
-    role: "Analyse de données et recommandations pour le bien-être au travail",
-    roleEn: "Data analysis and recommendations for workplace wellbeing",
+    role: "Conception et analyse d'un baromètre de bien-être au travail",
+    roleEn: "Designing and analysing a workplace wellbeing barometer",
     description: "Transformer des données de bien-être en décisions concrètes à l'échelle de l'entreprise.",
     descriptionEn: "Transforming wellbeing data into concrete decisions at company scale.",
     url: "projets/ohc.html",
-    endDate: "2025-12",
-    extraTag: "Data analyses",
-    extraTagEn: "Data analysis"
+    endDate: "2025-12"
   },
   {
     id: 5,
     slug: "1J1Sdelivery",
-    category: "product",
+    tags: ['product', 'transformation'],
     client: "Ministère du Travail",
     clientEn: "Ministry of Labour",
     title: "1jeune1solution (Delivery) – Ministère du Travail",
     titleEn: "1jeune1solution (Delivery) – Ministry of Labour",
-    role: "Conception et amélioration continue d'un service public",
-    roleEn: "Continuous design and improvement of a public service",
+    role: "Cadrage et delivery, coordination des équipes métier et tech",
+    roleEn: "Framing and delivery, coordinating business and tech teams",
     description: "Concevoir, tester et améliorer en continu un service public utilisé par des milliers de jeunes.",
     descriptionEn: "Designing, testing and continuously improving a public service used by thousands of young people.",
     url: "projets/1J1Sdelivery.html",
@@ -136,13 +133,13 @@ const projects = [
   {
     id: 3,
     slug: "1J1Scadrage",
-    category: "product",
+    tags: ['product', 'transformation'],
     client: "Ministère du Travail",
     clientEn: "Ministry of Labour",
     title: "1jeune1solution (Cadrage) – Ministère du Travail",
     titleEn: "1jeune1solution (Framing) – Ministry of Labour",
-    role: "Cadrage produit, vision et discovery pour une plateforme publique dédiée aux jeunes",
-    roleEn: "Product framing, vision and discovery for a public platform dedicated to young people",
+    role: "Cadrage et delivery, coordination des équipes métier et tech",
+    roleEn: "Framing and delivery, coordinating business and tech teams",
     description: "Comprendre les besoins, structurer les parcours et poser les bases d'un produit utile et accessible.",
     descriptionEn: "Understanding needs, structuring journeys and laying the foundations of a useful, accessible product.",
     url: "projets/1J1Scadrage.html",
@@ -151,13 +148,13 @@ const projects = [
   {
     id: 7,
     slug: "TRM",
-    category: "product",
+    tags: ['data', 'product'],
     client: "Ministère de la Transition écologique",
     clientEn: "Ministry of Ecological Transition",
     title: "TRM – Ministère de l'Écologie",
     titleEn: "TRM – Ministry of Ecological Transition",
-    role: "Refonte des parcours utilisateurs, structuration produit et conformité RGAA pour un outil de collecte de données du transport routier",
-    roleEn: "User journey redesign, product structuring and RGAA compliance for a road freight data-collection tool",
+    role: "Refonte d'une enquête nationale pour fiabiliser la donnée",
+    roleEn: "Redesigning a national survey to make data more reliable",
     description: "Améliorer la collecte et la fiabilité de données métier dans un produit public complexe.",
     descriptionEn: "Improving the collection and reliability of business data in a complex public product.",
     url: "projets/trm.html",
@@ -166,7 +163,7 @@ const projects = [
   {
     id: 2,
     slug: "STREETCO",
-    category: "product",
+    tags: ['product'],
     client: "StreetCo",
     clientEn: "StreetCo",
     title: "StreetCo – mécénat de compétences",
@@ -181,7 +178,7 @@ const projects = [
   {
     id: 1,
     slug: "MUSEUM",
-    category: "product",
+    tags: ['product'],
     client: "Leopold Museum",
     clientEn: "Leopold Museum",
     title: "Refonte UI - Leopold Museum (Vienne)",
@@ -209,7 +206,7 @@ projects.sort(compareByDate);
 function sortProjectsBy(mode) {
   if (mode === 'category') {
     return projects.slice().sort(function (a, b) {
-      var catDiff = CATEGORY_ORDER.indexOf(a.category) - CATEGORY_ORDER.indexOf(b.category);
+      var catDiff = TAG_ORDER.indexOf(a.tags[0]) - TAG_ORDER.indexOf(b.tags[0]);
       return catDiff !== 0 ? catDiff : compareByDate(a, b);
     });
   }
@@ -220,17 +217,16 @@ function createProjectCard(project) {
   var lang = (typeof localStorage !== 'undefined' && localStorage.getItem('uxcog_lang')) || 'fr';
   var title = (lang === 'en' && project.titleEn) ? project.titleEn : project.title;
   var role = (lang === 'en' && project.roleEn) ? project.roleEn : project.role;
-  var categoryLabel = (lang === 'en' && project.categoryLabelEn) ? project.categoryLabelEn :
-    (project.categoryLabel || CATEGORY_LABELS[project.category][lang] || CATEGORY_LABELS[project.category].fr);
-  var extraTag = (lang === 'en' && project.extraTagEn) ? project.extraTagEn : project.extraTag;
+  var tags = project.tags.map(function (tag) {
+    return '      <span class="project-label tag-' + tag + '">' + TAG_LABELS[tag][lang === 'en' ? 'en' : 'fr'] + '</span>';
+  }).join('\n');
   var roleLabel = lang === 'en' ? 'My role: ' : 'Mon rôle : ';
   var link  = lang === 'en' ? 'Discover the project →' : 'Découvrir le projet →';
   return [
     '<a class="project-card" href="' + project.url + '">',
     '  <div class="project-content">',
     '    <div class="project-label-row">',
-    '      <span class="project-label cat-' + project.category + '">' + categoryLabel + '</span>',
-    extraTag ? '      <span class="project-label-extra">' + extraTag + '</span>' : '',
+    tags,
     '    </div>',
     '    <h3>' + title + '</h3>',
     '    <p class="project-role"><strong>' + roleLabel + '</strong>' + role + '</p>',
