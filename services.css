@@ -21,7 +21,7 @@
 
 .hero {
     flex: 0 0 auto;
-    padding: 3.5rem 0 1.25rem;
+    padding: 3.5rem 0 0;
     background: var(--color-bg);
     text-align: center;
 }
@@ -145,7 +145,15 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.875rem;
-    margin-top: 2.25rem;
+    margin-top: 0;
+}
+
+.decision-tabs {
+    flex-basis: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 0.875rem;
 }
 
 .decision-buttons button {
@@ -269,6 +277,10 @@ section {
         align-items: stretch;
     }
 
+    .decision-tabs {
+        grid-template-columns: 1fr;
+    }
+
     .decision-buttons button {
         width: 100%;
         text-align: center;
@@ -279,7 +291,11 @@ section {
     font-weight: 400;
 }
 
-.service .service-examples a {
+.service .service-examples a,
+.service .service-examples a:hover {
     display: inline;
     margin-left: 0;
+    color: inherit;
+    font-weight: 400;
+    text-decoration: underline;
 }

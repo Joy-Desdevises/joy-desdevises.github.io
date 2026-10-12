@@ -15,7 +15,7 @@
   <meta name="twitter:description" content="Lancement de nouveaux produits, évolution de produits existants et intégration de l'IA, exploitation des données, simplification des outils et processus : les services de Joy Desdevises, consultante produit, data &amp; IA indépendante." />
   <meta name="twitter:image" content="https://joy-desdevises.github.io/images/logo-uxcog.png" />
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="services.css?v=2">
+  <link rel="stylesheet" href="services.css?v=3">
   <link rel="icon" href="images/logo-uxcog.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,21 +55,23 @@
   <section id="arbre" class="services-decision">
     <div class="container narrow">
       <div class="decision-buttons">
-        <button type="button" onclick="showService('framing')" data-i18n="services.btn_framing">
-          🚀 J'ai un nouveau produit à concevoir et à lancer
-        </button>
+        <div class="decision-tabs">
+          <button type="button" onclick="showService('framing')" data-i18n="services.btn_framing">
+            🚀 J'ai un nouveau produit à concevoir et à lancer
+          </button>
 
-        <button type="button" onclick="showService('product')" data-i18n="services.btn_product">
-          🛠️ Mon produit existe, il doit évoluer ou intégrer l'IA
-        </button>
+          <button type="button" onclick="showService('product')" data-i18n="services.btn_product">
+            🛠️ Mon produit existe, il doit évoluer ou intégrer l'IA
+          </button>
 
-        <button type="button" onclick="showService('data')" data-i18n="services.btn_data">
-          📊 J'ai des données, mais elles n'aident pas à décider
-        </button>
+          <button type="button" onclick="showService('data')" data-i18n="services.btn_data">
+            📊 J'ai des données, mais elles n'aident pas à décider
+          </button>
 
-        <button type="button" onclick="showService('process')" data-i18n="services.btn_process">
-          🧩 Nos outils et processus sont devenus trop complexes
-        </button>
+          <button type="button" onclick="showService('process')" data-i18n="services.btn_process">
+            🧩 Nos outils et processus sont devenus trop complexes
+          </button>
+        </div>
 
       <article id="framing" class="service">
         <p class="service-lead" data-i18n="services.framing_p">
