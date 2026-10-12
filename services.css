@@ -274,3 +274,12 @@ section {
         text-align: center;
     }
 }
+.service .service-examples {
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+.service .service-examples a {
+    display: inline;
+    margin-left: 0;
+}

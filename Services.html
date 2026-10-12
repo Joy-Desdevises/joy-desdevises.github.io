@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services - Joy Desdevises</title>
-  <meta name="description" content="Cadrage produit, conception UX/UI et amélioration continue : les services de Joy Desdevises, Product & Service Designer indépendante, pour vos projets complexes." />
+  <meta name="description" content="Lancement de nouveaux produits, évolution de produits existants et intégration de l'IA, exploitation des données, simplification des outils et processus : les services de Joy Desdevises, consultante produit, data &amp; IA indépendante." />
   <meta property="og:url" content="https://joy-desdevises.github.io/Services.html" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Services - Joy Desdevises" />
-  <meta property="og:description" content="Cadrage produit, conception UX/UI et amélioration continue : les services de Joy Desdevises, Product & Service Designer indépendante, pour vos projets complexes." />
+  <meta property="og:description" content="Lancement de nouveaux produits, évolution de produits existants et intégration de l'IA, exploitation des données, simplification des outils et processus : les services de Joy Desdevises, consultante produit, data &amp; IA indépendante." />
   <meta property="og:image" content="https://joy-desdevises.github.io/images/logo-uxcog.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Services - Joy Desdevises" />
-  <meta name="twitter:description" content="Cadrage produit, conception UX/UI et amélioration continue : les services de Joy Desdevises, Product & Service Designer indépendante, pour vos projets complexes." />
+  <meta name="twitter:description" content="Lancement de nouveaux produits, évolution de produits existants et intégration de l'IA, exploitation des données, simplification des outils et processus : les services de Joy Desdevises, consultante produit, data &amp; IA indépendante." />
   <meta name="twitter:image" content="https://joy-desdevises.github.io/images/logo-uxcog.png" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="services.css">
@@ -47,65 +47,82 @@
 <main>
   <section class="hero">
     <div class="container narrow">
-      <h1 data-i18n="services.h1">Cadrer, concevoir, améliorer</h1>
-      <p class="hero-subtitle" data-i18n="services.hero_subtitle">Un accompagnement sur mesure, du produit au processus.</p>
+      <h1 data-i18n="services.h1">Quel est votre point de départ&nbsp;?</h1>
+      <p class="hero-subtitle" data-i18n="services.hero_subtitle">Projet à cadrer, produit à faire évoluer, données à exploiter ou processus à simplifier : je vous accompagne de l'analyse jusqu'à l'adoption.</p>
     </div>
   </section>
 
   <section id="arbre" class="services-decision">
     <div class="container narrow">
-      <h2 data-i18n="services.h2_need">Quel est votre besoin principal&nbsp;?</h2>
-
       <div class="decision-buttons">
-        <button type="button" onclick="showService('discovery')" data-i18n="services.btn_discovery">
-          Cadrer et innover
+        <button type="button" onclick="showService('framing')" data-i18n="services.btn_framing">
+          Je lance un nouveau produit ou service
         </button>
 
-        <button type="button" onclick="showService('research')" data-i18n="services.btn_research">
-          Concevoir et décider
+        <button type="button" onclick="showService('product')" data-i18n="services.btn_product">
+          Mon produit existe, il doit évoluer ou intégrer l'IA
         </button>
 
-        <button type="button" onclick="showService('ux')" data-i18n="services.btn_ux">
-          Diagnostiquer et améliorer
+        <button type="button" onclick="showService('data')" data-i18n="services.btn_data">
+          J'ai des données, mais elles n'aident pas à décider
         </button>
 
-      <article id="discovery" class="service">
-        <p class="service-lead" data-i18n="services.discovery_p">
-         Je vous aide à clarifier un problème flou, structurer des hypothèses et faire émerger une direction, sur un produit, un service ou un processus.
+        <button type="button" onclick="showService('process')" data-i18n="services.btn_process">
+          Nos outils et processus sont devenus trop complexes
+        </button>
+
+      <article id="framing" class="service">
+        <p class="service-lead" data-i18n="services.framing_p">
+          Je vous accompagne du cadrage jusqu'à la mise en production, puis dans l'amélioration continue.
         </p>
         <ul>
-          <li data-i18n="services.discovery_li1">Clarification de la problématique et cartographie des enjeux</li>
-          <li data-i18n="services.discovery_li2">Ateliers de cadrage et priorisation</li>
-          <li data-i18n="services.discovery_li3">Exploration de cas d'usage data, IA ou automatisation</li>
-          <li data-i18n="services.discovery_li4">Expérimentation : tests de faisabilité et validation d'hypothèses</li>
+          <li data-i18n="services.framing_li1">Clarification du besoin et du périmètre, ateliers de cadrage et priorisation</li>
+          <li data-i18n="services.framing_li2">Exploration des cas d'usage IA ou d'automatisation, tests de faisabilité</li>
+          <li data-i18n="services.framing_li3">Entretiens, prototypage et tests auprès des futurs utilisateurs (Figma, outils IA)</li>
+          <li data-i18n="services.framing_li4">Conception en continu avec les équipes tech, de la mise en production à l'amélioration continue</li>
         </ul>
-        <a href="a-propos.html#travaillons-ensemble" data-i18n="services.discovery_link">Travaillons ensemble →</a>
+        <p class="service-examples" data-i18n-html="services.framing_examples">Exemples&nbsp;: <a href="projets/1J1Scadrage.html">1jeune1solution (cadrage)</a>, <a href="projets/1J1Sdelivery.html">1jeune1solution (delivery)</a>, <a href="projets/boussole-sante.html">Boussole Santé</a>, <a href="projets/T-SRU.html">SRU</a></p>
+        <a href="a-propos.html#travaillons-ensemble" data-i18n="services.framing_link">Travaillons ensemble →</a>
       </article>
 
-      <article id="research" class="service">
-        <p class="service-lead" data-i18n="services.research_p">
-          Je vous aide à comprendre les besoins, attentes et pratiques réelles de vos utilisateurs pour concevoir des solutions qui répondent à un usage réel, sur un produit, un service ou un processus.
+      <article id="product" class="service">
+        <p class="service-lead" data-i18n="services.product_p">
+          Je vous aide à identifier ce qui freine votre produit et à préparer ses évolutions, dont l'intégration de l'IA.
         </p>
         <ul>
-          <li data-i18n="services.research_li1">Analyses qualitatives (entretiens, enquêtes)</li>
-          <li data-i18n="services.research_li2">Prototypage et tests de solutions (Figma et outils IA)</li>
-          <li data-i18n="services.research_li3">Analyses quantitatives (data-analytics, questionnaires)</li>
-          <li data-i18n="services.research_li4">Synthèse des enseignements et recommandations documentées</li>
+          <li data-i18n="services.product_li1">Audit de l'existant sur critères</li>
+          <li data-i18n="services.product_li2">Analyse des usages réels (entretiens, données d'usage)</li>
+          <li data-i18n="services.product_li3">Plan de corrections priorisé</li>
+          <li data-i18n="services.product_li4">Refonte des parcours et des interfaces, intégration de fonctionnalités IA</li>
         </ul>
-        <a href="a-propos.html#travaillons-ensemble" data-i18n="services.research_link">Travaillons ensemble →</a>
+        <p class="service-examples" data-i18n-html="services.product_examples">Exemples&nbsp;: <a href="projets/bobbee.html">Bobbee</a> (200+ critères, 13 parcours), <a href="projets/trm.html">TRM</a>, <a href="projets/1J1Sdelivery.html">1jeune1solution</a></p>
+        <a href="a-propos.html#travaillons-ensemble" data-i18n="services.product_link">Travaillons ensemble →</a>
       </article>
 
-      <article id="ux" class="service">
-        <p class="service-lead" data-i18n="services.ux_p">
-          Je vous aide à retrouver de la clarté et de la cohérence dans un produit, un service ou un processus devenu difficile à comprendre, à utiliser ou à faire évoluer.
+      <article id="data" class="service">
+        <p class="service-lead" data-i18n="services.data_p">
+          Je vous aide à collecter les bonnes données, à les analyser et à les rendre utiles pour décider.
         </p>
         <ul>
-          <li data-i18n="services.ux_li1">Audit UX et diagnostic de l'existant</li>
-          <li data-i18n="services.ux_li2">Restructuration de parcours et de process</li>
-          <li data-i18n="services.ux_li3">Refonte d'interfaces</li>
-          <li data-i18n="services.ux_li4">Réduction de la complexité organisationnelle ou fonctionnelle</li>
+          <li data-i18n="services.data_li1">Conception de dispositifs de mesure, questionnaires et enquêtes</li>
+          <li data-i18n="services.data_li2">Analyse statistique (Excel, Power BI, Python, R)</li>
+          <li data-i18n="services.data_li3">Tableaux de bord, synthèses et recommandations documentées</li>
         </ul>
-        <a href="a-propos.html#travaillons-ensemble" data-i18n="services.ux_link">Travaillons ensemble →</a>
+        <p class="service-examples" data-i18n-html="services.data_examples">Exemples&nbsp;: <a href="projets/ohc.html">OHC</a> (8 entités, 500 à 900 réponses par vague), <a href="projets/trm.html">TRM</a></p>
+        <a href="a-propos.html#travaillons-ensemble" data-i18n="services.data_link">Travaillons ensemble →</a>
+      </article>
+
+      <article id="process" class="service">
+        <p class="service-lead" data-i18n="services.process_p">
+          Je vous aide à simplifier vos outils et processus, et à faire travailler ensemble équipes métier, tech et prestataires.
+        </p>
+        <ul>
+          <li data-i18n="services.process_li1">Diagnostic des outils et des processus</li>
+          <li data-i18n="services.process_li2">Rationalisation des outils et restructuration des processus</li>
+          <li data-i18n="services.process_li3">Coordination et accompagnement jusqu'à l'adoption</li>
+        </ul>
+        <p class="service-examples" data-i18n-html="services.process_examples">Exemples&nbsp;: <a href="projets/thales.html">Thales</a> (1&nbsp;200 applications), <a href="projets/ademe.html">ADEME</a></p>
+        <a href="a-propos.html#travaillons-ensemble" data-i18n="services.process_link">Travaillons ensemble →</a>
       </article>
 
       </div>
@@ -136,7 +153,7 @@ function showService(id) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  showService("discovery");
+  showService("framing");
 });
 </script>
 
@@ -159,7 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="footer-contact">
                 <p class="footer-heading">Contact</p>
                 <a href="mailto:desdevisesjoy.pro@proton.me">desdevisesjoy.pro@proton.me</a>
-                <a href="https://www.linkedin.com/in/joydesdevises-product-designer/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/joydesdevises-consultante/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
         </div>
         <p class="footer-bottom">© 2026 Joy Desdevises, UXcog. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
